@@ -1,0 +1,70 @@
+USER STORIES
+	-Described below is the minimum viable product;
+	-following is a list of nice to have features organized by category
+
+===================== LOGIN PAGE ========================
+Log In
+	-Password verification
+	-Unique ID verification
+	-Generate Member Page
+
+Sign Up
+	-email authentication
+	-Unique ID generation
+	-Add member information to database
+
+Forget ID/ Password
+	-email authentication
+
+===================== MEMBER PAGE ========================
+Purchase Membership
+	Self Purchase
+		-Enter credit information
+		-credit verification (ensure all int values)
+	Gift purchase
+		-member ID verification
+
+Member Data
+	-display name & id
+
+===================== DATABASE ===========================
+User Database
+	-Unique ID input
+	-User Data
+
+================== NICE TO HAVE FEATURES ==================
+==== Login Page =========
+Login
+	-sign in as guest
+Sign Up
+	-Password Strength
+Navigation Panel:
+	-drop down / event listener
+	-go to calendar page
+	-go to home page
+	-membership description
+
+==== Membership Page =====
+Member Data
+	-membership status (if still member)
+	-expiration date
+Event Data
+	-upcoming events
+	-registered events
+
+==== Database ============
+User Database
+	-metadata
+Event Database
+	-Event Data
+	-Images
+
+==== Admin Dashboard =====
+	Add events to calendar
+		-Form to enter data
+		-Space to enter picture
+	Member search
+		-Searchable query field
+		-Render user data info page
+	Member statistics and analytics
+		-Render graph from recent member data
