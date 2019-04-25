@@ -1,6 +1,6 @@
 *{
 	padding:0;
-	margin:0; 
+	margin:0;
     border:0;
 }
 html, body, div, h1, h2, h3, h4, a, strong, ul, li{
@@ -16,7 +16,7 @@ nav a{
 	text-decoration: none
 }
 li, p, strong{
-	font-size: 15px; 
+	font-size: 15px;
 	line-height: 22px;
 }
 hr{
@@ -53,15 +53,15 @@ nav.main ul{
 	list-style: none;
 }
 nav.main ul li{
-	height: 30px;	
+	height: 30px;
 	font-size: 14px;
 	line-height: 30px;
 	margin: 0 2px;
 	float: left;
 }
-nav.main ul li a{	
+nav.main ul li a{
 	color: #777;
-	padding: 0 10px;		
+	padding: 0 10px;
 	float: left;
 }
 nav.main ul li a:hover{
@@ -89,7 +89,7 @@ nav.main ul li a:hover{
 	width: 480px;
 }
 .container .content {
-	width: 980px; 
+	width: 980px;
 	position: relative;
 }
 /* login page - box */
@@ -101,9 +101,9 @@ form.registed{
 }
 form.registed strong{
 	color: #707070;
-	font: bold Arial, Helvetica, sans-serif;	
+	font: bold Arial, Helvetica, sans-serif;
 }
-form.registed input[type="text"], 
+form.registed input[type="text"],
 form.registed input[type="email"]{
 	width: 255px;
 	margin: 5px 0 14px 0;
@@ -115,7 +115,7 @@ form.registed a.forgot{
 }
 form.registed .submit {
 	font-size: 15px;
-	color: red;	
+	color: red;
 	margin: 20px 0 20px 0;
 }
 form.registed .submit input[type="submit"]{
@@ -145,7 +145,7 @@ button, input[type="submit"]{
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15px;
-	border-radius: 4px;	
+	border-radius: 4px;
 }
 button:hover, input[type="submit"]:hover{
 	background: #87CEFA;
@@ -161,4 +161,20 @@ button:hover, input[type="submit"]:hover{
 .new button.account{
 	width: 150px;
 	font: bold Arial, Helvetica, sans-serif;
+}
+
+/* Admin Dashboard Boxes */
+
+.box {
+  width:450px;
+  height:300px;
+  margin:20px auto;
+  padding:10px;
+}
+.left {
+	clear:both;
+	float:left;
+}
+.right {
+	float:right;
 }
