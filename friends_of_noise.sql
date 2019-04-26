@@ -5,7 +5,8 @@ CREATE DATABASE FriendsOfNoise;
 USE FriendsOfNoise;
 
 CREATE TABLE members(
-Memberid INT PRIMARY KEY AUTO_INCREMENT,
+memberID INT UNIQUE AUTO_INCREMENT,
+UID VARCHAR(100) PRIMARY KEY,
 login VARCHAR(45) NOT NULL,
 `password` VARCHAR(45) NOT NULL,
 First_Name VARCHAR(45) NOT NULL,
@@ -17,4 +18,4 @@ City VARCHAR(45) DEFAULT NULL,
 State VARCHAR(2) DEFAULT NULL,
 Zip VARCHAR(10) DEFAULT NULL);
 
-ALTER TABLE members AUTO_INCREMENT=1000001;
+INSERT INTO members VALUES(default, 'hLWoUFvXC5MbRgeJtqpsKozWdy53', 'test@gmail.com', '1232test34','Ken','LastName','test@gmail.com','206-206-2060','street','seattle','wa','10005');
