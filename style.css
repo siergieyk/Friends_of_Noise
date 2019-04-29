@@ -93,49 +93,73 @@ nav.main ul li a:hover{
 	position: relative;
 }
 /* login page - box */
-form.registed{
+form.new{
 	margin: 45px 0 0 0;
 	padding: 22px;
 	border: 1px solid #e0e0e0;
 	border-radius: 4px;
 }
-form.registed strong{
+form.new strong{
 	color: #707070;
 	font: bold Arial, Helvetica, sans-serif;
 }
-form.registed input[type="text"],
-form.registed input[type="email"]{
+/*
+form.new input[type="text"],
+form.new input[type="email"]
+{
 	width: 255px;
 	margin: 5px 0 14px 0;
 }
-form.registed a.forgot{
+*/
+
+form.new input[type="text"],
+form.new input[type="phone"],
+form.new input[type="zip"],
+form.new input[type="address"]
+{
+	width: 255px;
+	margin: 5px 0 14px 0;
+}
+form.new a.forgot{
 	font-size: 12px;
 	color: #707070;
 	margin-left: 12px;
 }
-form.registed .submit {
+form.new .submit {
 	font-size: 15px;
 	color: red;
 	margin: 20px 0 20px 0;
 }
-form.registed .submit input[type="submit"]{
+form.new .submit input[type="submit"]{
 	float: left;
 	margin: 0 180px 0 0;
 	width: 110px;
 	font: bold Arial, Helvetica, sans-serif;
 }
 /* login page - input */
-input[type="email"], input[type="text"]{
+input[type="email"], input[type="text"],input[type="phone"],input[type="zip"]{
 	height: 35px;
 	padding: 0 10px;
 	border: 1px solid #ccc;
 	border-radius: 2px;
 }
-input[type="email"]:focus, input[type="text"]:focus{
+/*
+input[type="phone"], input[type="text"]{
+	height: 35px;
+	padding: 0 10px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+*/
+
+
+
+input[type="email"]:focus, input[type="text"]:focus, input[type="zip"]:focus{
 	outline:none;
 	border: 1px solid red;
 	box-shadow: 0px 0px 4px red;
 }
+
 /* login page - button */
 button, input[type="submit"]{
 	height: 40px;
