@@ -10,11 +10,11 @@ html, body, div, h1, h2, h3, h4, a, strong, ul, li{
     font-size: 100%;
 }
 ul{
-	list-style: none
+	list-style: none;
 }
 a, nav a{
 	color: #FFD700;
-	text-decoration: none
+	text-decoration: none;
 }
 li, p, strong{
 	font-size: 15px;
@@ -22,7 +22,7 @@ li, p, strong{
 }
 hr{
 	background: #e0e0e0;
-	height: 1px
+	height: 1px;
 }
 h1, h2, h3, h4{
 	font-family: Times New Roman, Helvetica, sans-serif;
