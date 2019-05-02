@@ -6,10 +6,60 @@
   <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>     
+<!-- Below is the initialization for Firebase. -->
+
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC0N7dTxzX551I3SeSMcxkx1PJbaAHzVR0",
+    authDomain: "fonproject-faf34.firebaseapp.com",
+    databaseURL: "https://fonproject-faf34.firebaseio.com",
+    projectId: "fonproject-faf34",
+    storageBucket: "fonproject-faf34.appspot.com",
+    messagingSenderId: "572276368012"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<!-- Below initializes the sign-in widget from FirebaseUI web -->
+<script src="https://cdn.firebase.com/libs/firebaseui/3.6.0/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.6.0/firebaseui.css" />
+<script type="text/javascript">
+  // FirebaseUI config.
+  var uiConfig = {
+    signInSuccessUrl: 'loggedIn.html',
+    signInOptions: [
+      // Leave the lines as is for the providers you want to offer your users.
+      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+      firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+      firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+      firebase.auth.GithubAuthProvider.PROVIDER_ID,
+      firebase.auth.EmailAuthProvider.PROVIDER_ID,
+      firebase.auth.PhoneAuthProvider.PROVIDER_ID,
+      firebaseui.auth.AnonymousAuthProvider.PROVIDER_ID
+    ],
+    // tosUrl and privacyPolicyUrl accept either url string or a callback
+    // function.
+    // Terms of service url/callback.
+    tosUrl: '<your-tos-url>',
+    // Privacy policy url/callback.
+    privacyPolicyUrl: function() {
+      window.location.assign('<your-privacy-policy-url>');
+    }
+  };
+
+  // Initialize the FirebaseUI Widget using Firebase.
+  var ui = new firebaseui.auth.AuthUI(firebase.auth());
+  // The start method will wait until the DOM is loaded.
+  ui.start('#firebaseui-auth-container', uiConfig);
+</script>
+
+
+<body>
       <div class="top">
         <h4>Already a member? <a href="login.html">Sign in</a></h4>
-      </div>    
+      </div>
 
       <nav class="main">
         <ul>
@@ -23,45 +73,45 @@
 	     	<li class="separator">|</li>
           <li><a href="login.html">Sign Up</a></li>
         </ul>
-      </nav>         
-  
+      </nav>
+
   <section id="account" class="width">
-    <div class="container">      
+    <div class="container">
        	<div class="content">
 			<h1>Login or Create an Account</h1>
 			<hr>
-		</div>			
+		</div>
 		<div class="login">
 			<form class="registed">
-				<h2>Registed Member</h2>			
+				<h2>Registed Member</h2>
 				<p>If you have an account with us, please sign in your account.</p><br/>
-							
+
 				<div class="email">
 					<strong>Email Adress: </strong><sup class="asterism">*</sup><br/>
 					<input type="email" name="" class="" value="" />
 				</div>
-							
+
 				<div class="password">
 					<strong>Password: </strong><sup class="asterism">*</sup><br/>
 					<input type="text" name="" class="" value="" />
 					<a class="forgot" href="#">Forgot Your Password?</a>
 				</div>
-				
-				<div class="submit">								
+
+				<div class="submit">
 					<input type="submit" value="Sign In" />
 					<sup class="sup">* </sup><span>Required Field</span>
 				</div>
-			</form>             
+			</form>
        </div>
 
        	<div class="login new">
 			<h2>New Member</h2>
-			<p>Create your FREE account, you will be able to view and track your orders in your account and more.</p>			
+			<p>Create your FREE account, you will be able to view and track your orders in your account and more.</p>
 			<button class="account">Sign Up</button>
         </div>
       </div>
     </div>
   </section>
-  
+
 </body>
 </html>
