@@ -18,7 +18,7 @@
 							
 				<div class="password">
 					<strong>Password: </strong><sup class="asterism">*</sup><br/>
-					<input type="text" name="" class="" value="" />
+					<input type="password" name="" class="" value="" />
 					<a class="forgot" href="#">Forgot Your Password?</a>
 				</div>
 				
