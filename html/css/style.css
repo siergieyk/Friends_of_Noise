@@ -50,7 +50,7 @@ body{
 }
 .logo img{
 	width: 17%;
-	margin: 0 0 10px 40px;
+    margin: 0 auto; 
 }
 nav.main{
 	position: relative;
@@ -186,9 +186,9 @@ form.info button{
 select{
     height: 35px;
     width: 420px;
-	padding: 0 10px;
+	padding: 0 5px;
 	border: 1px solid #ccc;
-	border-radius: 2px;
+	border-radius: 2px;	
 }
 .center{
     width: 185px;
@@ -211,15 +211,16 @@ select{
 	float: right;
  	color: #333;
  	margin: 10px 0px 10px 0px;
- 	padding: 10px;
+ 	padding: 5px;
  	height: 500px;
  	width: 580px;
  	display: inline;
  	position: relative;
 }
 .image img{
-	width: 40%;
-	margin: 0 0 10px 40px;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 20px;
 }
 /* Admin Dashboard Boxes */
 .box {
