@@ -20,7 +20,7 @@
         <li class="separator">|</li>
           <li><a href="member.php">Members</a></li>
         <li class="separator">|</li>
-        <li><a href="event.php">Events</a></li>
+        <li><a href="#">Sell</a></li>
         <li class="separator">|</li>
           <li><a href="login.php">Sign In</a></li>
         <li class="separator">|</li>

@@ -194,34 +194,6 @@ select{
     width: 185px;
     margin: 2px auto;
 }
-/* event page */
-.event{
-	margin: 0 auto;
-	width: 950px;
-}
-.leftcolumn{
-	margin: 10px 0px 10px 0px;
- 	padding: 10px;
- 	height: 170px;
- 	width: 300px;
- 	float: left;	
- 	border: 8px dotted #FFD700;
-}
-.rightcolumn { 
-	float: right;
- 	color: #333;
- 	margin: 10px 0px 10px 0px;
- 	padding: 5px;
- 	height: 500px;
- 	width: 580px;
- 	display: inline;
- 	position: relative;
-}
-.image img{
-	width: 100%;
-	margin: 0 auto;
-	margin-bottom: 20px;
-}
 /* Admin Dashboard Boxes */
 .box {
   width:450px;
