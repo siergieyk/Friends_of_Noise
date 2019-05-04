@@ -96,6 +96,7 @@ nav.main ul li a:hover{
 }
 .container .login{
 	width: 480px;
+	height: 400px;
 }
 .container .content{
 	width: 980px;
@@ -186,9 +187,9 @@ form.info button{
 select{
     height: 35px;
     width: 420px;
-	padding: 0 5px;
-	border: 1px solid #ccc;
-	border-radius: 2px;	
+    padding: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;	
 }
 .center{
     width: 185px;
