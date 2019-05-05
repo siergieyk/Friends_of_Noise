@@ -16,11 +16,11 @@
 
       <nav class="main">
         <ul>
-          <li><a href="admin_dash.php">My Account</a></li>
+          <li><a href="admin_dash.php">Admin</a></li>
         <li class="separator">|</li>
           <li><a href="member.php">Members</a></li>
         <li class="separator">|</li>
-        <li><a href="#">Sell</a></li>
+        <li><a href="sell.php">Sell</a></li>
         <li class="separator">|</li>
           <li><a href="login.php">Sign In</a></li>
         <li class="separator">|</li>
