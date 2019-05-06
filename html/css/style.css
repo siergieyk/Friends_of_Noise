@@ -39,6 +39,7 @@ body{
 	min-width: 960px;
 	margin: 0 auto;
 	font-family: Arial, Helvetica, sans-serif;
+	background: radial-gradient(circle, #0584F2, #DAA2DA);
 }
 /* login page - top */
 .top{
@@ -104,7 +105,7 @@ nav.main ul li a:hover{
 }
 /* login page */
 form.registed{
-	margin: 45px 0 0 0;
+	margin: 40px 0 0 0;
 	padding: 22px;
 	border: 1px solid #e0e0e0;
 	border-radius: 4px;
@@ -113,6 +114,7 @@ form.registed strong{
 	color: #707070;
 	font: bold Arial, Helvetica, sans-serif;
 }
+form.registed input[type="text"],
 form.registed input[type="email"],
 form.registed input[type="password"], select{
 	width: 255px;
@@ -195,6 +197,74 @@ select{
     width: 185px;
     margin: 2px auto;
 }
+/* sell page */
+.checkout{
+	margin: 0 auto;
+	padding: 10px;
+	width: 1080px;
+	display: inline-block;	
+}
+.music{ 
+ 	margin: 30px 0 0 0;
+ 	padding: 5px;
+ 	height: 300px;
+ 	width: 290px;
+ 	float: left;
+}
+.leftcolumn{	
+ 	margin: 40px 0 0 0;
+	padding: 10px;
+	height: 300px;
+	width: 290px;
+ 	display: inline;
+ 	float: left;	
+}
+.rightcolumn{ 
+ 	height: 300px;
+ 	width: 470px;
+ 	float: left;
+	position: relative;
+}
+.image img{
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.table{
+	width: 105%;
+}
+.radio{
+	margin-left: 65px;
+}
+/* event page */
+.event{
+	margin: 0 auto;
+	width: 950px;
+}
+.event .leftcolumn{
+	margin: 10px 0px 10px 0px;
+ 	padding: 10px;
+ 	height: 170px;
+ 	width: 300px;
+ 	float: left;	
+ 	border: 8px dotted #FFD700;
+}
+.event .rightcolumn { 
+	float: right;
+ 	color: #333;
+ 	margin: 10px 0px 10px 0px;
+ 	padding: 5px;
+ 	height: 500px;
+ 	width: 580px;
+ 	display: inline;
+ 	position: relative;
+}
+.image img{
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
 /* Admin Dashboard Boxes */
 .box {
   width:450px;
