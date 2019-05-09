@@ -77,7 +77,7 @@
                 <div class="password">
                   <strong>Password: </strong><sup class="asterism">*</sup><br/>
                   <input type="password" name="" class="" value="" />
-                  <a class="forgot" href="forgot.html">Forgot Your Password?</a>
+                  <a class="forgot" href="forgot.php">Forgot Your Password?</a>
                 </div>
                 
                 <div class="submit">                
