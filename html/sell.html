@@ -78,16 +78,14 @@
         </div>
 
           <div class="leftcolumn"> 
-           <form class="guest">  
-              
+           <form class="guest">               
               <ul class="radio">
                 <h3>Buy Event Ticket</h3>
-                <li><input type="radio" id="guest" name="type" value="guest" >
+                <li><input type="radio" id="guest" name="type" value="guest" onclick="window.location='checkout.html'">
                   <label for="guest">Checkout as Guest</label></li>
-                <li><input type="radio" id="member" name="type" value="member">
+                <li><input type="radio" id="member" name="type" value="member" onclick="window.location='register.html'">
                   <label for="member">Register a Member</label></li>
                 <br />             
-                <input type="submit" value="Checkout" />
                </ul>
             </form>
           </div>
