@@ -82,8 +82,7 @@ nav.main ul li a:hover{
 	position: relative;
 }
 /* Container */
-.container
-{
+.container{
 	margin-left: auto;
 	margin-right: auto;
 	width: 1020px;
@@ -97,42 +96,47 @@ nav.main ul li a:hover{
 }
 .container .login{
 	width: 480px;
-	height: 400px;
+
 }
 .container .content{
 	width: 980px;
 	position: relative;
 }
 /* login page */
-form.registed{
+.registed{
 	margin: 40px 0 0 0;
 	padding: 22px;
 	border: 1px solid #e0e0e0;
 	border-radius: 4px;
 }
-form.registed strong{
+.registed strong{
 	color: #707070;
 	font: bold Arial, Helvetica, sans-serif;
 }
-form.registed input[type="text"],
-form.registed input[type="email"],
-form.registed input[type="password"], select{
+.registed input[type="text"],
+.registed input[type="email"],
+.registed input[type="password"], select{
 	width: 255px;
 	margin: 5px 0 14px 0;
 }
-form.registed a.forgot{
+.registed a.forgot{
 	font-size: 12px;
 	color: #707070;
 	margin-left: 12px;
 }
-form.registed .submit{
+.registed .submit{
 	font-size: 15px;
 	color: red;
 	margin: 20px 0 20px 0;
 }
-form.registed .submit input[type="submit"]{
+.required{
+	float: right;
+	margin-right: 40px;
+	font-size: 13px;
+}
+.registed .submit input[type="submit"]{
 	float: left;
-	margin: 0 180px 0 0;
+	margin: 0 130px 0 0;
 	width: 110px;
 	font: bold Arial, Helvetica, sans-serif;
 }
@@ -169,21 +173,34 @@ button:hover, input[type="submit"]:hover{
 .new p{
 	margin-bottom: 35px;
 }
-.new button.signup{
+.new .signup{
+	height: 40px;
+	display: block;
+	background: #FFD700;
+	color: #fefefe;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	border-radius: 4px;
 	width: 120px;
 }
+.new .signup:hover{
+	background: #87CEFA;
+	color: black;
+	box-shadow: 0px 0px 2px #87CEFA;
+}
 /* register page  */
-form.info, select{
+.info, select{
 	margin: 45px 0 0 0;
 	padding: 22px;
 }
-form.info input[type="text"],
-form.info input[type="email"],
-form.info input[type="password"], select{
+.info input[type="text"],
+.info input[type="email"],
+.info input[type="password"], select{
 	width: 400px;
 	margin: 5px 0 14px 0;
 }
-form.info button{
+.info button{
 	width: 200px;
 }
 select{
@@ -238,6 +255,10 @@ select{
 .table{
 	width: 105%;
 }
+.guest{
+	font-style: oblique;
+	font-weight: 600;
+}
 .radio{
 	margin-left: 65px;
 }
@@ -269,10 +290,10 @@ button.buy{
 }
 /* Admin Dashboard Boxes */
 .box {
-  width:450px;
-  height:300px;
-  margin:20px auto;
-  padding:10px;
+	width:450px;
+	height:300px;
+	margin:20px auto;
+	padding:10px;
 }
 .left {
 	clear:both;
