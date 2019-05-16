@@ -190,31 +190,39 @@ button:hover, input[type="submit"]:hover{
 	box-shadow: 0px 0px 2px #87CEFA;
 }
 /* register page  */
-.info, select{
-	margin: 45px 0 0 0;
-	padding: 22px;
+.info{
+	margin: 45px auto;
+	padding: 30px;
+	height: 480px;
 }
 .info input[type="text"],
 .info input[type="email"],
 .info input[type="password"], select{
 	width: 400px;
+	height: 40px;
 	margin: 5px 0 14px 0;
 }
-.info button{
-	width: 200px;
-}
 select{
-    height: 35px;
-    width: 420px;
+    height: 40px;
+    width: 422px;
     padding: 0 5px;
     border: 1px solid #ccc;
     border-radius: 2px;	
+    color: black;
 }
+select option:first-child{
+	background: #FFD700;	
+}
+.info button{
+	width: 250px;	
+	display: inline-block;
+	margin: 60px 0 0 360px ;
+ }
+/* sell page */
 .center{
     width: 185px;
     margin: 2px auto;
 }
-/* sell page */
 .checkout{
 	margin: 0 auto;
 	padding: 5px;
