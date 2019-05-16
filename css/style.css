@@ -1,0 +1,179 @@
+*{
+	padding:0;
+	margin:0; 
+    border:0;
+}
+html, body, div, h1, h2, h3, h4, a, strong, ul, li{
+	margin: 0;
+	padding: 0;
+	border: 0;
+    font-size: 100%;
+}
+ul{
+	list-style: none
+}
+nav a{
+	text-decoration: none
+}
+a {
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+li, p, strong{
+	font-size: 15px; 
+	line-height: 22px;
+}
+hr{
+	background: #e0e0e0;
+	height: 1px
+}
+h1, h2, h3, h4{
+	font-family: Times New Roman, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #444444;
+	padding-bottom: 23px;
+}
+h1{font-size: 32px;}
+h2{font-size: 27px}
+h3{font-size: 22px;}
+h4{font-size: 17px;}
+
+body{
+	min-width: 960px;
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* login page - top */
+.top{
+  	margin: 14px 0 0 14px;
+}
+.middle{
+	margin: 30px 0 0  14px;
+}
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:15%;
+  height:auto;
+}
+
+.flyer{
+	float:left;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 8%;
+	height: auto;
+}
+
+nav.main{
+	text-align: center;
+	margin: 20px 0 0 0;
+	/*position: relative;
+	float: right;
+	margin: 30px 0 0 0;*/
+	font-family: Arial, Helvetica, sans-serif;
+}
+nav.main ul{
+	display: inline-block;
+	list-style: none;
+}
+nav.main ul li{
+	height: 30px;	
+	font-size: 14px;
+	line-height: 30px;
+	margin: 0 2px;
+	float: left;
+}
+nav.main ul li a{	
+	color: #777;
+	padding: 0 10px;		
+	float: left;
+}
+nav.main ul li a:hover{
+	color: #fefefe;
+	background: #87CEFA;
+	text-decoration: none;
+	border-radius: 3px;
+	position: relative;
+}
+/* Container */
+.container
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1020px;
+}
+/* login page - login and new */
+
+.upcoming{
+	display: inline;
+	margin-left: 300px;
+	margin-right: 434px;
+	padding: 60px;
+}
+
+.renew{
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  margin: auto;
+  color: white;
+  text-align: center;
+border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	background-color: #854624;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+
+.status{
+	margin: 45px 0 0 0;
+	padding: 22px;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	float: right;
+	width: 100px;
+}
+
+.card{
+	width: 360px;
+	height: 450px;
+	margin: 60px auto 0;
+	border: 1px #000 solid;
+	border-radius: 6px;
+	background-color: #689742;
+	box-shadow: 1px 2px 3px 0 rgba(0,0,0,.10);
+	
+}
+
+.formhead{
+	height: 60px;
+    padding-top: 60px; 
+	margin: auto;
+	text-align: center;
+	
+}
+
+.formbody{
+	height: 650px;
+	padding: 10px 30px 20px;
+}
+
+.button{
+	font-size: 20px;
+	width: 100%;
+	border-radius: 6px;
+	margin-top: 10px;
+}
+
+.billaddr, .payinfo{
+	padding: 10px;
+}
+
+.sameadd{
+	padding: 10px;
+}
+

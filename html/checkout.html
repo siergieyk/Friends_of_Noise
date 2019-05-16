@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>     
+      <div class="top">
+        <h4>Already a Member? <a href="login.html">User Visitor</a></h4>
+          <div class="logo"> 
+            <img src="images/FoNlogo.png"> 
+          </div>
+      </div>    
+
+      <nav class="main">
+        <ul>
+          <li><a href="admin_dash.html">Admin</a></li>
+        <li class="separator">|</li>
+          <li><a href="member.html">Members</a></li>
+        <li class="separator">|</li>
+          <li><a href="single-event.html">Events</a></li>
+        <li class="separator">|</li>
+          <li><a href="login.html">Sign In</a></li>
+        <li class="separator">|</li>
+          <li><a href="logout.html">Logout</a></li>
+        </ul>
+      </nav>       
+  
+  <section id="account" class="width">
+    <div class="container">      
+        <div class="content">
+          <h1>Guest Checkout</h1><br />
+          <hr>
+        </div>
+    <div class="register">
+      <form class="info">
+            <div class="left box">
+              <strong>Billing Address: </strong><sup class="asterism">*</sup><br/>
+              <input type="text" name="" class="" value="" placeholder="First name" />
+              <input type="text" name="" class="" value="" placeholder="Last name"/>
+              <input type="text" name="" class="" value="" placeholder="Street address"/>
+              <input type="text" name="" class="" value="" placeholder="Street address (optional)"/>
+              <input type="text" name="" class="" value="" placeholder="City"/>
+              <input type="text" name="" class="" value="" placeholder="State"/>
+              <input type="text" name="" class="" value="" placeholder="ZIP code"/>
+              <input type="text" name="" class="" value="" placeholder="Email"/>
+              <input type="submit" value="Done" /><br />
+            </div>
+
+           <div class="right box">     
+            <div class="progress">
+              <strong>Pay with: </strong><sup class="asterism">*</sup><br/>
+              <ul class="pay">
+                <li><input type="radio" id="card" name="type" value="card" >
+                  <label for="card">Credit or debit card</label></li>
+                <li><input type="radio" id="card" name="type" value="paypal">
+                  <label for="paypal">PayPal</label></li>
+                <br />                
+               </ul>
+            </div>
+
+            <div class="payment">
+              <input type="text" name="" class="" value="" placeholder="Card number"/>
+              <input type="text" name="" class="" value="" placeholder="Expiration month"/>
+              <input type="text" name="" class="" value="" placeholder="Expiration year"/>
+              <input type="text" name="" class="" value="" placeholder="Security code"/>
+              <input type="submit" value="Checkout" />
+            </div>            
+     </form>
+    </div>
+  </section>
+</body>
+</html>
