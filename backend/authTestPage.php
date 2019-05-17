@@ -7,7 +7,8 @@ firebase.auth().onAuthStateChanged(function(user) {
     var user = firebase.auth().currentUser;
     if(user != null){
       var email_id = user.email;
-      document.getElementById("user_para").innerHTML = "Welcome User: " + email_id;
+      var u_id = user.uid;
+      document.getElementById("user_para").innerHTML = "Welcome User: " + email_id +"!  Your user UID is: "+u_id;
     }
   } else {
     // No user is signed in.
@@ -18,8 +19,9 @@ firebase.auth().onAuthStateChanged(function(user) {
 
 
 
-
+//login function for sign up button- goes to membership page
 function login(){
+  //
   var userEmail= document.getElementById("email_field").value;
   var userPass= document.getElementById("password_field").value;
 
