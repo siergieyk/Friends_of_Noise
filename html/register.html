@@ -35,13 +35,13 @@
       <hr>
     </div>      
     <div class="register">
-      <form class="info">
+      <form class="info" action="../php/register.php" method="get">
             <div class="left box">
-              <div><input type="email" value="" placeholder="Email" /></div>              
-              <div><input type="text" value="" placeholder="First Name" /></div>
-              <div><input type="text" value="" placeholder="Last Name" /></div>
-              <div><input type="text" value="" placeholder="User Name" /></div>    
-              <div><input type="password" value="" placeholder="Password" /></div>
+              <div><input type="email" value="" placeholder="Email" name="email"/></div>              
+              <div><input type="text" value="" placeholder="First Name" name="firstname" /></div>
+              <div><input type="text" value="" placeholder="Last Name" name="lastname"/></div>
+              <div><input type="text" value="" placeholder="User Name" name="login"/></div>    
+              <div><input type="password" value="" placeholder="Password" name="password"/></div>
               <select required>
                 <option value="null">Please select one option</option>
                 <option value="over">Over the age of 21</option>
@@ -49,9 +49,9 @@
               </select>
             </div>
             <div class="right box">
-              <div><input type="text" value="" placeholder="Phone" /></div>              
-              <div><input type="text" value="" placeholder="Address" /></div>
-              <div><input type="text" value="" placeholder="City" /></div>
+              <div><input type="text" value="" placeholder="Phone" name="phone"/></div>              
+              <div><input type="text" value="" placeholder="Address" name="address"/></div>
+              <div><input type="text" value="" placeholder="City" name="city"/></div>
               <select id="state" name="state">
                 <option value="null">Select a State</option>
                 <option value="AL">Alabama</option>
@@ -106,11 +106,11 @@
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
             </select>         
-              <div><input type="text" value="" placeholder="Zip Code" /></div>
+              <div><input type="text" value="" placeholder="Zip Code" name="zip"/></div>
               <br />
               <label><input type="checkbox" name="newsletter"> Join our newsletter</label>                           
             </div>
-              <button class="btn">Submit</button>
+              <inpu id="addPeople" type="Submit"></inpu><button class="btn">Submit</button>
         </form>        
       </div>
   </div>

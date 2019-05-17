@@ -6,7 +6,7 @@ USE FriendsOfNoise;
 
 CREATE TABLE members(
 memberID INT UNIQUE AUTO_INCREMENT,
-UID VARCHAR(100) PRIMARY KEY,
+#UID VARCHAR(100) PRIMARY KEY,
 login VARCHAR(45) NOT NULL,
 `password` VARCHAR(45) NOT NULL,
 First_Name VARCHAR(45) NOT NULL,
@@ -15,7 +15,7 @@ Email VARCHAR(100) NOT NULL,
 Phone VARCHAR(12) DEFAULT NULL,
 Address VARCHAR(60) DEFAULT NULL,
 City VARCHAR(45) DEFAULT NULL,
-State VARCHAR(2) DEFAULT NULL,
+State VARCHAR(45) DEFAULT NULL,
 Zip VARCHAR(10) DEFAULT NULL);
 
-INSERT INTO members VALUES(default, 'hLWoUFvXC5MbRgeJtqpsKozWdy53', 'test@gmail.com', '1232test34','Ken','LastName','test@gmail.com','206-206-2060','street','seattle','wa','10005');
+INSERT INTO members VALUES(default, 'test@gmail.com', '1232test34','Ken','LastName','test@gmail.com','206-206-2060','street','seattle','wa','10005');
