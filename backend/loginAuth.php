@@ -20,12 +20,27 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 
-function forgotPass(){
-    var userEmail= document.getElementById("email_field").value;
+function forgotPassPage(){
 
     document.getElementById("user_div").style.display= "none";
     document.getElementById("login_div").style.display= "none";
     document.getElementById("forgotPass-div").style.display="block"
+}
+
+
+function forgotPass(){
+  var userEmail= document.getElementById("fP_email_field").value;
+  var auth = firebase.auth();
+  var emailAddress = userEmail;
+
+  auth.sendPasswordResetEmail(emailAddress).then(function() {
+    // Email sent.
+        window.alert("Password reset email sent");
+  }).catch(function(error) {
+    // An error happened.
+        window.alert("Error: Member does not exist or wrong input");
+  });
+
 }
 
 //login function for sign up button- goes to membership page
