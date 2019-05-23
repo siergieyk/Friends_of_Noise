@@ -11,12 +11,20 @@
       <input type="email" placeholder="Email..." name="" value="" id="email_field">
       <input type="text" placeholder="Password..." name="" value="" id="password_field">
       <button onclick="login()">Loging to Account</button>
+      <button onClick="forgotPassPage()">Forgot Password</button>
     </div>
 
     <div id="user_div" class="loggedIn-div">
       <h3>Welcome User</h3>
       <p id="user_para">Welcome to Friends Of Noise Member Page. You're currently logged in.</p>
       <button onclick="logout()">Logout</button>
+    </div>
+
+    <div id="forgotPass-div" class="forgotPass-div">
+      <h3>Forgot password test page</h3>
+      <input type="email" placeholder="Email..." name="" value="" id="fP_email_field">
+      <button onclick="forgotPass()" type="button" name="">Retrieve My Password!</button>
+
     </div>
 
     <!-- Below is the initialization snippet for Firebase -->
