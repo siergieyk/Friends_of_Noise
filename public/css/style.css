@@ -181,7 +181,7 @@ button:hover, input[type="submit"]:hover{
 
 /* login auth test page*/
 
-.auth-div, .loggedIn-div {
+.auth-div, .loggedIn-div, .forgotPass-div{
 	width: 20%;
 	margin: 0px auto;
 	margin-top: 150px;
@@ -189,7 +189,7 @@ button:hover, input[type="submit"]:hover{
 
 }
 
-.auth-div input{
+.auth-div input, .forgotPass-div input{
 	display: block;
 	border: 1px solid #ccc;
 	border-radius: 5px;
@@ -200,8 +200,9 @@ button:hover, input[type="submit"]:hover{
 	margin-bottom: 20px;
 }
 
-.auth-div button, .loggedIn-div button {
+.auth-div button, .loggedIn-div button, .forgotPass-div button{
 	background: #5d8ffc;
+	margin-bottom: 15px;
 	color: #fff;
 	border: 0px;
 	border-radius: 5px;
