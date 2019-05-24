@@ -109,6 +109,7 @@ nav.main ul li a:hover{
 	border: 1px solid #e0e0e0;
 	border-radius: 4px;
 	background: #fff;
+	background-image: url("../images/bg-blue.jpg");
 }
 .registed strong{
 	color: #707070;
