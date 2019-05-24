@@ -108,7 +108,7 @@
               <ul class="pay">
                 <li><input type="radio" id="card" name="type" value="card" >
                   <label for="card">Credit or debit card</label></li>
-                <li><input type="radio" id="card" name="type" value="paypal">
+                <li><input type="radio" id="card" name="type" value="paypal" onclick="window.open('https://www.paypal.com/us/home');">
                   <label for="paypal">PayPal</label></li>
                 <br />                
                </ul>
@@ -116,8 +116,37 @@
 
             <div class="payment">
               <input type="text" name="" class="" value="" placeholder="Card number"/>
-              <input type="text" name="" class="" value="" placeholder="Expiration month"/>
-              <input type="text" name="" class="" value="" placeholder="Expiration year"/>
+              <select id="month" name="month">
+              <option value="null">Expiration month</option>
+                <option value="JAN">January</option>
+                <option value="FEB">February</option>
+                <option value="MAR">March</option>
+                <option value="APR">April</option>
+                <option value="MAY">May</option>
+                <option value="JUN">June</option>
+                <option value="JUL">July</option>
+                <option value="AUG">August</option>
+                <option value="SEP">September</option>
+                <option value="OCT">October</option>
+                <option value="NOV">November</option>
+                <option value="DEC">December</option>
+             </select> 
+     
+             <select id="year" name="year">
+              <option value="null">Expiration year</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+             </select> 
               <input type="text" name="" class="" value="" placeholder="Security code"/>
               <input type="submit" value="Checkout" />
             </div>            
