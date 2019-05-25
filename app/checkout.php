@@ -1,34 +1,23 @@
- 
- <?php
+<?php include "includes/config.php";
+	    include "includes/header.php";
 
-$servername = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "friendsofnoise";
-$port = 3306;
+$firstname = $_POST["firstname"];
+$lastname = $_POST["lastname"];
+$address = $_POST["address"];
+$addressoptional = $_POST["addressoptional"];
+$city = $_POST["city"];
+$state = $_POST["state"];
+$zip = $_POST["zip"];
+$email = $_POST["email"];
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname, $port);
+$sql = "INSERT INTO guestcheckout(first_name, last_name, address, addressoptional, city, state, zip, email)
+
+VALUES('$firstname', '$lastname', '$address', '$addressoptional', '$city', '$state', '$zip', '$email');";
+
 // Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
+if ($conn->query($sql) === TRUE) {    
+    echo "";
 
-$email = $_GET["email"];
-$firstname = $_GET["firstname"];
-$lastname = $_GET["lastname"];
-$address = $_GET["address"];
-$AddressOptional = $_GET["AddressOptional"];
-$city = $_GET["city"];
-$state = $_GET["state"];
-$zip = $_GET["zip"];
-
-
-$sql = "INSERT INTO guestcheckout(email, first_name, last_name, address, AddressOptional, city, state, zip)
-VALUES('$email', '$firstname', '$lastname', '$address', '$AddressOptional', '$city', '$state', '$zip');";
-
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
@@ -36,3 +25,22 @@ if ($conn->query($sql) === TRUE) {
 $conn->close();
 
 ?> 
+
+  <section id="account" class="width">
+    <div class="container">      
+        <div class="content">
+          <h1>Guest Checkoutr</h1><br />
+          <hr>
+        </div>
+          <div class="left box"> 
+            <h1>New record created successfully in Friends of Noise.</h1>
+          </div> 
+          <div class="right box">
+            <div class="image"> 
+                  <img src="../web/images/fon-03.jpg"> 
+            </div>
+          </div>
+    </div>
+  </section>
+
+<?php require('includes/footer.php'); ?>
