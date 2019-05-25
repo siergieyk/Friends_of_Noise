@@ -103,7 +103,7 @@ nav.main ul li a:hover{
 	position: relative;
 }
 /* login page */
-.registed{
+.registered{
 	margin: 40px 0 0 0;
 	padding: 22px;
 	border: 1px solid #e0e0e0;
@@ -111,22 +111,22 @@ nav.main ul li a:hover{
 	background: #fff;
 	background-image: url("../images/bg-blue.jpg");
 }
-.registed strong{
+.registered strong{
 	color: #707070;
 	font: bold Arial, Helvetica, sans-serif;
 }
-.registed input[type="text"],
-.registed input[type="email"],
-.registed input[type="password"], select{
+.registered input[type="text"],
+.registered input[type="email"],
+.registered input[type="password"], select{
 	width: 255px;
 	margin: 5px 0 14px 0;
 }
-.registed a.forgot{
+.registered a.forgot{
 	font-size: 12px;
 	color: #707070;
 	margin-left: 12px;
 }
-.registed .submit{
+.registered .submit{
 	font-size: 15px;
 	color: red;
 	margin: 20px 0 20px 0;
@@ -136,7 +136,7 @@ nav.main ul li a:hover{
 	margin-right: 40px;
 	font-size: 13px;
 }
-.registed .submit button[type="submit"]{
+.registered .submit button[type="submit"]{
 	float: left;
 	margin: 0 130px 0 0;
 	width: 110px;
