@@ -312,3 +312,35 @@ button.buy{
 .right {
 	float:right;
 }
+
+/* login auth test page*/
+
+.auth-div, .loggedIn-div, .forgotPass-div{
+	width: 20%;
+	margin: 0px auto;
+	margin-top: 150px;
+	padding: 20px;
+
+}
+
+.auth-div input, .forgotPass-div input{
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background: #fff;
+	padding: 15px;
+	outline: none;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.auth-div button, .loggedIn-div button, .forgotPass-div button{
+	background: #5d8ffc;
+	margin-bottom: 15px;
+	color: #fff;
+	border: 0px;
+	border-radius: 5px;
+	padding: 15px;
+	display: block;
+	width: 100%;
+}
