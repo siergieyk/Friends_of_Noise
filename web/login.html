@@ -35,26 +35,28 @@
 			  <hr>
 		    </div>
 		    <div class="login">
-				<form class="registed">
-					<h2>Registed Member</h2>
-					<p>If you have an account with us, please sign in your account.</p><br/>
 
-					<div id="email" class="email">
-						<strong>Email Address: </strong><sup class="asterism">*</sup><br/>
-						<input type="email" name="" class="" value="" />
-					</div>
 
-					<div id="password" class="password">
-						<strong>Password: </strong><sup class="asterism">*</sup><br/>
-						<input type="password" name="" class="" value="" />
-						<a class="forgot" href="forgot.html">Forgot Your Password?</a>
-					</div>
-
-					<div class="submit">
-						<button type="submit" value="Sign In" />
-              <sup class="sup">* </sup><span>Required Field</span>
+          <div id="login_div" class="auth-div registed">
+            <h3>Friends Of Noise Member Sign In</h3>
+            <input type="email" placeholder="Email..." name="" value="" id="email_field">
+            <input type="text" placeholder="Password..." name="" value="" id="password_field">
+            <button onclick="login()">Loging to Account</button>
+            <button onClick="forgotPassPage()">Forgot Password</button>
           </div>
-				</form>
+
+          <div id="user_div" class="loggedIn-div">
+            <h3>Welcome User</h3>
+            <p id="user_para">Welcome to Friends Of Noise Member Page. You're currently logged in.</p>
+            <button onclick="logout()">Logout</button>
+          </div>
+
+          <div id="forgotPass-div" class="forgotPass-div">
+            <h3>Forgot password test page</h3>
+            <input type="email" placeholder="Email..." name="" value="" id="fP_email_field">
+            <button onclick="forgotPass()" type="button" name="">Retrieve My Password!</button>
+
+          </div>
             </div>
 
        	    <div class="login new">
@@ -64,11 +66,25 @@
             </div>
         </div>
 
-        <div id="user_div" class="loggedIn-div">
-          <h3>Welcome User</h3>
-          <p id="user_para">Welcome to Friends Of Noise Member Page. You're currently logged in.</p>
-          <button onclick="logout()">Logout</button>
-        </div>
+
+        <!-- Below is the initialization snippet for Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyC0N7dTxzX551I3SeSMcxkx1PJbaAHzVR0",
+            authDomain: "fonproject-faf34.firebaseapp.com",
+            databaseURL: "https://fonproject-faf34.firebaseio.com",
+            projectId: "fonproject-faf34",
+            storageBucket: "fonproject-faf34.appspot.com",
+            messagingSenderId: "572276368012"
+          };
+          firebase.initializeApp(config);
+        </script>
+
+        <script src="../app/loginAuth.php">
+
+        </script>
   </section>
 
 </body>
