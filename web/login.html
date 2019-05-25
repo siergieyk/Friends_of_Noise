@@ -39,12 +39,12 @@
 					<h2>Registed Member</h2>
 					<p>If you have an account with us, please sign in your account.</p><br/>
 
-					<div class="email">
+					<div id="email" class="email">
 						<strong>Email Address: </strong><sup class="asterism">*</sup><br/>
 						<input type="email" name="" class="" value="" />
 					</div>
 
-					<div class="password">
+					<div id="password" class="password">
 						<strong>Password: </strong><sup class="asterism">*</sup><br/>
 						<input type="password" name="" class="" value="" />
 						<a class="forgot" href="forgot.html">Forgot Your Password?</a>
@@ -62,6 +62,12 @@
 				      <p>Create your FREE account, you will be able to view and track your orders in your account and more.</p>
 				      <button class="signup">Sign Up</button>
             </div>
+        </div>
+
+        <div id="user_div" class="loggedIn-div">
+          <h3>Welcome User</h3>
+          <p id="user_para">Welcome to Friends Of Noise Member Page. You're currently logged in.</p>
+          <button onclick="logout()">Logout</button>
         </div>
   </section>
 
