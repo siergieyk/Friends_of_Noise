@@ -36,26 +36,30 @@
 		    </div>
 		    <div class="login">
 
+<div class="registed">
+  <h2>Registed Member</h2>
+  <p>If you have an account with us, please sign in your account.</p><br>
 
-          <div id="login_div" class="auth-div registed">
-            <h3>Friends Of Noise Member Sign In</h3>
-            <input type="email" placeholder="Email..." name="" value="" id="email_field">
-            <input type="text" placeholder="Password..." name="" value="" id="password_field">
-            <button onclick="login()">Loging to Account</button>
-            <button onClick="forgotPassPage()">Forgot Password</button>
+          <div id="login_div">
+            <input type="email" placeholder="Email" name="" value="" id="email_field">
+            <input type="password" placeholder="Password..." name="" value="" id="password_field">
+            <button type="submit" onclick="login()">Loging to Account</button>
+            <button type="submit" onClick="forgotPassPage()">Forgot Password</button>
           </div>
 
-          <div id="user_div" class="loggedIn-div">
+          <div id="user_div">
             <h3>Welcome User</h3>
             <p id="user_para">Welcome to Friends Of Noise Member Page. You're currently logged in.</p>
-            <button onclick="logout()">Logout</button>
+            <button type="submit" onclick="logout()">Logout</button>
           </div>
 
-          <div id="forgotPass-div" class="forgotPass-div">
+          <div id="forgotPass-div">
             <h3>Forgot password test page</h3>
             <input type="email" placeholder="Email..." name="" value="" id="fP_email_field">
-            <button onclick="forgotPass()" type="button" name="">Retrieve My Password!</button>
+            <button type="submit"onclick="forgotPass()" type="button" name="">Retrieve My Password!</button>
 
+          </div>
+        </div>
           </div>
             </div>
 
