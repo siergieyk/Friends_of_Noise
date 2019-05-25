@@ -5,6 +5,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     document.getElementById("login_div").style.display= "none";
     document.getElementById("forgotPass-div").style.display="none";
 
+
     var user = firebase.auth().currentUser;
     if(user != null){
       var email_id = user.email;
