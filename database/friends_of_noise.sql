@@ -55,3 +55,4 @@ INSERT INTO members VALUES(default, 'goober@test.com', 'goo','ber','goober','pas
 INSERT INTO `events` VALUES(default, 'Night of Music', '2020-04-04','100','43','1st ave','','Seattle','WA','10005');
 INSERT INTO `events` VALUES(default, 'Poetry', '2020-04-06','300','56','4th ave','','Seattle','WA','10005');
 INSERT INTO `events` VALUES(default, 'Rock and Roll Night', '2020-06-04','2540','1911','5th ave','','Seattle','WA','10005');
+
