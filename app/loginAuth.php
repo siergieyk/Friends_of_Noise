@@ -62,4 +62,6 @@ function login(){
 
 function logout(){
   firebase.auth().signOut();
+  window.alert("Logged out!");
+
 }

@@ -7,8 +7,8 @@
 </head>
 
 <body>
-      <div class="top" id="memberId">
-        <h4>Already a Member? <a href="login.html">User Visitor</a></h4>
+      <div class="top">
+        <h4 id="memberId">Already a Member? <a href="login.html">User Visitor</a></h4>
           <div class="logo">
             <img src="images/FoNlogo.png">
           </div>
@@ -24,7 +24,7 @@
         <li class="separator">|</li>
           <li><a href="login.html">Sign In</a></li>
         <li class="separator">|</li>
-          <li><a href="logout.html">Logout</a></li>
+          <li><a onclick="logout()" href="login.html">Logout</a></li>
         </ul>
       </nav>
 
@@ -36,6 +36,26 @@
         </div>
 
     </div>
+
+
+  <!-- Below is the initialization snippet for Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC0N7dTxzX551I3SeSMcxkx1PJbaAHzVR0",
+      authDomain: "fonproject-faf34.firebaseapp.com",
+      databaseURL: "https://fonproject-faf34.firebaseio.com",
+      projectId: "fonproject-faf34",
+      storageBucket: "fonproject-faf34.appspot.com",
+      messagingSenderId: "572276368012"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <script src="../app/loginAuth.php">
+
+  </script>
   </section>
 </body>
 </html>

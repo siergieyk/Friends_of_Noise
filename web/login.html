@@ -24,7 +24,7 @@
         <li class="separator">|</li>
           <li><a href="login.html">Sign In</a></li>
         <li class="separator">|</li>
-          <li><a href="logout.html">Logout</a></li>
+          <li><a onclick="logout()" href="logout.html">Logout</a></li>
         </ul>
       </nav>
 
@@ -54,10 +54,9 @@
                      window.location = "member.html";
                   }
                   document.write("You will be redirected to main page in 10 sec.");
-                  setTimeout('Redirect()', 10000);
+                  setTimeout('Redirect()', 1000);
                //-->
             </script>
-            <button type="submit" onclick="logout()">Logout</button>
           </div>
 
           <div id="forgotPass-div">
