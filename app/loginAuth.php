@@ -5,6 +5,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     document.getElementById("login_div").style.display= "none";
     document.getElementById("forgotPass-div").style.display="none";
 
+    <!-- window.location = 'member.html' // comment this out to log out -->
 
     var user = firebase.auth().currentUser;
     if(user != null){
@@ -27,7 +28,6 @@ function forgotPassPage(){
     document.getElementById("login_div").style.display= "none";
     document.getElementById("forgotPass-div").style.display="block"
 }
-
 
 function forgotPass(){
   var userEmail= document.getElementById("fP_email_field").value;
