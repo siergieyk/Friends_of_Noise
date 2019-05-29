@@ -48,8 +48,15 @@
           </div>
 
           <div id="user_div">
-            <h3>Welcome User</h3>
-            <p id="user_para">Welcome to Friends Of Noise Member Page. You're currently logged in.</p>
+            <script type = "text/javascript">
+               <!--
+                  function Redirect() {
+                     window.location = "member.html";
+                  }
+                  document.write("You will be redirected to main page in 10 sec.");
+                  setTimeout('Redirect()', 10000);
+               //-->
+            </script>
             <button type="submit" onclick="logout()">Logout</button>
           </div>
 
