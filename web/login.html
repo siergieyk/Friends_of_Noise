@@ -3,17 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Login</title>
-  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/top.css" rel="stylesheet" type="text/css">
+  <link href="css/login.css" rel="stylesheet" type="text/css">
+  <link href="css/slide.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>     
-      <div class="top">
-        <h4>Already a Member? <a href="login.html">User Visitor</a></h4>
+      <div class="top">          
+          <div id="users">
+          <h4 id="text"></h4>  
+          </div>
           <div class="logo"> 
             <img src="images/FoNlogo.png"> 
           </div>
-      </div>   
-
+      </div> 
+      
       <nav class="main">
         <ul>
           <li><a href="admin_dash.html">Admin</a></li>
@@ -26,44 +31,96 @@
         <li class="separator">|</li>
           <li><a href="logout.html">Logout</a></li>
         </ul>
-      </nav>      
+      </nav>                  
 
   <section id="account" class="width">
-    	<div class="container">      
-       	    <div class="content">
-			  <h1>Login or Create an Account</h1><br />
-			  <hr>
-		    </div>			
-		    <div class="login">
-				<form class="registed">
-					<h2>Registed Member</h2>			
-					<p>If you have an account with us, please sign in your account.</p><br/>
-								
-					<div class="email">
-						<strong>Email Address: </strong><sup class="asterism">*</sup><br/>
-						<input type="email" name="" class="" value="" />
-					</div>
-								
-					<div class="password">
-						<strong>Password: </strong><sup class="asterism">*</sup><br/>
-						<input type="password" name="" class="" value="" />
-						<a class="forgot" href="forgot.html">Forgot Your Password?</a>
-					</div>
-					
-					<div class="submit">								
-						<input type="submit" value="Sign In" />
-              <sup class="sup">* </sup><span>Required Field</span>
-          </div>
-				</form>             
-            </div>
+      <div class="container">      
+        <div class="content">
+        <h1>Login</h1><br />
+        <hr>
+      </div> 
 
-       	    <div class="login new">
-				      <h2>New Member</h2>
-				      <p>Create your FREE account, you will be able to view and track your orders in your account and more.</p>			
-				      <button class="signup">Sign Up</button>
+      <div class="login">
+        <div id="div" class="registed">
+          <h2>Registered Member</h2>      
+          <p>If you have an account with us, please sign in your account.</p><br/>
+                
+          <div class="email">
+            <strong>Email Address: </strong><sup class="asterism">*</sup><br/>
+            <input type="email" id="email" />
+          </div>
+                
+          <div class="password">
+            <strong>Password: </strong><sup class="asterism">*</sup><br/>
+            <input type="password" id="password" />
+
+            <a class="forgot" href="forgot.html">Forgot Your Password?</a>
+          </div>
+          
+          <div class="submit">            
+            <button>Sign In</button>
+            <div class="required">
+              <sup class="sup">* </sup><span>Required Field</span>
             </div>
+          </div>
+        </div>             
+      </div>
+
+      <div id="users" class="login">
+        <h2 id="logged"></h2>
+          <div id="slider">
+            <ul class="slideshow">
+              <li class="show"><img width="490" height="380" src="images/fon-01.jpg" alt=""></li>
+              <li class="show"><img width="490" height="380" src="images/fon-02.jpg" alt=""></li>
+              <li class="show"><img width="490" height="380" src="images/fon-03.jpg" alt=""></li>
+              <li class="show"><img width="490" height="380" src="images/fon-04.jpg" alt=""></li>
+              <li class="show"><img width="490" height="380" src="images/fon-05.jpg" alt=""></li>
+            </ul>
+          </div>
+      </div>  
+
+     <div class="wrap">
+       <div class="left-box">
+              <h2><img width="50" height="50" src="images/bg-sun.jpg" alt=""> Upcoming Event</h2>
+              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+       </div>
+      
+       <div class="middle-box">
+             <h2><img width="50" height="50" src="images/bg-eye.jpg" alt=""> Get Involved</h2>              
+             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+       </div>
+          
+       <div class="right-box">
+             <h2><img width="50" height="50" src="images/getinvolved-bg-img3.png" alt=""> Shop Our Store</h2>
+              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+       </div>
+     </div>
+            
+      <ul class="pic">
+        <li class="slide">
+        <img src="images/fon-01.jpg" alt="image01" class="left">        
+        <div class="title">
+          <h2>Like</h2>
+          <h3>Dream</h3>
         </div>
+        </li>
+        <li class="slide">
+        <img src="images/fon-02.jpg" alt="image02" class="middle">
+        <div class="title">
+          <h2>Give</h2>
+          <h3>Wings</h3>
+        </div>
+        </li>
+
+      </ul>
+
+    </div>  
   </section>
-  
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+  <script type="text/javascript" src="js/auth.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/slide.js"></script> 
 </body>
 </html>
