@@ -6,7 +6,17 @@
   <link href="css/top.css" rel="stylesheet" type="text/css">
   <link href="css/login.css" rel="stylesheet" type="text/css">
   <link href="css/slide.css" rel="stylesheet" type="text/css">
-
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+  <script type="text/javascript" src="js/auth.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+  <script type="text/javascript" src="js/slide.js"></script> 
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script src='http://fullcalendar.io/js/fullcalendar-2.1.1/lib/moment.min.js'></script>
+  <script src='http://fullcalendar.io/js/fullcalendar-2.1.1/lib/jquery.min.js'></script>
+  <script src="http://fullcalendar.io/js/fullcalendar-2.1.1/lib/jquery-ui.custom.min.js"></script>  
+  <script src="js/jquery-1.7.min.js" > </script>
+  <script src="js/jquery-ui-1.8.16.custom.min.js" ></script> 
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>  
 </head>
 
 <body>     
@@ -70,11 +80,11 @@
         <h2 id="logged"></h2>
           <div id="slider">
             <ul class="slideshow">
-              <li class="show"><img width="490" height="380" src="images/fon-01.jpg" alt=""></li>
-              <li class="show"><img width="490" height="380" src="images/fon-02.jpg" alt=""></li>
-              <li class="show"><img width="490" height="380" src="images/fon-03.jpg" alt=""></li>
+              <li class="show"><img width="490" height="375" src="images/fon-01.jpg" alt=""></li>
+              <li class="show"><img width="490" height="375" src="images/fon-02.jpg" alt=""></li>
+              <li class="show"><img width="490" height="375" src="images/fon-03.jpg" alt=""></li>
               <li class="show"><img width="490" height="380" src="images/fon-04.jpg" alt=""></li>
-              <li class="show"><img width="490" height="380" src="images/fon-05.jpg" alt=""></li>
+              <li class="show"><img width="490" height="375" src="images/fon-05.jpg" alt=""></li>              
             </ul>
           </div>
       </div>  
@@ -82,7 +92,12 @@
      <div class="wrap">
        <div class="left-box">
               <h2><img width="50" height="50" src="images/bg-sun.jpg" alt=""> Upcoming Event</h2>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+           <script src="js/date.js"></script>
+
+           <form class="event" action=" https://www.eventbrite.com/e/friends-of-noise-presents-spit-infinity-dmarx-jasonundefinded-guest-tickets-56867976649#">
+              <input class="date" id="datepicker" type="text" value="Select date">
+              <button class="submit">Search</button>   
+           </form>        
        </div>
       
        <div class="middle-box">
@@ -96,31 +111,119 @@
        </div>
      </div>
             
-      <ul class="pic">
-        <li class="slide">
-        <img src="images/fon-01.jpg" alt="image01" class="left">        
-        <div class="title">
-          <h2>Like</h2>
-          <h3>Dream</h3>
-        </div>
-        </li>
-        <li class="slide">
-        <img src="images/fon-02.jpg" alt="image02" class="middle">
-        <div class="title">
-          <h2>Give</h2>
-          <h3>Wings</h3>
-        </div>
-        </li>
-
-      </ul>
-
+            <ul class="pic">
+              <div id="left-box">
+              <li class="slide">
+              <img src="images/fon-01.jpg" alt="detail" class="slide">
+              <div class="title">
+                <h2>Like</h2>
+                <h3>Dreams</h3>
+              </div>
+              </li>
+            </div>
+            <div id="mid-box">
+              <li class="slide">
+               <img src="images/fon-02.jpg" alt="details" class="slide">
+              <div class="title">
+                <h2>Give</h2>
+                <h3>Wings</h3>
+              </div>
+              </li>
+            </div>
+            <div id="right-box">
+              <li class="slide">
+               <img src="images/fon-03.jpg" alt="details" class="slide">
+              <div class="title">
+                <h2>Universe</h2>
+                <h3>Mind</h3>
+              </div>
+            
+              </li>
+            </div>
+              <div id="left-box">
+              <li class="slide">
+              <img src="images/fon-04.jpg" alt="detail" class="slide">
+              <div class="title">
+                <h2>Truth</h2>
+                <h3>Emotion</h3>
+              </div>
+              </li>
+            </div>
+            <div id="mid-box">
+              <li class="slide">
+               <img src="images/fon-05.jpg" alt="details" class="slide">
+              <div class="title">
+                <h2>Express</h2>
+                <h3>Soul</h3>
+              </div>
+              </li>
+            </div>
+            <div id="right-box">
+              <li class="slide">
+               <img src="images/fon-06.jpg" alt="details" class="slide">
+              <div class="title">
+                <h2>Share</h2>
+                <h3>Feeling</h3>
+              </div>
+              </li>
+            </div>
+              <div id="left-box">
+              <li class="slide">
+              <img src="images/fon-07.jpg" alt="detail" class="slide">
+              <div class="title">
+                <h2>Incredible</h2>
+                <h3>Innovation </h3>
+              </div>
+              </li>
+            </div>
+            <div id="mid-box">
+              <li class="slide">
+               <img src="images/fon-08.jpg" alt="details" class="slide">
+              <div class="title">
+                <h2>Magic</h2>
+                <h3>Love</h3>
+              </div>
+              </li>
+            </div>
+            <div id="right-box">
+              <li class="slide">
+               <img src="images/fon-09.jpg" alt="details" class="slide">
+              <div class="title">
+                <h2>Beautifully</h2>
+                <h3>Listen</h3>
+              </div>
+              </li>
+            </div>
+              <div id="left-box">
+              <li class="slide">
+              <img src="images/fon-10.jpg" alt="detail" class="slide">
+              <div class="title">
+                <h2>Life</h2>
+                <h3>Live</h3>
+              </div>
+              </li>
+            </div>
+            <div id="mid-box">
+              <li class="slide">
+               <img src="images/fon-11.jpg" alt="details" class="slide">
+              <div class="title">
+                <h2>High</h2>
+                <h3>Powerful</h3>
+              </div>
+              </li>
+            </div>
+            <div id="right-box">
+              <li class="slide">
+               <img src="images/fon-12.jpg" alt="details" class="slide">
+              <div class="title">
+                <h2>Across</h2>
+                <h3>Distances</h3>
+              </div>
+              </li>
+            </div>
+            </ul>
     </div>  
   </section>
-    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
-  <script type="text/javascript" src="js/auth.js"></script>
-  <script type="text/javascript" src="js/login.js"></script>
 
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/slide.js"></script> 
 </body>
 </html>

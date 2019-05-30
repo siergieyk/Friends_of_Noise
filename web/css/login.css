@@ -1,0 +1,164 @@
+/* login page - login and new */
+.content, .login{
+	display: inline;
+	margin: 0 12px 10px 5px;
+	float: left;
+}
+.container .login{
+	width: 480px;
+}
+.container .content{
+	width: 980px;
+	position: relative;
+}
+/* login page */
+.registed{
+	margin: 20px 0 0 0;
+	padding: 22px;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	background-image: url("../images/bg-blue.jpg");
+}
+.registed strong{
+	color: #707070;
+	font: bold Arial, Helvetica, sans-serif;
+}
+.registed input[type="text"],
+.registed input[type="email"],
+.registed input[type="password"], select{
+	width: 255px;
+	margin: 5px 0 14px 0;
+}
+.registed a.forgot{
+	font-size: 12px;
+	color: #707070;
+	margin-left: 12px;
+}
+.registed .submit{
+	font-size: 15px;
+	color: red;
+	margin: 20px 0 20px 0;
+}
+.required{
+	float: right;
+	margin-right: 40px;
+	font-size: 13px;
+}
+input[type="text"], input[type="email"], input[type="password"]{
+	height: 35px;
+	padding: 0 10px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus{
+	outline:none;
+	border: 1px solid red;
+	box-shadow: 0px 0px 4px red;
+}
+button, input[type="submit"]{
+	height: 40px;
+	display: block;
+	background: #FFD700;
+	color: #fefefe;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	border-radius: 4px;
+	width: 120px;
+}
+button:hover, input[type="submit"]:hover{
+	background: #87CEFA;
+	color: black;
+	box-shadow: 0px 0px 2px #87CEFA;
+}
+.wrap{
+	position: relative; 
+	width: 1020px; 
+	margin: 0 auto; 
+	padding: 0;
+}
+.wrap h2{
+	color: black;
+	font-size: 24px;
+	font-weight: 600;
+	font-family: "Times New Roman", Times, serif;
+}
+.left-box{
+    background-image: url("../images/bg-black.jpg"); 
+  	color: #fff;
+  	float: left;
+	width: 31%;
+	height: 230px;
+	margin: 0 auto;
+	padding: 8px;    
+}
+.left-box h2{
+	color: #fff;
+	font-size: 24px;
+	font-weight: 600;
+	font-family: "Times New Roman", Times, serif;
+}
+.middle-box{
+    background-image: url("../images/bg-blue.jpg");    
+  	float: left;
+	width: 31%;
+	height: 230px;
+	margin: 0 auto;
+	padding: 8px;  
+}
+.right-box{
+  	background-image: url("../images/bg-yellow.jpg");
+  	float: left;
+	width: 31%;
+	height: 230px;
+	margin: 0 auto;
+	padding: 8px;      
+}
+.leftcolumn{
+	margin: 20px auto;
+	width: 300px;
+}
+.date{
+	margin: 20px 0px 10px 0px;
+ 	padding: 10px;
+ 	width: 200px;
+ 	background:url(../images/cal-icon.png) no-repeat 100% 50% #FFF;
+}
+.ui-datepicker{
+	background-color: black;
+	color: red;
+	width: 150px;
+	height: 155px;
+	display: none;
+	margin: 5px;
+}
+.ui-corner-all{
+	font-size: 15px;
+	margin: 0 15px 0  15px;
+	text-align: center;
+}
+.ui-datepicker-calendar{
+	font-size: 14px;	
+}
+.ui-datepicker-header{
+
+	text-align: center;
+}
+.data-event{
+	color: red;
+}
+.details {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+.ui-datepicker-current-day .ui-state-active{
+	 background: #008000;
+	 border-radius: 5px;
+	 padding: 2px;
+	 margin: 2px;
+}
+.event a {
+    color: red;
+}
