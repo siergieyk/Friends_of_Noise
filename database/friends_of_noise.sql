@@ -39,12 +39,12 @@ CONSTRAINT guestcheckout_transactionID_PK PRIMARY KEY(transactionID));
 
 CREATE TABLE `events`(
 eventID INT UNIQUE AUTO_INCREMENT,
-EventName VARCHAR(60) DEFAULT NULL,
-EventDate VARCHAR(20) NOT NULL,
-numberOfspots VARCHAR(45) NOT NULL,
-numberOfAvailableSpots VARCHAR(45) NOT NULL,
+event_name VARCHAR(60) DEFAULT NULL,
+event_date VARCHAR(20) NOT NULL,
+number_Of_spots VARCHAR(45) NOT NULL,
+number_Of_AvailableSpots VARCHAR(45) NOT NULL,
 Address VARCHAR(60) DEFAULT NULL,
-AddressOptional VARCHAR(60) DEFAULT NULL,
+Address_Optional VARCHAR(60) DEFAULT NULL,
 City VARCHAR(45) DEFAULT NULL,
 State VARCHAR(45) DEFAULT NULL,
 Zip VARCHAR(10) DEFAULT NULL,
@@ -65,6 +65,7 @@ CREATE TABLE merchandise_tickets(
 itemID INT NOT NULL AUTO_INCREMENT,
 item_name VARCHAR(90) NOT NULL,
 item_price DECIMAL(8,2) DEFAULT NULL,
+quantity DECIMAL(8,0) DEFAULT NULL,
 vendor VARCHAR(45) DEFAULT NULL,
 CONSTRAINT tickets_merch_itemID_PK PRIMARY KEY(itemID));
 
@@ -77,6 +78,25 @@ ON DELETE NO ACTION,
 CONSTRAINT merch_tickets_itemID_FK FOREIGN KEY(itemID) REFERENCES MERCHANDISE_TICKETS(itemID)
 ON UPDATE NO ACTION
 ON DELETE NO ACTION);
+
+DROP VIEW IF EXISTS members_items;
+CREATE VIEW members_items
+AS
+SELECT   first_name, last_name, email, itemID, item_name, item_price, quantity
+FROM members
+JOIN memebrs_merch_tick USING(memberID)
+JOIN merchandise_tickets USING(itemID)
+ORDER BY first_name;
+
+DROP VIEW IF EXISTS members_events;
+CREATE VIEW members_events
+AS
+SELECT first_name, last_name, email, event_name, event_date, events.address, events.city, events.state
+FROM members
+JOIN members_events USING(memberID)
+JOIN `events` USING(eventID)
+ORDER BY first_name;
+
 
 
 #=============================================================================================================================================================================
