@@ -79,6 +79,12 @@ CONSTRAINT merch_tickets_itemID_FK FOREIGN KEY(itemID) REFERENCES MERCHANDISE_TI
 ON UPDATE NO ACTION
 ON DELETE NO ACTION);
 
+CREATE TABLE admin(
+first_name VARCHAR(45) NOT NULL,
+last_name VARCHAR(60) NOT NULL,
+email VARCHAR(45) NOT NULL,
+`password` VARCHAR(45) NOT NULL);
+
 DROP VIEW IF EXISTS members_items;
 CREATE VIEW members_items
 AS
@@ -88,8 +94,8 @@ JOIN memebrs_merch_tick USING(memberID)
 JOIN merchandise_tickets USING(itemID)
 ORDER BY first_name;
 
-DROP VIEW IF EXISTS members_events;
-CREATE VIEW members_events
+DROP VIEW IF EXISTS member_events;
+CREATE VIEW member_events
 AS
 SELECT first_name, last_name, email, event_name, event_date, events.address, events.city, events.state
 FROM members
