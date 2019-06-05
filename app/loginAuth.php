@@ -44,7 +44,7 @@ function forgotPass(){
 
 }
 
-//login function for sign up button- goes to membership page
+//login function for sign in button- goes to membership page
 function login(){
   //
   var userEmail= document.getElementById("email_field").value;
@@ -62,4 +62,19 @@ function login(){
 
 function logout(){
   firebase.auth().signOut();
+}
+
+function signUp(){
+  var regEmail = document.getElementById("regEmail").value;
+  var regPass = document.getElementById("regPass").value;
+
+  firebase.auth().createUserWithEmailAndPassword(regEmail, regPass).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+    window.alert("err" + errorMessage);
+
+});
+
+
 }
