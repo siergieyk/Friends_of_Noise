@@ -64,6 +64,7 @@ function logout(){
   firebase.auth().signOut();
 }
 
+
 function signUp(){
   var regEmail = document.getElementById("regEmail").value;
   var regPass = document.getElementById("regPass").value;
@@ -73,8 +74,5 @@ function signUp(){
   var errorCode = error.code;
   var errorMessage = error.message;
     window.alert("err" + errorMessage);
-
-});
-
-
+  });
 }
