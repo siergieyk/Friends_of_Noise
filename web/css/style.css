@@ -118,7 +118,7 @@ nav.main ul li a:hover{
 /* #################Button and Input################### */
 
 /*This changes all input for all pages, overrides made below*/
-input {
+input, select {
 	width:90%;
 	margin: 5px auto;
 	margin-bottom:20px;
@@ -126,6 +126,19 @@ input {
 	padding: 10px;
 	border: 1px solid #ccc;
 	border-radius: 2px;
+}
+
+select {
+    height: 40px;
+    width: 422px;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: black;
+}
+
+select option:first-child{
+	background: #FFD700;
 }
 
 button {
@@ -160,6 +173,13 @@ input[type="password"]:focus {
 	outline: none;
 	border: 1px solid red;
 	box-shadow: 0px 0px 4px red;
+}
+
+input[type="checkbox"] {
+	float:left;
+	height:20px;
+	width:20px;
+	margin:0 10px 10px;
 }
 
 
@@ -332,19 +352,6 @@ input[type="password"]:focus {
 	margin: 45px auto;
 	padding: 30px;
 	height: 480px;
-}
-
-select {
-    height: 40px;
-    width: 422px;
-    padding: 0 5px;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    color: black;
-}
-
-select option:first-child{
-	background: #FFD700;
 }
 
 /* #############Sell page############## */
