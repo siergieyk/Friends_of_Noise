@@ -4,6 +4,22 @@
   <meta charset="UTF-8">
   <title>Admin Dashboard</title>
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <!-- Below is the initialization snippet for Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC0N7dTxzX551I3SeSMcxkx1PJbaAHzVR0",
+      authDomain: "fonproject-faf34.firebaseapp.com",
+      databaseURL: "https://fonproject-faf34.firebaseio.com",
+      projectId: "fonproject-faf34",
+      storageBucket: "fonproject-faf34.appspot.com",
+      messagingSenderId: "572276368012"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <script src="../app/adminOnClicks.js"></script>
 </head>
 
 <body>
@@ -36,9 +52,11 @@
 <div class="left box">
   <h2>Search user</h2>
   <div id="user_search">
+    <input type="uid" placeholder="User ID" name="" value="" id="id_field">
     <input type="email" placeholder="Email" name="" value="" id="email_field">
     <button type="submit" onclick="">Search</button>
   </div>
+
   <div id="user_found">
     <h3 id ="message">User Found</h3>
   </div>
@@ -78,6 +96,15 @@
   </div>
 </div>
 
+<div class="left box">
+  <div id="list_users">
+    <h2>List All Users</h2>
+    <!--Currently no function-->
+    <button type="submit" onclick="listAllUsers()">List</button>
+  </div>
+</div>
+
 </div> <!--End container-->
+
 </body>
 </html>
