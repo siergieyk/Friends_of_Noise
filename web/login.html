@@ -2,115 +2,117 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Login</title>
-  <link href="css/top.css" rel="stylesheet" type="text/css">
+  <title>Login</title>  
   <link href="css/login.css" rel="stylesheet" type="text/css">
-  <link href="css/slide.css" rel="stylesheet" type="text/css">
   <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
   <script type="text/javascript" src="js/auth.js"></script>
   <script type="text/javascript" src="js/login.js"></script>
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/slide.js"></script> 
-  <script src='http://fullcalendar.io/js/fullcalendar-2.1.1/lib/moment.min.js'></script>
   <script src='http://fullcalendar.io/js/fullcalendar-2.1.1/lib/jquery.min.js'></script>
-  <script src="http://fullcalendar.io/js/fullcalendar-2.1.1/lib/jquery-ui.custom.min.js"></script>  
-  <script src="js/jquery-1.7.min.js" > </script>
-  <script src="js/jquery-ui-1.8.16.custom.min.js" ></script> 
-  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>  
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script> 
+  <script type="text/javascript" src="js/slide.js"></script>   
 </head>
 
 <body>     
-      <div class="top">          
-          <div id="users">
+      <div class="top">
           <h4 id="text"></h4>  
-          </div>
-          <div class="logo"> 
-            <img src="images/FoNlogo.png"> 
-          </div>
+        </div>
+        <div class="logo"> 
+          <img src="images/FoNlogo.png"> 
+        </div>
       </div> 
       
       <nav class="main">
         <ul>
-          <li><a href="admin_dash.html">Admin</a></li>
+          <li><a href="http://www.friendsofnoise.org/" target="_blank">Home</a></li>
         <li class="separator">|</li>
-          <li><a href="member.html">Members</a></li>
+          <li><a href="event.html">Events</a></li>
         <li class="separator">|</li>
-          <li><a href="single-event.html">Events</a></li>
+          <li><a href="register.html">Sign Up</a></li>
         <li class="separator">|</li>
           <li><a href="login.html">Sign In</a></li>
+        <div id="users" class="logout"> 
         <li class="separator">|</li>
-          <li><a href="logout.html">Logout</a></li>
+          <li><a href="logout.html" onclick="logout()">Logout</a></li>
+        </div>
         </ul>
       </nav>                  
 
-  <section id="account" class="width">
-      <div class="container">      
-        <div class="content">
-        <h1>Login</h1><br />
-        <hr>
-      </div> 
+      <section id="account" class="width">
+        <div class="container">      
+          <div class="content">
+              <h1>Login</h1><br />
+            <hr>
+          </div> 
+                   
+          <div id="div">
+            <div class="login">
+              <div id="slider">
+                <ul class="slideshow">
+                  <li class="show"><img width="480" height="405" src="images/fon-01.jpg" alt=""></li>
+                  <li class="show"><img width="480" height="405" src="images/fon-02.jpg" alt=""></li>
+                  <li class="show"><img width="480" height="405" src="images/fon-03.jpg" alt=""></li>
+                  <li class="show"><img width="480" height="405" src="images/fon-04.jpg" alt=""></li>
+                  <li class="show"><img width="480" height="405" src="images/fon-05.jpg" alt=""></li>
+                  <li class="show"><img width="480" height="405" src="images/fon-06.jpg" alt=""></li>
+                </ul>
+              </div>
+            </div>      
+         
+            <div class="login new">
+              <div class="board">
+                <h2>Registered Member</h2>      
+                <p>If you have an account with us, please sign in your account.</p><br/>
+                      
+                <div class="email">
+                  <strong>Email Address: </strong><sup class="asterism">*</sup><br/>
+                  <input type="email" id="email" />
+                </div>
+                      
+                <div class="password">
+                  <strong>Password: </strong><sup class="asterism">*</sup><br/>
+                  <input type="password" id="password" />
 
-      <div class="login">
-        <div id="div" class="registed">
-          <h2>Registered Member</h2>      
-          <p>If you have an account with us, please sign in your account.</p><br/>
+                  <a class="forgot" href="forgot.html">Forgot Your Password?</a>
+                </div>
                 
-          <div class="email">
-            <strong>Email Address: </strong><sup class="asterism">*</sup><br/>
-            <input type="email" id="email" />
-          </div>
-                
-          <div class="password">
-            <strong>Password: </strong><sup class="asterism">*</sup><br/>
-            <input type="password" id="password" />
-
-            <a class="forgot" href="forgot.html">Forgot Your Password?</a>
-          </div>
-          
-          <div class="submit">            
-            <button>Sign In</button>
-            <div class="required">
-              <sup class="sup">* </sup><span>Required Field</span>
+                <div class="submit">            
+                  <button onclick="login()">Sign In</button>
+                  <div class="required">
+                    <sup class="sup">* </sup><span>Required Field</span>
+                  </div>
+                </div>
+              </div> 
             </div>
-          </div>
-        </div>     
-      </div>
+          </div>    
 
-      <div id="users" class="login">
-        <h2 id="logged"></h2>
-          <div id="slider">
-            <ul class="slideshow">
-              <li class="show"><img width="490" height="375" src="images/fon-01.jpg" alt=""></li>
-              <li class="show"><img width="490" height="375" src="images/fon-02.jpg" alt=""></li>
-              <li class="show"><img width="490" height="375" src="images/fon-03.jpg" alt=""></li>
-              <li class="show"><img width="490" height="375" src="images/fon-04.jpg" alt=""></li>
-              <li class="show"><img width="490" height="375" src="images/fon-05.jpg" alt=""></li>              
-            </ul>
-          </div>
-      </div>  
-
-     <div class="wrap">
-       <div class="left-box">
+         <div class="wrap">
+          <div class="left-box">
               <h2><img width="50" height="50" src="images/bg-sun.jpg" alt=""> Upcoming Event</h2>
-           <script src="js/date.js"></script>
-
-           <form class="event" action=" https://www.eventbrite.com/e/friends-of-noise-presents-spit-infinity-dmarx-jasonundefinded-guest-tickets-56867976649#">
-              <input class="date" id="datepicker" type="text" value="Select date">
-              <button class="submit">Search</button>   
-           </form>        
-       </div>
-      
-       <div class="middle-box">
-             <h2><img width="50" height="50" src="images/bg-eye.jpg" alt=""> Get Involved</h2>              
-             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-       </div>
+          <div class="upcoming">    
+            <ul>
+             <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="3" direction="up">
+              <li><h2><a href="single-event.html" target="_blank">04/15/2019 Music</a></h2></li>
+              <li><h2><a href="single-event2.html" target="_blank">04/25/2019 Band</a></h2></li>
+              <li><h2><a href="single-event3.html" target="_blank">05/15/2019 Music</a></h2></li>
+              <li><h2><a href="single-event4.html" target="_blank">05/25/2019 Band</a></h2></li>
+              <li><h2><a href="single-event5.html" target="_blank">06/15/2019 Music</a></h2></li>      
+              </marquee>
+            </ul>
+          </div>       
+          </div>
           
-       <div class="right-box">
-             <h2><img width="50" height="50" src="images/getinvolved-bg-img3.png" alt=""> Shop Our Store</h2>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-       </div>
-     </div> 
+           <div class="middle-box">
+                 <h2><img width="50" height="50" src="images/bg-eye.jpg" alt=""> Get Involved</h2>              
+                 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+           </div>
+              
+           <div class="right-box">
+                 <h2><img width="50" height="50" src="images/getinvolved-bg-img3.png" alt=""> Shop Our Store</h2>
+                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <a href="retail.html"> Shop Now</a></p>
+           </div>
+         </div> 
 
+         <div id="logged"></div>
             <ul class="pic">
               <div id="left-box">
               <li class="slide">
@@ -222,8 +224,8 @@
               </li>
             </div>
             </ul>
-    </div>  
-  </section>
+        </div>  
+      </section>
 
 </body>
 </html>

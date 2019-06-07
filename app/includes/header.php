@@ -16,14 +16,16 @@
 
       <nav class="main">
         <ul>
-          <li><a href="../web/admin_dash.html">Admin</a></li>
+          <li><a href="http://www.friendsofnoise.org/" target="_blank">Home</a></li>
         <li class="separator">|</li>
-          <li><a href="../web/member.html">Members</a></li>
+          <li><a href="../web/event.html">Events</a></li>
         <li class="separator">|</li>
-          <li><a href="../web/single-event.html">Events</a></li>
+          <li><a href="../web/register.html">Sign Up</a></li>
         <li class="separator">|</li>
           <li><a href="../web/login.html">Sign In</a></li>
+        <div id="users" class="logout"> 
         <li class="separator">|</li>
-          <li><a href="../web/logout.html">Logout</a></li>
+          <li><a href="../web/logout.html" onclick="logout()">Logout</a></li>
+        </div>
         </ul>
-      </nav>   
+      </nav>    

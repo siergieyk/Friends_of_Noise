@@ -202,7 +202,8 @@ button:hover, input[type="submit"]:hover{
 	padding: 8px;    
 }
 .left-box h2{
-	color: #fff;	
+	color: #fff;
+	
 }
 .middle-box{
     background-image: url("../images/bg-blue.jpg");    
@@ -220,10 +221,50 @@ button:hover, input[type="submit"]:hover{
 	margin: 5px auto;
 	padding: 8px;       
 }
-.right-box a{
-	color: green;
-	font-weight: 600;
-	font-size: 24px;
+.date{
+	margin: 20px 0px 0px 20px;
+ 	padding: 10px;
+ 	width: 200px;
+ 	height: 200px; 	
+ 	background: url(../images/cal-icon.png) no-repeat 100% 50% #FFF;
+}
+.search{
+	margin: 25px 0px 0px 20px;  
+}
+.ui-datepicker{
+	background-color: black;
+	color: #DC143C;
+	width: 150px;
+	height: 170px;
+	display: none;
+	margin: 2px;
+	padding: 2px;
+}
+.ui-corner-all{
+	font-size: 15px;
+	margin: 0 15px 0  15px;
+	text-align: center;
+}
+.ui-datepicker-calendar{
+	font-size: 14px;	
+}
+.ui-datepicker-header{
+	text-align: center;
+}
+.details {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.ui-datepicker-current-day .ui-state-active{
+	background: #008000;
+	border-radius: 5px;
+	padding: 2px;
+	margin: 2px;
+}
+.event a {
+    color: red;
+    font-weight: bold;    
 }
 .slide{
 	margin: 5px 3px 3px 3px;
@@ -280,4 +321,110 @@ ul.slideshow li{
 	padding: 0;
 	left: 0;
 	right: 0;
+}
+.content, .login{
+	display: inline;
+	margin-left: 18px;
+	margin-right: 12px;
+	float: left;
+}
+.container .login{
+	width: 480px;
+}
+.container .content{
+	width: 980px;
+	position: relative;
+}
+button, input[type="submit"]{
+	height: 40px;
+	display: block;
+	background: #FFD700;
+	color: #fefefe;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	border-radius: 4px;
+	width: 120px;
+	margin: 5px;
+	display: inline-block;
+}
+button:hover, input[type="submit"]:hover{
+	background: #87CEFA;
+	color: black;
+	box-shadow: 0px 0px 2px #87CEFA;
+}
+.wrap h2{
+	color: black;
+	font-size: 25px;
+	font-weight: 600;
+	font-family: "Times New Roman", Times, serif;
+}
+.wrap p{
+	color: black;
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0 auto;
+	padding: 0 10px 5px 10px;
+}
+#left-box{
+	float: left;
+	width: 32%;
+	margin: 5px;
+}
+#mid-box{
+	float: left;
+	width: 32%;
+	margin: 5px;
+}
+#right-box{
+	float: left;
+	width: 32%;
+	margin: 5px;
+}
+.date{
+	margin: 20px 0px 10px 0px;
+ 	padding: 10px;
+ 	width: 200px;
+ 	background:url(../images/cal-icon.png) no-repeat 100% 50% #FFF;
+}
+.ui-datepicker{
+	background-color: black;
+	color: #DC143C;
+	width: 150px;
+	height: 170px;
+	display: none;
+	margin: 2px;
+	padding: 2px;
+}
+.ui-corner-all{
+	font-size: 15px;
+	margin: 0 15px 0  15px;
+	text-align: center;
+}
+.ui-datepicker-calendar{
+	font-size: 14px;	
+}
+.ui-datepicker-header{
+	text-align: center;
+}
+.data-event{
+	color: red;
+}
+.details {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.pic img{
+	width: 100%;	
+}
+.ui-datepicker-current-day .ui-state-active{
+	 background: #008000;
+	 border-radius: 5px;
+	 padding: 2px;
+	 margin: 2px;
+}
+.event a {
+    color: red;
+    font-weight: bold;
 }

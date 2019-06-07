@@ -15,9 +15,7 @@ $zip = $_POST["zip"];
 $newsletter = $_POST["newsletter"];
 $date = (Y-m-d); 
 
-$sql = "INSERT INTO members (email, first_name, last_name, 
-		user_name, password, age, phone, address, city,
-		state, zip, newsletter, date)
+$sql = "INSERT INTO members (email, first_name, last_name, user_name, password, age, phone, address, city, state, zip, newsletter, date)
 
 VALUES ('$email', '$firstname', '$lastname', '$username', '$password', '$age', '$phone','$address', '$city', '$state', '$zip', '$newsletter', NOW());";
 

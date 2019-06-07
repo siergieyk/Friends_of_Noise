@@ -35,6 +35,24 @@ State VARCHAR(45) NOT NULL,
 Zip VARCHAR(10) NOT NULL);
 
 
+CREATE TABLE `guestPayment`(
+cardID INT UNIQUE AUTO_INCREMENT,
+#UID VARCHAR(100) PRIMARY KEY,
+CardName nvarchar(45) NOT NULL,
+CardNumber nvarchar(45) NOT NULL,
+ExpMonth VARCHAR(10) NOT NULL,
+ExpYear VARCHAR(10) NOT NULL,
+Cvs VARCHAR(10) NOT NULL,
+Date datetime(4) NOT NULL);
+
+
+CREATE TABLE `member_status` (
+MemberID INT UNIQUE AUTO_INCREMENT,
+#UID VARCHAR(100) PRIMARY KEY,
+start_date DATE NOT NULL,
+end_date DATE NOT NULL);
+
+
 CREATE TABLE `events`(
 eventID INT UNIQUE AUTO_INCREMENT,
 EventName VARCHAR(60) DEFAULT NULL,
@@ -48,9 +66,14 @@ State VARCHAR(45) DEFAULT NULL,
 Zip VARCHAR(10) DEFAULT NULL);
 
 
+
 =============================================================================================================================================================================
 
 INSERT INTO members VALUES(default, 'goober@test.com', 'goo','ber','goober','password', 'over', '206-206-2060','123 Example st','Seattle','WA','10005', 'YES', '2019-05-20');
+INSERT INTO guestcheckout VALUES(default, 'goo','ber','goober@test.com','123 Example st', '#7', 'Seattle','WA','10005');
+
+INSERT INTO `guestPayment` VALUES(default, 'goober','1314324','01','01','111','2019-01-01:01:01:01');
+INSERT INTO `member_status` VALUES(default, '2019-05-20','2020-05-20');
 
 INSERT INTO `events` VALUES(default, 'Night of Music', '2020-04-04','100','43','1st ave','','Seattle','WA','10005');
 INSERT INTO `events` VALUES(default, 'Poetry', '2020-04-06','300','56','4th ave','','Seattle','WA','10005');

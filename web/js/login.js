@@ -1,5 +1,6 @@
-firebase.auth().onAuthStateChanged(function(user) {
-  if(user){
+firebase.auth().onAuthStateChanged((user)=>{
+    
+    if(user){
     
     document.getElementById("users").style.display= "block";
     document.getElementById("div").style.display= "none";
@@ -8,8 +9,8 @@ firebase.auth().onAuthStateChanged(function(user) {
     
     if(user != null){
       var userEmail = user.email;
-      document.getElementById("text").innerHTML = "Welcome to FON: " + userEmail;
-      document.getElementById("logged").innerHTML = "Login Successful! Thank you for joining us!";                      
+      document.getElementById("text").innerHTML = "Welcome to FON: " + userEmail;         
+      document.getElementById("logged").innerHTML = '<img src="images/fon-green.jpg" />';                            
     }
 
   } else {
@@ -22,7 +23,7 @@ function login(){
   var userEmail= document.getElementById("email").value;
   var userPassword= document.getElementById("password").value;
 
-  firebase.auth().signInWithEmailAndPassword(userEmail, userPassword).catch(function(error) {
+    firebase.auth().signInWithEmailAndPassword(userEmail, userPassword).catch((error)=>{
 
     var errorCode = error.code;
     var errorMessage = error.message;
