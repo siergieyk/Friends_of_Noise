@@ -2,6 +2,9 @@
 //https://firebase.google.com/docs/admin/setup/?authuser=0
 //https://firebase.google.com/docs/auth/admin/manage-users?authuser=0
 
+//requires the admin
+var admin = require('firebase-admin');
+
 //Searches for users in firebase using email
 admin.auth().getUserByEmail(email)
   .then(function(userRecord) {

@@ -1,0 +1,25 @@
+{
+  "name": "friends_of_noise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siergieyk/Friends_of_Noise.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siergieyk/Friends_of_Noise/issues"
+  },
+  "homepage": "https://github.com/siergieyk/Friends_of_Noise#readme",
+  "dependencies": {
+    "firebase-admin": "^8.0.0"
+  }
+}
