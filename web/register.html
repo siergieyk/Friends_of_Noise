@@ -9,13 +9,13 @@
   <script src="js/login.js"></script>
 </head>
 
-<body>     
+<body>
       <div class="top">
         <h4>Already a Member? <a href="login.html">User Visitor</a></h4>
-          <div class="logo"> 
-            <img src="images/FoNlogo.png"> 
+          <div class="logo">
+            <img src="images/FoNlogo.png">
           </div>
-      </div>   
+      </div>
 
       <nav class="main">
         <ul>
@@ -29,22 +29,22 @@
         <li class="separator">|</li>
           <li><a href="logout.html" onclick="logout()">Logout</a></li>
         </ul>
-      </nav>        
-  
+      </nav>
+
   <section id="account" class="width">
-    <div class="container">      
+    <div class="container">
         <div class="content">
       <h1>Create an Account</h1><br />
       <hr>
-    </div>      
+    </div>
     <div class="register">
       <form class="info" action="../app/register.php" method="post">
             <div class="left box">
-              <div><input type="email" value="" placeholder="Email" name="email" required="required" /></div>              
+              <div><input id="regEmail" type="email" value="" placeholder="Email" name="email" required="required" /></div>
               <div><input type="text" value="" placeholder="First Name" name="firstname" required="required" /></div>
               <div><input type="text" value="" placeholder="Last Name" name="lastname" required="required" /></div>
-              <div><input type="text" value="" placeholder="User Name" name="username" required="required" /></div>    
-              <div><input type="password" value="" placeholder="Password" name="password" required="required" /></div>
+              <div><input type="text" value="" placeholder="User Name" name="username" required="required" /></div>
+              <div><input id="regPass" type="password" value="" placeholder="Password" name="password" required="required" /></div>
               <select id="age" name="age" required="required" />
                 <option value="null">Please select one option</option>
                 <option value="over">Over the age of 21</option>
@@ -52,7 +52,7 @@
               </select>
             </div>
             <div class="right box">
-              <div><input type="text" value="" placeholder="Phone" name="phone"/></div>              
+              <div><input type="text" value="" placeholder="Phone" name="phone"/></div>
               <div><input type="text" value="" placeholder="Address" name="address"/></div>
               <div><input type="text" value="" placeholder="City" name="city"/></div>
               <select id="state" name="state">
@@ -108,17 +108,37 @@
                 <option value="WV">West Virginia</option>
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
-            </select>         
+            </select>
               <div><input type="text" value="" placeholder="Zip Code" pattern="[0-9]{5}" name="zip"/></div>
               <br />
               <label>
                 <input type="checkbox" id="newsletter" value="YES" name="newsletter"> Join our newsletter
-              </label>                   
+              </label>
             </div>
-              <button class="btn">Submit</button>
-        </form>        
+              <button onclick="signUp()"class="btn">Submit</button>
+        </form>
       </div>
   </div>
+
+
+  <!-- Below is the initialization snippet for Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC0N7dTxzX551I3SeSMcxkx1PJbaAHzVR0",
+      authDomain: "fonproject-faf34.firebaseapp.com",
+      databaseURL: "https://fonproject-faf34.firebaseio.com",
+      projectId: "fonproject-faf34",
+      storageBucket: "fonproject-faf34.appspot.com",
+      messagingSenderId: "572276368012"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <script src="../app/loginAuth.php">
+
+  </script>
 </section>
 
 </body>

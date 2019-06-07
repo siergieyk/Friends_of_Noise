@@ -8,10 +8,10 @@
   <body>
     <div id="login_div" class="auth-div">
       <h3>Friends Of Noise Member Sign In</h3>
-      <input type="email" placeholder="Email..." name="" value="" id="email_field">
-      <input type="text" placeholder="Password..." name="" value="" id="password_field">
-      <button onclick="login()">Loging to Account</button>
-      <button onClick="forgotPassPage()">Forgot Password</button>
+      <input type="email" placeholder="Email..." name="" value="" id="regEmail">
+      <input type="text" placeholder="Password..." name="" value="" id="regPass">
+      <button onclick="signUp()">sign up Account</button>
+      <button onClick="signUp()">Forgot Password</button>
     </div>
 
     <div id="user_div" class="loggedIn-div">
@@ -41,9 +41,7 @@
       };
       firebase.initializeApp(config);
     </script>
-
     <script src="../app/loginAuth.php">
-
     </script>
   </body>
 </html>
