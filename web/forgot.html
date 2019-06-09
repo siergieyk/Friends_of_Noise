@@ -2,40 +2,76 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Reset Password</title>
+  <title>Reset Password</title>  
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/login.css" rel="stylesheet" type="text/css">
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+  <script src="../app/loginAuth.php"></script>
+  <script type="text/javascript" src="js/auth.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+  <script src='http://fullcalendar.io/js/fullcalendar-2.1.1/lib/jquery.min.js'></script>
+  <script type="text/javascript" src="js/slide.js"></script>  
 </head>
 
 <body>     
       <div class="top">
-        <h4>Already a Member? <a href="login.html">User Visitor</a></h4>
-          <div class="logo"> 
-            <img src="images/FoNlogo.png"> 
-          </div>
-      </div>   
-
+          <h4 id="text"></h4>  
+        </div>
+        <div class="logo"> 
+          <img src="images/FoNlogo.png"> 
+        </div>
+      </div> 
+      
       <nav class="main">
         <ul>
-          <li><a href="admin_dash.html">Admin</a></li>
+          <li><a href="http://www.friendsofnoise.org/" target="_blank">Home</a></li>
         <li class="separator">|</li>
-          <li><a href="member.html">Members</a></li>
+          <li><a href="event.html">Events</a></li>
         <li class="separator">|</li>
-          <li><a href="single-event.html">Events</a></li>
+          <li><a href="register.html">Sign Up</a></li>
         <li class="separator">|</li>
           <li><a href="login.html">Sign In</a></li>
+        <div id="users" class="logout"> 
         <li class="separator">|</li>
-          <li><a href="logout.html">Logout</a></li>
+          <li><a href="logout.html" onclick="logout()">Logout</a></li>
+        </div>
         </ul>
-      </nav>        
-  
+      </nav>                   
+
   <section id="account" class="width">
-    <div class="container">      
+      <div class="container">      
         <div class="content">
-          <h1>Reset Password</h1><br />
-          <hr>
-        </div>      
+            <h1>Reset Password</h1><br />
+            <hr>
+        </div> 
+
+      <div class="login">
+              <div id="slider">
+                <ul class="slideshow">
+                  <li class="show"><img width="480" height="405" src="images/fon-07.jpg" alt=""></li>
+                  <li class="show"><img width="480" height="405" src="images/fon-08.jpg" alt=""></li>
+                  <li class="show"><img width="480" height="405" src="images/fon-09.jpg" alt=""></li>
+                  <li class="show"><img width="480" height="405" src="images/fon-10.jpg" alt=""></li>     
+                  <li class="show"><img width="480" height="405" src="images/fon-11.jpg" alt=""></li>     
+                  <li class="show"><img width="480" height="405" src="images/fon-12.jpg" alt=""></li>     
+                </ul>
+              </div>
+      </div>
+
+      <div id="users" class="login">
+          <h2 id="logged"></h2> 
+          <div id="div" class="board">
+            <h2>Reset Password</h2>
+            <div id="forgotPass-div">            
+              <input type="email" placeholder="Email..." name="" value="" id="fP_email_field">
+              <button onclick="forgotPass()">Retrieve My Password!</button>
+            </div>          
+          </div>      
+      </div>
     </div>
-  </section>
-  
+  </section>  
 </body>
 </html>
+
+
+       
