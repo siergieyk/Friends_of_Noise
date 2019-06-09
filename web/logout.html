@@ -4,29 +4,35 @@
   <meta charset="UTF-8">
   <title>Logout</title>
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+  <script type="text/javascript" src="js/auth.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
 </head>
 
 <body>     
       <div class="top">
-        <h4>Already a Member? <a href="login.html">User Visitor</a></h4>
-          <div class="logo"> 
-            <img src="images/FoNlogo.png"> 
-          </div>
-      </div>    
-
+          <h4 id="text"></h4>  
+        </div>
+        <div class="logo"> 
+          <img src="images/FoNlogo.png"> 
+        </div>
+      </div> 
+      
       <nav class="main">
         <ul>
-          <li><a href="admin_dash.html">Admin</a></li>
+          <li><a href="http://www.friendsofnoise.org/" target="_blank">Home</a></li>
         <li class="separator">|</li>
-          <li><a href="member.html">Members</a></li>
+          <li><a href="event.html">Events</a></li>
         <li class="separator">|</li>
-          <li><a href="single-event.html">Events</a></li>
+          <li><a href="register.html">Sign Up</a></li>
         <li class="separator">|</li>
           <li><a href="login.html">Sign In</a></li>
+        <div id="users" class="logout"> 
         <li class="separator">|</li>
-          <li><a href="logout.html">Logout</a></li>
+          <li><a href="logout.html" onclick="logout()">Logout</a></li>
+        </div>
         </ul>
-      </nav>        
+      </nav>                             
   
   <section id="account" class="width">
     <div class="container">      

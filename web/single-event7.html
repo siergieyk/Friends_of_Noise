@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Events</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/event.css" rel="stylesheet" type="text/css">
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+  <script type="text/javascript" src="js/auth.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+</head>
+
+<body>     
+      <div class="top">
+        <div id="div"></div>
+          <h4 id="text"></h4>  
+        </div>
+        <div class="logo"> 
+          <img src="images/FoNlogo.png"> 
+        </div>
+      </div> 
+      
+      <nav class="main">
+        <ul>
+          <li><a href="http://www.friendsofnoise.org/" target="_blank">Home</a></li>
+        <li class="separator">|</li>
+          <li><a href="event.html">Events</a></li>
+        <li class="separator">|</li>
+          <li><a href="register.html">Sign Up</a></li>
+        <li class="separator">|</li>
+          <li><a href="login.html">Sign In</a></li>
+        <div id="users" class="logout"> 
+        <li class="separator">|</li>
+          <li><a href="logout.html" onclick="logout()">Logout</a></li>
+        </div>
+        </ul>
+      </nav>                     
+  
+  <section id="account" class="width">
+    <div class="container">      
+        <div class="content">
+          <h1>Events</h1><br />
+          <hr>
+        </div>      
+    </div>
+    <div class="event">
+        <div class="leftcolumn">
+          <table class="table">
+            <tr>
+              <td><strong>Event: </strong></td>
+              <td>Single Event</td>
+            </tr>
+            <tr>
+              <td><strong>Date: </strong></td>
+              <td>July 15, 2019 6:00 PM</td>
+            </tr>
+            <tr>
+              <td><strong>Member Cost: </strong></td>
+              <td>$ 5</td>
+            </tr>
+            <tr>
+              <td><strong>Non-Member: </strong></td>
+              <td>$15</td>
+            </tr>
+            <tr>
+              <td><strong>Category: </strong></td>
+              <td class="category">
+                 <a href="https://fon.ichortest.com/">Music</a>
+                 |
+                 <a href="http://www.friendsofnoise.org/">Events</a>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Location: </strong></td>
+              <td>Example High School</td>
+            </tr>
+            <tr>
+              <td><strong>Address: </strong></td>
+              <td>1234 Example St, OR</td>
+            </tr>     
+          </table>
+          <div class="center"><a href=sell.html><button class="buy">Buy</button></a></div>    
+        </div>
+        <div class="rightcolumn">          
+             <h4>Jazz Event</h4>
+             <h2><span>Event: </span><small>July 15, 2019</small></h2>
+                <div class="image"> 
+                  <img src="images/fon-07.jpg"> 
+                </div>
+             <p>Baseball ipsum dolor sit amet blue knuckleball out streak. Baseball rope forkball gapper glove helmet robbed starting pitcher. Foul line hall of fame third baseman arm 1-2-3, full count choke up reds. Grounder cubs knuckle robbed outfield off-speed bush league. Extra innings friendly confines double switch center field alley manager basehit pull. Cycle forkball earned run streak strike zone batting average sacrifice bunt grass.</p>
+             <p>Third baseman shutout pine tar right field lineup, team slugging corner pennant. Wins pitchout can of corn strikeout 1-2-3 southpaw earned run. Left on base outfield away all-star bat dodgers retire flyout disabled list. Run batted in reds rainout reliever leadoff ejection off-speed pitchout. Shortstop moneyball swing triple play sport pickoff full count loogy. Baltimore chop mustard around the horn steal tigers sabremetrics cy young left field.</p><br />                   
+        </div>
+    </div>
+  </section>  
+   
+</body>
+</html>

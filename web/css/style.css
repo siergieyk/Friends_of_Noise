@@ -1,24 +1,25 @@
-/* ###############General################## */
-
-* {
+*{
 	padding: 0;
 	margin: 0;
-  border: 0;
-	font-size: 100%;
+    border: 0;
 }
-
-ul { list-style: none; }
-
-a {
+html, body, div, h1, h2, h3, h4, a, strong, ul, li{
+	margin: 0;
+	padding: 0;
+	border: 0;
+    font-size: 100%;
+}
+ul{
+	list-style: none;
+}
+a, nav a{
 	color: #FFD700;
 	text-decoration: none;
 }
-
-li, p, strong {
+li, p, strong{
 	font-size: 15px;
 	line-height: 22px;
 }
-
 hr{
 	background: #e0e0e0;
 	height: 1px;
@@ -29,49 +30,38 @@ h1, h2, h3, h4{
 	color: #FFD700;
 	padding-bottom: 23px;
 }
-
 h1{font-size: 32px;}
-h2{font-size: 27px}
+h2{font-size: 27px;}
 h3{font-size: 22px;}
 h4{font-size: 17px;}
 
-body {
-	min-width: 960px;
+body{
+	min-width: 980px;
 	margin: 0 auto;
 	font-family: Arial, Helvetica, sans-serif;
 	background-image: url("../images/get-involved.png");
 }
-
-footer {
-  margin-left: auto;
-  margin-right: auto;
+/* header - logo and navigation */
+.top{
+  	margin: 14px 0 0 14px;
 }
-
-.copyright {
-  text-align: center;
-}
-
-/* ###############Login Page - Top################## */
-
-.top{margin: 14px 0 0 14px;}
-
 .logo{
 	position: absolute;
 	text-align: center;
 }
-
 .logo img{
 	width: 17%;
     margin: 0 auto;
 }
-
 nav.main{
 	position: relative;
 	float: right;
 	margin: 30px 0 0 0;
 	font-family: Arial, Helvetica, sans-serif;
 }
-
+nav.main ul{
+	list-style: none;
+}
 nav.main ul li{
 	height: 30px;
 	font-size: 14px;
@@ -79,13 +69,11 @@ nav.main ul li{
 	margin: 0 2px;
 	float: left;
 }
-
 nav.main ul li a{
 	color: #777;
 	padding: 0 10px;
 	float: left;
 }
-
 nav.main ul li a:hover{
 	color: #fefefe;
 	background: #FFD700;
@@ -93,578 +81,53 @@ nav.main ul li a:hover{
 	border-radius: 3px;
 	position: relative;
 }
-
-/* #################Container################### */
-
+.logout{
+	height: 30px;
+	font-size: 14px;
+	line-height: 30px;
+	margin: 0 2px;
+	float: left;
+}
+/* Container */
 .container{
 	margin-left: auto;
 	margin-right: auto;
 	width: 1020px;
 }
-
-.content, .login{
+.content, .space{
 	display: inline;
-	margin: 0 12px 10px 5px;
+	margin-left: 18px;
+	margin-right: 12px;
 	float: left;
 }
-
-.container .login{width: 480px;}
-
+.container .space{
+	width: 480px;
+}
 .container .content{
 	width: 980px;
 	position: relative;
 }
-
-/* #################Button and Input################### */
-
-/*This changes all input for all pages, overrides made below*/
-input, select {
-	width:90%;
-	margin: 5px auto;
-	margin-bottom:20px;
-	height: 35px;
-	padding: 10px;
-	border: 1px solid #ccc;
-	border-radius: 2px;
-}
-
-select {
-    height: 40px;
-    width: 422px;
-    padding: 0 5px;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    color: black;
-}
-
-select option:first-child{
-	background: #FFD700;
-}
-
-button {
-	height: 40px;
-	margin:5px;
-	display: block;
-	background: #FFD700;
-	color: #fefefe;
-	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 15px;
-	border-radius: 4px;
-	width: 120px;
-}
-
-button:hover {
-	background: #87CEFA;
-	color: black;
-	box-shadow: 0px 0px 2px #87CEFA;
-}
-
-/*Unique to other css*/
-.registered .submit input[type="submit"]{
-	float: left;
-	margin: 0 130px 0 0;
-	width: 110px;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus {
-	outline: none;
-	border: 1px solid red;
-	box-shadow: 0px 0px 4px red;
-}
-
-input[type="checkbox"] {
-	float:left;
-	height:20px;
-	width:20px;
-	margin:0 10px 10px;
-}
-
-
-/* ###############Login Page################# */
-/*Make sure to update all instances of 'registed' => 'registered'*/
-
-.registered{
-	margin: 20px 0 0 0;
-	padding: 22px;
-	border: 1px solid #e0e0e0;
-	border-radius: 4px;
-	background: #fff;
-	background-image: url("../images/bg-blue.jpg");
-}
-
-.registered strong{
-	color: #707070;
-	font: bold Arial, Helvetica, sans-serif;
-}
-
-.registered a.forgot{
-	font-size: 12px;
-	color: #707070;
-	margin-left: 12px;
-}
-
-.registered .submit{
-	font-size: 15px;
-	color: red;
-	margin: 20px 0 20px 0;
-}
-
-.required{
-	float: right;
-	margin-right: 40px;
-	font-size: 13px;
-}
-
-.wrap{
-	position: relative;
-	width: 1020px;
-	margin: 0 auto;
-	padding: 0;
-}
-
-.wrap h2{
-	color: black;
-	font-size: 24px;
-	font-weight: 600;
-	font-family: "Times New Roman", Times, serif;
-}
-
-.left-box{
-    background-image: url("../images/bg-black.jpg");
-  	color: #fff;
-  	float: left;
-	width: 31%;
-	height: 230px;
-	margin: 0 auto;
-	padding: 8px;
-}
-
-.left-box h2{
-	color: #fff;
-	font-size: 24px;
-	font-weight: 600;
-	font-family: "Times New Roman", Times, serif;
-}
-
-.middle-box{
-    background-image: url("../images/bg-blue.jpg");
-  	float: left;
-	width: 31%;
-	height: 230px;
-	margin: 0 auto;
-	padding: 8px;
-}
-
-.right-box{
-  	background-image: url("../images/bg-yellow.jpg");
-  	float: left;
-	width: 31%;
-	height: 230px;
-	margin: 0 auto;
-	padding: 8px;
-}
-
-.leftcolumn{
-	margin: 20px auto;
-	width: 300px;
-}
-
-.date{
-	margin: 20px 0px 10px 0px;
- 	padding: 10px;
- 	width: 200px;
- 	background:url(../images/cal-icon.png) no-repeat 100% 50% #FFF;
-}
-
-.ui-datepicker{
-	background-color: black;
-	color: red;
-	width: 150px;
-	height: 155px;
-	display: none;
-	margin: 5px;
-}
-
-.ui-corner-all{
-	font-size: 15px;
-	margin: 0 15px 0  15px;
-	text-align: center;
-}
-
-.ui-datepicker-calendar{
-	font-size: 14px;
-}
-
-.ui-datepicker-header{
-
-	text-align: center;
-}
-
-.data-event{
-	color: red;
-}
-
-.details {
-	float: left;
-	width: 100%;
-	text-align: center;
-}
-
-.ui-datepicker-current-day .ui-state-active{
-	 background: #008000;
-	 border-radius: 5px;
-	 padding: 2px;
-	 margin: 2px;
-}
-
-.event a {
-    color: red;
-}
-
-.new{margin-top: 65px;}
-
-.new p{	margin-bottom: 35px;}
-
-.new .signup{
-	height: 40px;
-	display: block;
-	background: #FFD700;
-	color: #fefefe;
-	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 15px;
-	border-radius: 4px;
-	width: 120px;
-}
-
-.new .signup:hover {
-	background: #87CEFA;
-	color: black;
-	box-shadow: 0px 0px 2px #87CEFA;
-}
-
-/* Registered page  */
-
-.info{
-	margin: 45px auto;
-	padding: 30px;
-	height: 480px;
-}
-
-/* #############Sell page############## */
-
-.center{
-    width: 185px;
-    margin: 2px auto;
-}
-
-.checkout{
-	margin: 0 auto;
-	padding: 5px;
-	width: 1080px;
-	display: inline-block;
-}
-
-.music{
-	margin: 20px 0 0 0;
- 	padding: 5px;
- 	height: 300px;
- 	width: 290px;
- 	float: left;
-}
-
-.leftcolumn{
- 	margin: 40px 0 0 0;
-	padding: 10px;
+/* two columns */
+.box {
+	width: 450px;
 	height: 300px;
-	width: 290px;
- 	display: inline;
- 	float: left;
+	margin: 20px auto;
+	padding: 10px;
 }
-
-.rightcolumn{
- 	height: 300px;
- 	width: 470px;
- 	float: left;
-	position: relative;
+.left {
+	clear: both;
+	float: left;
 }
-
+.right {
+	float: right;
+}
 .image img{
 	width: 100%;
 	margin: 0 auto;
 	border: 8px solid #fff;
 }
-
 .image img:hover {
 	width: 115%;
 	height: 115%;
 	border: 8px solid #9ACD32;
-}
-
-.table{
-	width: 105%;
-}
-
-.guest{
-	font-style: oblique;
-	font-weight: 600;
-}
-
-.radio{
-	margin-left: 65px;
-}
-
-/* ############Event page############### */
-
-.event{
-	margin: 0 auto;
-	width: 950px;
-}
-
-.event .leftcolumn{
-	margin: 20px 0px 10px 0px;
- 	padding: 10px;
- 	height: 175px;
- 	width: 300px;
- 	float: left;
- 	border: 7px dotted #FFD700;
-}
-.event .rightcolumn {
-	float: right;
- 	color: #333;
- 	margin: 10px 0px 10px 0px;
- 	padding: 5px;
- 	height: 500px;
- 	width: 580px;
- 	display: inline;
- 	position: relative;
-}
-
-/*####################Slide show only#######################*/
-
-.slide{
-	margin: 20px 5px 5px 5px;
-	width: 300px;
-	height: 300px;
-	position: relative;
-	display: inline-block;
-    list-style: none;
-}
-#left-box{
-	float: left;
-	width: 33.33%;
-}
-#mid-box{
-	float: left;
-	width: 33.33%;
-}
-#right-box{
-	float: left;
-	width: 33.33%;
-}
-.title{
-	position: absolute;
-	top: 35%;
-}
-.title h2{
-	font-size: 20px;
-	line-height: 20px;
-	color: #ADFF2F;
-	padding: 5px 15px;
-	text-align: center;
-	font-weight: 600;
-}
-.title h3{
-	font-size: 15px;
-	line-height: 25px;
-	color: #FFF8DC;
-	background: #8B4513;
-	padding: 0px 15px;
-	text-transform: uppercase;
-	text-align: center;
-}
-ul.slideshow{
-	list-style: none;
-	width: 480px;
-	height: 390px;
-	overflow: hidden;
-	position: relative;
-	margin: 0;
-}
-ul.slideshow li{
-	position: absolute;
-	margin: 0;
-	padding: 0;
-	left: 0;
-	right: 0;
-}
-
-/*#################Member Page#################*/
-
-
-.upcoming{
-	display: inline;
-	margin-left: 300px;
-	margin-right: 434px;
-	padding: 70px;
-}
-
-.renew{
-  left: 0;
-  bottom: 0;
-  width: 50%;
-  margin: auto;
-  color: white;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-
-}
-
-.status{
-	margin: 45px 0 0 0;
-	padding: 22px;
-	border: 1px solid #000;
-	border-radius: 4px;
-	float: right;
-	width: 100px;
-}
-
-.renew_btn{
-  background-color: #000;
-  color: white;
-  padding: 12px;
-  margin: 10px 0;
-  border: none;
-  width: 30%;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 17px;
-}
-
-.mem_status{
-	color: #099556;
-}
-
-.row {
-  margin: 0 auto;
-	width: 50%;
-	padding: 15px;
-}
-
-
-.inside_con {
-	display: inline-block;
-}
-
-.outside_con{
-	display: block;
-}
-
-.inside_con,
-.outside_con {
-  padding: 0 16px;
-}
-
-.container_pay {
-  background-color: #099556;
-  padding: 5px 20px 15px 20px;
-  border: 1px solid #000;
-  border-radius: 3px;
-}
-
-label {
-  margin-bottom: 10px;
-  display: block;
-}
-
-.icon-container {
-  margin-bottom: 20px;
-  padding: 7px 0;
-  font-size: 24px;
-}
-
-.btn {
-  background-color: #000;
-  color: white;
-  padding: 12px;
-  margin: 10px 0;
-  border: none;
-  width: 100%;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 17px;
-}
-
-.btn:hover {
-  background-color: #45a049;
-}
-
-.middle{
-	margin: 30px 0 0  14px;
-}
-
-nav.main{
-	text-align: center;
-	margin: 20px 0 0 0;
-	/*position: relative;
-	float: right;
-	margin: 30px 0 0 0;*/
-	font-family: Arial, Helvetica, sans-serif;
-}
-
-nav.main ul{
-	display: inline-block;
-	list-style: none;
-}
-
-nav.main ul li{
-	height: 30px;
-	font-size: 14px;
-	line-height: 30px;
-	margin: 0 2px;
-	float: left;
-}
-
-nav.main ul li a{
-	color: #777;
-	padding: 0 10px;
-	float: left;
-}
-
-nav.main ul li a:hover{
-	color: #fefefe;
-	background: #87CEFA;
-	text-decoration: none;
-	border-radius: 3px;
-	position: relative;
-}
-
-.payment_lb{
-	text-align: center;
-}
-
-/* ###########Admin Dashboard Boxes############ */
-
-.box {
-	width:450px;
-	height:300px;
-	margin:0 auto;
-	padding:20px;
-	background-color:#27aae1;
-}
-
-.left {
-	clear:both;
-	float:left;
-}
-
-.right {
-	float:right;
-}
-
-#message {
-	margin-left: 170px;
 }

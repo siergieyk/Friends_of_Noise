@@ -2,10 +2,11 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Friends Of Noise - Payment Page</title>
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-	 <script src="js/add.js"></script>
-
+  <title>Payment</title>
+  <link href="css/payment.css" rel="stylesheet" type="text/css">
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+  <script type="text/javascript" src="js/auth.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
 </head>
 
 <body>
@@ -16,15 +17,17 @@
 
       <nav class="main">
         <ul>
-          <li><a href="#">Home</a></li>
-		    <li class="separator">|</li>
-          <li><a href="#">Events</a></li>
-	     	<li class="separator">|</li>
-	      <li><a href="#">Merchandise</a></li>
-	     	<li class="separator">|</li>
-          <li><a href="login.html">Buy/Renew Membership</a></li>
-	     	<li class="separator">|</li>
-          <li><a href="login.html">Friends Of Noise</a></li>
+          <li><a href="http://www.friendsofnoise.org/" target="_blank">Home</a></li>
+        <li class="separator">|</li>
+          <li><a href="event.html">Events</a></li>
+        <li class="separator">|</li>
+          <li><a href="register.html">Sign Up</a></li>
+        <li class="separator">|</li>
+          <li><a href="login.html">Sign In</a></li>
+        <div id="users" class="logout">
+        <li class="separator">|</li>
+          <li><a href="logout.html" onclick="logout()">Logout</a></li>
+        </div>
         </ul>
       </nav>
 
@@ -90,7 +93,7 @@
 <label>
           <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
         </label>
-        <button type="submit" value="Continue to checkout" class="btn">
+        <input type="submit" value="Continue to checkout" class="btn">
 
 
       </form>

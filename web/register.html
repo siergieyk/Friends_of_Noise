@@ -2,11 +2,12 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>register</title>
+  <title>Register</title>
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/register.css" rel="stylesheet" type="text/css">
+  <script src="../app/loginAuth.php"></script>
   <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
-  <script src="js/auth.js"></script>
-  <script src="js/login.js"></script>
+  <script type="text/javascript" src="js/auth.js"></script>
 </head>
 
 <body>
@@ -19,15 +20,13 @@
 
       <nav class="main">
         <ul>
-          <li><a href="admin_dash.html">Admin</a></li>
-        <li class="separator">|</li>
-          <li><a href="member.html">Members</a></li>
+          <li><a href="http://www.friendsofnoise.org/" target="_blank">Home</a></li>
         <li class="separator">|</li>
           <li><a href="event.html">Events</a></li>
         <li class="separator">|</li>
-          <li><a href="login.html">Sign In</a></li>
+          <li><a href="register.html">Sign Up</a></li>
         <li class="separator">|</li>
-          <li><a href="logout.html" onclick="logout()">Logout</a></li>
+          <li><a href="login.html">Sign In</a></li>
         </ul>
       </nav>
 
@@ -39,7 +38,7 @@
     </div>
     <div class="register">
       <form class="info" action="../app/register.php" method="post">
-            <div class="left">
+            <div class="left box">
               <div><input id="regEmail" type="email" value="" placeholder="Email" name="email" required="required" /></div>
               <div><input type="text" value="" placeholder="First Name" name="firstname" required="required" /></div>
               <div><input type="text" value="" placeholder="Last Name" name="lastname" required="required" /></div>
@@ -51,7 +50,7 @@
                 <option value="under">Under the age of 21 </option>
               </select>
             </div>
-            <div class="right">
+            <div class="right box">
               <div><input type="text" value="" placeholder="Phone" name="phone"/></div>
               <div><input type="text" value="" placeholder="Address" name="address"/></div>
               <div><input type="text" value="" placeholder="City" name="city"/></div>

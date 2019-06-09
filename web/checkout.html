@@ -2,29 +2,29 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Checkout</title>
+  <title>Checkout as guest</title>
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/checkout.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
       <div class="top">
-        <h4>Already a Member? <a href="login.html">User Visitor</a></h4>
-          <div class="logo">
-            <img src="images/FoNlogo.png">
-          </div>
+          <h4 id="text"></h4>
+        </div>
+        <div class="logo">
+          <img src="images/FoNlogo.png">
+        </div>
       </div>
 
       <nav class="main">
         <ul>
-          <li><a href="admin_dash.html">Admin</a></li>
+          <li><a href="http://www.friendsofnoise.org/" target="_blank">Home</a></li>
         <li class="separator">|</li>
-          <li><a href="member.html">Members</a></li>
+          <li><a href="event.html">Events</a></li>
         <li class="separator">|</li>
-          <li><a href="single-event.html">Events</a></li>
+          <li><a href="register.html">Sign Up</a></li>
         <li class="separator">|</li>
           <li><a href="login.html">Sign In</a></li>
-        <li class="separator">|</li>
-          <li><a href="logout.html">Logout</a></li>
         </ul>
       </nav>
 
@@ -96,14 +96,15 @@
                 <option value="WV">West Virginia</option>
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
-</select>
+              </select>
               <input type="text" name="zip" pattern="[0-9]{5}" class="" value="" placeholder="ZIP code" required="required" />
               <input type="email" name="email" class="" value="" placeholder="Email" required="required" />
-              <button type="submit" value="Done" /><br />
+              <input type="submit" value="Done" /><br />
             </div>
+          </form>
 
            <div class="right box">
-            <div class="progress">
+            <div class="choose">
               <strong>Pay with: </strong><sup class="asterism">*</sup><br/>
               <ul class="pay">
                 <li><input type="radio" id="card" name="type" value="card" >
@@ -114,9 +115,11 @@
                </ul>
             </div>
 
-            <div class="payment">
-              <input type="text" name="" class="" value="" placeholder="Card number"/>
-              <select id="month" name="month">
+            <div class="progress">
+              <form class="payment" action="../app/card.php" method="post">
+              <input type="text" name="cardname" class="" value="" placeholder="Name on the card" required="required">
+              <input type="text" name="cardnumber" class="" value="" placeholder="Card number" required="required">
+              <select id="month" name="expmonth" required="required">
               <option value="null">Expiration month</option>
                 <option value="JAN">January</option>
                 <option value="FEB">February</option>
@@ -132,7 +135,7 @@
                 <option value="DEC">December</option>
              </select>
 
-             <select id="year" name="year">
+             <select id="year" name="expyear" required="required">
               <option value="null">Expiration year</option>
                 <option value="2019">2019</option>
                 <option value="2020">2020</option>
@@ -146,12 +149,3 @@
                 <option value="2028">2028</option>
                 <option value="2029">2029</option>
                 <option value="2030">2030</option>
-             </select>
-              <input type="text" name="" class="" value="" placeholder="Security code"/>
-              <button type="submit" value="Checkout" />
-            </div>
-     </form>
-    </div>
-  </section>
-</body>
-</html>
