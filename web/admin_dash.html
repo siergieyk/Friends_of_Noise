@@ -3,64 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <title>Admin Dashboard</title>
-  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/admin.css" rel="stylesheet" type="text/css">
+  <!-- Below is the initialization snippet for Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC0N7dTxzX551I3SeSMcxkx1PJbaAHzVR0",
+      authDomain: "fonproject-faf34.firebaseapp.com",
+      databaseURL: "https://fonproject-faf34.firebaseio.com",
+      projectId: "fonproject-faf34",
+      storageBucket: "fonproject-faf34.appspot.com",
+      messagingSenderId: "572276368012"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <script src="../app/adminOnClicks.js"></script>
 </head>
 
-<body>     
-      <div class="top">
-        <h4>Already a Member? <a href="login.html">User Visitor</a></h4>
-          <div class="logo"> 
-            <img src="images/FoNlogo.png"> 
-          </div>
-      </div>     
+<body>
+  <div class="top">
+    <h4>Already a Member? <a href="login.html">User Visitor</a></h4>
+      <div class="logo">
+        <img src="images/FoNlogo.png">
+      </div>
+  </div>
 
-      <nav class="main">
-        <ul>
-          <li><a href="admin_dash.html">Admin</a></li>
-        <li class="separator">|</li>
-          <li><a href="member.html">Members</a></li>
-        <li class="separator">|</li>
-          <li><a href="single-event.html">Events</a></li>
-        <li class="separator">|</li>
-          <li><a href="login.html">Sign In</a></li>
-        <li class="separator">|</li>
-          <li><a href="logout.html">Logout</a></li>
-        </ul>
-      </nav> 
-  
+  <nav class="main">
+    <ul>
+      <li><a href="admin_dash.html">Admin</a></li>
+    <li class="separator">|</li>
+      <li><a href="member.html">Members</a></li>
+    <li class="separator">|</li>
+      <li><a href="single-event.html">Events</a></li>
+    <li class="separator">|</li>
+      <li><a href="login.html">Sign In</a></li>
+    <li class="separator">|</li>
+      <li><a href="logout.html">Logout</a></li>
+    </ul>
+  </nav>
+
 <div class="container">
 	<div class="content">
 		<h1>Admin Dashboard</h1><br />
 		<hr>
 	</div>
+<div class="left box">
+  <h2>Search user</h2>
+  <div id="user_search">
+    <input type="uid" placeholder="User ID" name="" value="" id="id_field">
+    <input type="email" placeholder="Email" name="" value="" id="email_field">
+    <button type="submit" onclick="">Search</button>
+  </div>
 
-		<!--Picture with statistics-->
-	<div class="left box">
-		<img src="images/line_graph.gif" alt="lines" style="width:90%;">
-	</div>
-	<!--Field with one searchbar-->
-	<div class="right box">
-		<div class="submit">
-			<strong>Search User: </strong><br/>
-			Name: <input type="text" name="" class="" value="" />
-			<input type="submit" value="Submit" />
-		</div>
-	</div>
-	<!--Field with 2 search bars-->
-	<div class="left box">
-		<div class="submit">
-			<strong>Search Events: </strong><br/>
-			Name: <input type="text" name="" class="" value="" /> <br/>
-			Description: <input type="text" name="" class="" value="" /> <br/>
-			Image: (jpeg no larger than 50mb) <input type="text" name="" class="" value="" /> <br/>
-			<input type="submit" value="Submit" />
-		</div>
-	</div>
-
-	<!--Empty box-->
-	<div class="right box">
-		<h1> Your Idea Here! </h1>
-	</div>
+  <div id="user_found">
+    <h3 id ="message">User Found</h3>
+  </div>
 </div>
+
+<div class="right box">
+  <h2>Remove User</h2>
+  <div id="rem_user">
+    <input type="email" placeholder="Email" name="" value="" id="email_field">
+    <!--Currently no function-->
+    <button type="submit" onclick="">Remove User</button>
+  </div>
+
+  <div id="user_removed">
+    <h3 id ="message" >User removed</h3>
+  </div>
+
+  <p>To add user, <a href="register.html">click here</a></p>
+</div>
+
+<div class="left box">
+  <div id="event_find">
+    <h2>Search Events</h2>
+    <input type="Name" placeholder="Name" name="" value="" id="Name_field">
+    <input type="Description" placeholder="Description" name="" value="" id="Description_field">
+    <!--Currently no function-->
+    <button type="submit" onclick="">Search</button>
+  </div>
+</div>
+
+<div class="right box">
+  <div id="item_find">
+    <h2>Customer Purchase History</h2>
+    <input type="email" placeholder="Email" name="" value="" id="email_field">
+    <!--Currently no function-->
+    <button type="submit" onclick="">Search</button>
+  </div>
+</div>
+
+<div class="left box">
+  <div id="list_users">
+    <h2>List All Users</h2>
+    <!--Currently no function-->
+    <button type="submit" onclick="listAllUsers()">List</button>
+  </div>
+</div>
+
+</div> <!--End container-->
+
 </body>
 </html>

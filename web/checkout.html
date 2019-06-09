@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Checkout as guest</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="css/checkout.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -115,11 +116,40 @@
             </div>
 
             <div class="progress">
-              <form class="payment" action="../app/payment.php" method="post">
+              <form class="payment" action="../app/card.php" method="post">
               <input type="text" name="cardname" class="" value="" placeholder="Name on the card" required="required">
               <input type="text" name="cardnumber" class="" value="" placeholder="Card number" required="required">
-              <input type="text" name="expmonth" class="" value="" placeholder="Expiration month" required="required">
-              <input type="text" name="expyear" class="" value="" placeholder="Expiration year" required="required">              
+              <select id="month" name="expmonth" required="required">
+              <option value="null">Expiration month</option>
+                <option value="JAN">January</option>
+                <option value="FEB">February</option>
+                <option value="MAR">March</option>
+                <option value="APR">April</option>
+                <option value="MAY">May</option>
+                <option value="JUN">June</option>
+                <option value="JUL">July</option>
+                <option value="AUG">August</option>
+                <option value="SEP">September</option>
+                <option value="OCT">October</option>
+                <option value="NOV">November</option>
+                <option value="DEC">December</option>
+             </select>
+
+             <select id="year" name="expyear" required="required">
+              <option value="null">Expiration year</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+             </select>              
               <input type="text" name="cvs" class="" value="" placeholder="CVS number" required="required">
               <button class="submit">Checkout</button><br /> 
             </div>            

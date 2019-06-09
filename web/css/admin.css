@@ -1,25 +1,24 @@
-*{
+/* ###############General################## */
+
+* {
 	padding: 0;
 	margin: 0;
     border: 0;
+	font-size: 100%;
 }
-html, body, div, h1, h2, h3, h4, a, strong, ul, li{
-	margin: 0;
-	padding: 0;
-	border: 0;
-    font-size: 100%;
-}
-ul{
-	list-style: none;
-}
-a, nav a{
+
+ul { list-style: none; }
+
+a {
 	color: #FFD700;
 	text-decoration: none;
 }
-li, p, strong{
+
+li, p, strong {
 	font-size: 15px;
 	line-height: 22px;
 }
+
 hr{
 	background: #e0e0e0;
 	height: 1px;
@@ -30,38 +29,39 @@ h1, h2, h3, h4{
 	color: #FFD700;
 	padding-bottom: 23px;
 }
+
 h1{font-size: 32px;}
-h2{font-size: 27px;}
+h2{font-size: 27px}
 h3{font-size: 22px;}
 h4{font-size: 17px;}
 
-body{
-	min-width: 980px;
+body {
+	min-width: 960px;
 	margin: 0 auto;
 	font-family: Arial, Helvetica, sans-serif;
 	background-image: url("../images/get-involved.png");
 }
-/* header - logo and navigation */
-.top{
-  	margin: 14px 0 0 14px;
-}
+/* ###############Login Page - Top################## */
+
+.top{margin: 14px 0 0 14px;}
+
 .logo{
 	position: absolute;
 	text-align: center;
 }
+
 .logo img{
 	width: 17%;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
+
 nav.main{
 	position: relative;
 	float: right;
 	margin: 30px 0 0 0;
 	font-family: Arial, Helvetica, sans-serif;
 }
-nav.main ul{
-	list-style: none;
-}
+
 nav.main ul li{
 	height: 30px;
 	font-size: 14px;
@@ -69,11 +69,13 @@ nav.main ul li{
 	margin: 0 2px;
 	float: left;
 }
+
 nav.main ul li a{
 	color: #777;
 	padding: 0 10px;
 	float: left;
 }
+
 nav.main ul li a:hover{
 	color: #fefefe;
 	background: #FFD700;
@@ -81,53 +83,70 @@ nav.main ul li a:hover{
 	border-radius: 3px;
 	position: relative;
 }
-.logout{
-	height: 30px;
-	font-size: 14px;
-	line-height: 30px;
-	margin: 0 2px;
-	float: left;	
-}
-/* Container */
+
+/* #################Container################### */
+
 .container{
 	margin-left: auto;
 	margin-right: auto;
 	width: 1020px;
 }
-.content, .space{
+.content, .login{
 	display: inline;
-	margin-left: 18px;
-	margin-right: 12px;
+	margin: 0 12px 10px 5px;
 	float: left;
-}
-.container .space{
-	width: 480px;
 }
 .container .content{
 	width: 980px;
 	position: relative;
 }
-/* two columns */
-.box {
-	width: 450px;
-	height: 300px;
-	margin: 20px auto;
+input {
+	width:90%;
+	margin: 5px auto;
+	margin-bottom:20px;
+	height: 35px;
 	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
 }
+
+button {
+	height: 40px;
+	margin:5px;
+	display: block;
+	background: #FFD700;
+	color: #fefefe;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	border-radius: 4px;
+	width: 120px;
+}
+
+button:hover {
+	background: #87CEFA;
+	color: black;
+	box-shadow: 0px 0px 2px #87CEFA;
+}
+/* ###########Admin Dashboard Boxes############ */
+
+.box {
+	width:450px;
+	height:300px;
+	margin:0 auto;
+	padding:20px;
+	background-color:#27aae1;
+}
+
 .left {
-	clear: both;
-	float: left;
+	clear:both;
+	float:left;
 }
+
 .right {
-	float: right;
+	float:right;
 }
-.image img{
-	width: 100%;
-	margin: 0 auto;
-	border: 8px solid #fff;
-}
-.image img:hover {	
-	width: 115%;
-	height: 115%;
-	border: 8px solid #9ACD32;	
+
+#message {
+	margin-left: 170px;
 }
