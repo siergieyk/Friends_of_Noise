@@ -109,6 +109,7 @@ button:hover, input[type="submit"]:hover{
 }
 .event a{
     font-weight: bold;
+    color: red;
 }
 /* single event page */
 .center{
