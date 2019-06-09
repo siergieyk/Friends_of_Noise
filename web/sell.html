@@ -4,43 +4,48 @@
   <meta charset="UTF-8">
   <title>Sell</title>
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/sell.css" rel="stylesheet" type="text/css">
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+  <script type="text/javascript" src="js/auth.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
 </head>
 
-<body>
+<body>     
       <div class="top">
-        <h4>Already a Member? <a href="login.html">User Visitor</a></h4>
-          <div class="logo">
-            <img src="images/FoNlogo.png">
-          </div>
-      </div>
-
+          <h4 id="text"></h4>  
+        </div>
+        <div class="logo"> 
+          <img src="images/FoNlogo.png"> 
+        </div>
+      </div> 
+      
       <nav class="main">
         <ul>
-          <li><a href="admin_dash.html">Admin</a></li>
+          <li><a href="http://www.friendsofnoise.org/" target="_blank">Home</a></li>
         <li class="separator">|</li>
-          <li><a href="member.html">Members</a></li>
+          <li><a href="event.html">Events</a></li>
         <li class="separator">|</li>
-          <li><a href="single-event.html">Events</a></li>
+          <li><a href="register.html">Sign Up</a></li>
         <li class="separator">|</li>
           <li><a href="login.html">Sign In</a></li>
         <li class="separator">|</li>
-          <li><a href="logout.html">Logout</a></li>
+          <li><a href="logout.html" onclick="logout()">Logout</a></li>
         </ul>
-      </nav>
-
+      </nav>             
+  
   <section id="account" class="width">
-    <div class="container">
+    <div class="container">      
         <div class="content">
           <h1>Checkout</h1><br />
           <hr>
         </div>
-
+        
         <div class="checkout">
           <div class="music">
               <div class="image">
                  <a href="single-event.html"><img src="images/Hero-compressor.jpg"></a>
               </div>
-
+             
           <table class="table">
             <tr>
               <td><strong>Upcoming Event: </strong></td>
@@ -52,17 +57,18 @@
             </tr>
             <tr>
               <td><strong>Member Cost: </strong></td>
-              <td>$ 50</td>
+              <td>$ 5</td>
             </tr>
             <tr>
               <td><strong>Non-Member: </strong></td>
-              <td>$150</td>
+              <td>$15</td>
             </tr>
             <tr>
               <td><strong>Category: </strong></td>
               <td class="category">
-                 <a href="https://fon.ichortest.com/">Music</a> |
-                 <a href="http://www.friendsofnoise.org/">Events</a>
+                 <a href="https://fon.ichortest.com/" target="_blank">Music</a>
+                 |
+                 <a href="http://www.friendsofnoise.org/" target="_blank">Events</a>
               </td>
             </tr>
             <tr>
@@ -72,48 +78,141 @@
             <tr>
               <td><strong>Address: </strong></td>
               <td>1234 Example St, OR</td>
-            </tr>
-          </table>
-          <br />
+            </tr>     
+          </table><br />                   
         </div>
 
-          <div class="leftcolumn">
-           <form class="guest">
-              <ul class="radio">
-                <h3>Buy Event Ticket</h3>
-                <li><input type="radio" id="guest" name="type" value="guest" onclick="window.location='checkout.html'">
-                  <label for="guest">Checkout as Guest</label></li>
-                <li><input type="radio" id="member" name="type" value="member" onclick="window.location='register.html'">
-                  <label for="member">Register a Member</label></li>
-                <br />
-               </ul>
-            </form>
-          </div>
+          <div id="div">
+            <div class="leftcolumn"> 
+             <div class="guest">               
+                <ul class="radio">
+                  <h3>Buy Event Ticket</h3>
+                  <li><input type="radio" id="guest" name="type" value="guest" onclick="window.location='checkout.html'">
+                    <label for="guest">Checkout as Guest</label></li>
+                  <li><input type="radio" id="member" name="type" value="member" onclick="window.location='register.html'">
+                    <label for="member">Register a Member</label></li>
+                  <br />             
+                </ul>
+              </div>
+            </div>
 
           <div class="rightcolumn">
-              <form class="registed">
-                <h2>Registed Member</h2>
+             <div class="board">
+                <h2>Registered Member</h2>      
                 <p>If you have an account with us, please sign in your account.</p><br/>
-
+                      
                 <div class="email">
                   <strong>Email Address: </strong><sup class="asterism">*</sup><br/>
-                  <input type="email" name="" class="" value="" />
+                  <input type="email" id="email" />
                 </div>
-
+                      
                 <div class="password">
                   <strong>Password: </strong><sup class="asterism">*</sup><br/>
-                  <input type="password" name="" class="" value="" />
+                  <input type="password" id="password" />
+
                   <a class="forgot" href="forgot.html">Forgot Your Password?</a>
                 </div>
-
-                <div class="submit">
-                  <button type="submit" value="Sign In" />
-                  <sup class="sup">* </sup><span>Required Field</span>
+                
+                <div class="submit">            
+                  <button onclick="login()">Sign In</button>
+                  <div class="required">
+                    <sup class="sup">* </sup><span>Required Field</span>
+                  </div>
                 </div>
-              </form>
+              </div>             
             </div>
-    </div>
-  </section>
+      </div>
 
+      <div id="users">
+          <div class="leftcolumn">
+            <div class="card">
+                <h3>Member Payment</h3>
+                <p><label><input type="checkbox" name="gift">   Gift membership</label><br />
+                <label><input type="checkbox" name="donation" >  Make a donation</label></p><br />
+                <hr>
+                <div class="payleft">         
+            <div class="billaddr"><h3>Billing Address</h3>
+                <p><label for="firstname">First Name </label><input type="text" id="firstname" name="fname"></p>
+                <p><label for="lastname">Last Name </label><input type="text" id="lastname" name="lname"></p>
+                <p><label for="email">Email </label><input type="text" id="email" name="email"></p>
+                <p><label for="streetaddress">Address </label><input type="text" id="streetaddress" name="address"></p>
+                <p><label for="city">City </label><input type="text" id="city" name="city"></p>
+                <p><label for="state">State </label>   
+            <select id="state" class="stateus" name="state">
+              <option value="null">Select a State</option>
+              <option value="AL">Alabama</option>
+              <option value="AK">Alaska</option>
+              <option value="AZ">Arizona</option>
+              <option value="AR">Arkansas</option>
+              <option value="CA">California</option>
+              <option value="CO">Colorado</option>
+              <option value="CT">Connecticut</option>
+              <option value="DE">Delaware</option>
+              <option value="DC">District Of Columbia</option>
+              <option value="FL">Florida</option>
+              <option value="GA">Georgia</option>
+              <option value="HI">Hawaii</option>
+              <option value="ID">Idaho</option>
+              <option value="IL">Illinois</option>
+              <option value="IN">Indiana</option>
+              <option value="IA">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="KY">Kentucky</option>
+              <option value="LA">Louisiana</option>
+              <option value="ME">Maine</option>
+              <option value="MD">Maryland</option>
+              <option value="MA">Massachusetts</option>
+              <option value="MI">Michigan</option>
+              <option value="MN">Minnesota</option>
+              <option value="MS">Mississippi</option>
+              <option value="MO">Missouri</option>
+              <option value="MT">Montana</option>
+              <option value="NE">Nebr />a</option>
+              <option value="NV">Nevada</option>
+              <option value="NH">New Hampshire</option>
+              <option value="NJ">New Jersey</option>
+              <option value="NM">New Mexico</option>
+              <option value="NY">New York</option>
+              <option value="NC">North Carolina</option>
+              <option value="ND">North Dakota</option>
+              <option value="OH">Ohio</option>
+              <option value="OK">Oklahoma</option>
+              <option value="OR">Oregon</option>
+              <option value="PA">Pennsylvania</option>
+              <option value="RI">Rhode Island</option>
+              <option value="SC">South Carolina</option>
+              <option value="SD">South Dakota</option>
+              <option value="TN">Tennessee</option>
+              <option value="TX">Texas</option>
+              <option value="UT">Utah</option>
+              <option value="VT">Vermont</option>
+              <option value="VA">Virginia</option>
+              <option value="WA">Washington</option>
+              <option value="WV">West Virginia</option>
+              <option value="WI">Wisconsin</option>
+              <option value="WY">Wyoming</option>
+            </select></p>
+                  <p><label for="zip">Zip </label><input type="text" id="zip" name="zip"></p>
+            </div>
+          </div>
+                     
+            <div class="payright"> 
+            <div class="payinfo"><h3>Payment Information</h3>
+              <p><label for="name">Name On Card </label><input type="text" id="name" name="name"></p>
+              <p><label for="cardnum">Credit Card Number </label><input type="text" id="cardnum" name="card"></p>
+              <p><label for="cvv">CVV </label><input type="text" id="cvv" name="cvv"></p>
+              <p><label for="expmonth" >Expiration Month </label><input type="text" id="expmonth" name="expmonth"></p>
+              <p><label for="expyear">Expiration Year </label><input type="text" id="expyear" name="expyear"></p>
+              <p><label><input type="checkbox" name="same" class="sameadd"> Shipping address same as billing </label></p>
+
+              <p><input type="submit" value="Make Payment" class="button"></p>                      
+           </div>
+         </div>         
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
 </body>
 </html>
