@@ -1,5 +1,5 @@
 <?php include "includes/config.php";
-      include "includes/header.php";
+	    include "includes/header.php";
 
 $firstname = $_POST["firstname"];
 $lastname = $_POST["lastname"];
@@ -15,7 +15,7 @@ $sql = "INSERT INTO guestcheckout(first_name, last_name, address, addressoptiona
 VALUES('$firstname', '$lastname', '$address', '$addressoptional', '$city', '$state', '$zip', '$email');";
 
 // Check connection
-if ($conn->query($sql) === TRUE) {    
+if ($conn->query($sql) === TRUE) {
     echo "";
 
 } else {
@@ -24,20 +24,20 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 
-?> 
+?>
 
   <section id="account" class="width">
-    <div class="container">      
+    <div class="container">
         <div class="content">
           <h1>Guest Checkoutr</h1><br />
           <hr>
         </div>
-          <div class="left box"> 
+          <div class="left box">
             <h1>New record created successfully in Friends of Noise.</h1>
-          </div> 
+          </div>
           <div class="right box">
-            <div class="image"> 
-                  <img src="../web/images/fon-03.jpg"> 
+            <div class="image">
+                  <img src="../web/images/fon-03.jpg">
             </div>
           </div>
     </div>

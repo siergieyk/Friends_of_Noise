@@ -13,7 +13,7 @@ $city = $_POST["city"];
 $state = $_POST["state"];
 $zip = $_POST["zip"];
 $newsletter = $_POST["newsletter"];
-$date = (Y-m-d); 
+$date = (Y-m-d);
 
 $sql = "INSERT INTO members (email, first_name, last_name, user_name, password, age, phone, address, city, state, zip, newsletter, date)
 
@@ -27,7 +27,7 @@ if(isset($_POST['newsletter']) && $_POST['newsletter'] == '1'){
 }
 
 // Check connection
-if ($conn->query($sql) === TRUE) {    
+if ($conn->query($sql) === TRUE) {
     echo "";
 
 } else {
@@ -36,20 +36,20 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 
-?> 
+?>
 
   <section id="account" class="width">
-    <div class="container">      
+    <div class="container">
         <div class="content">
           <h1>New Member</h1><br />
           <hr>
         </div>
-          <div class="left box"> 
+          <div class="left box">
             <h1>New record created successfully in Friends of Noise.</h1>
-          </div> 
+          </div>
           <div class="right box">
-            <div class="image"> 
-                  <img src="../web/images/fon-02.jpg"> 
+            <div class="image">
+                  <img src="../web/images/fon-02.jpg">
             </div>
           </div>
     </div>

@@ -10,14 +10,14 @@
   <script type="text/javascript" src="js/auth.js"></script>
 </head>
 
-<body>     
+<body>
       <div class="top">
         <h4>Already a Member? <a href="login.html">User Visitor</a></h4>
-          <div class="logo"> 
-            <img src="images/FoNlogo.png"> 
+          <div class="logo">
+            <img src="images/FoNlogo.png">
           </div>
-      </div> 
-      
+      </div>
+
       <nav class="main">
         <ul>
           <li><a href="http://www.friendsofnoise.org/" target="_blank">Home</a></li>
@@ -28,14 +28,14 @@
         <li class="separator">|</li>
           <li><a href="login.html">Sign In</a></li>
         </ul>
-      </nav>         
-  
+      </nav>
+
   <section id="account" class="width">
-    <div class="container">      
+    <div class="container">
         <div class="content">
       <h1>Create an Account</h1><br />
       <hr>
-    </div>      
+    </div>
     <div class="register">
       <form class="info" action="../app/register.php" method="post">
             <div class="left box">
@@ -115,9 +115,29 @@
               </label>
             </div>
               <button onclick="signUp()"class="btn">Submit</button>
-        </form>      
+        </form>
       </div>
   </div>
+
+
+  <!-- Below is the initialization snippet for Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC0N7dTxzX551I3SeSMcxkx1PJbaAHzVR0",
+      authDomain: "fonproject-faf34.firebaseapp.com",
+      databaseURL: "https://fonproject-faf34.firebaseio.com",
+      projectId: "fonproject-faf34",
+      storageBucket: "fonproject-faf34.appspot.com",
+      messagingSenderId: "572276368012"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <script src="../app/loginAuth.php">
+
+  </script>
 </section>
 
 </body>

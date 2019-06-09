@@ -51,7 +51,7 @@ body{
 }
 .logo img{
 	width: 17%;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 nav.main{
 	position: relative;
@@ -86,7 +86,7 @@ nav.main ul li a:hover{
 	font-size: 14px;
 	line-height: 30px;
 	margin: 0 2px;
-	float: left;	
+	float: left;
 }
 /* Container */
 .container{
@@ -126,8 +126,8 @@ nav.main ul li a:hover{
 	margin: 0 auto;
 	border: 8px solid #fff;
 }
-.image img:hover {	
+.image img:hover {
 	width: 115%;
 	height: 115%;
-	border: 8px solid #9ACD32;	
+	border: 8px solid #9ACD32;
 }
