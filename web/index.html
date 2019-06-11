@@ -2,68 +2,231 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>index</title>
+  <title>Index</title>  
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/login.css" rel="stylesheet" type="text/css">
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+  <script type="text/javascript" src="js/auth.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+  <script src='http://fullcalendar.io/js/fullcalendar-2.1.1/lib/jquery.min.js'></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script> 
+  <script type="text/javascript" src="js/slide.js"></script>
+  <link rel="shortcut icon" href="images/fon-yellow.jpg" />    
 </head>
 
-<body>
+<body>     
       <div class="top">
-        <h4>Already a Member? <a href="login.html">User Visitor</a></h4>
-          <div class="logo">
-            <img src="images/FoNlogo.png">
-          </div>
-      </div>
-
+          <h4 id="text"></h4>  
+        </div>
+        <div class="logo"> 
+          <img src="images/FoNlogo.png"> 
+        </div>
+      </div> 
+      
       <nav class="main">
         <ul>
-          <li><a href="admin_dash.html">Admin</a></li>
+          <li><a href="http://www.friendsofnoise.org/" target="_blank">Home</a></li>
         <li class="separator">|</li>
-          <li><a href="member.html">Members</a></li>
+          <li><a href="event.html">Events</a></li>
         <li class="separator">|</li>
-          <li><a href="single-event.html">Events</a></li>
+          <li><a href="register.html">Sign Up</a></li>
         <li class="separator">|</li>
           <li><a href="login.html">Sign In</a></li>
+        <div id="users" class="logout"> 
         <li class="separator">|</li>
-          <li><a href="logout.html">Logout</a></li>
-        </ul>
-      </nav>
-
-  <section id="account" class="width">
-    	<div class="container">
-       	    <div class="content">
-			  <h1>Login or Create an Account</h1><br />
-			  <hr>
-		    </div>
-		    <div class="login">
-				<form class="registed">
-					<h2>Registed Member</h2>
-					<p>If you have an account with us, please sign in your account.</p><br/>
-
-					<div class="email">
-						<strong>Email Address: </strong><sup class="asterism">*</sup><br/>
-						<input type="email" name="" class="" value="" />
-					</div>
-
-					<div class="password">
-						<strong>Password: </strong><sup class="asterism">*</sup><br/>
-						<input type="password" name="" class="" value="" />
-						<a class="forgot" href="forgot.html">Forgot Your Password?</a>
-					</div>
-
-					<div class="submit">
-						<button type="submit" value="Sign In" />
-						<sup class="sup">* </sup><span>Required Field</span>
-					</div>
-				</form>
-            </div>
-
-       	    <div class="login new">
-				      <h2>New Member</h2>
-				      <p>Create your FREE account, you will be able to view and track your orders in your account and more.</p>
-				      <button class="signup">Sign Up</button>
-            </div>
+          <li><a href="logout.html" onclick="logout()">Logout</a></li>
         </div>
-  </section>
+        </ul>
+      </nav>                 
 
+      <section id="account" class="width">
+        <div class="container">      
+          <div class="content">
+              <h1>Login</h1><br />
+            <hr>
+          </div> 
+                   
+          <div id="div">
+            <div class="space">
+              <div id="slider">
+                <ul class="slideshow">
+                  <li class="show"><img width="480" height="405" src="images/fon-01.jpg" alt=""></li>
+                  <li class="show"><img width="480" height="405" src="images/fon-02.jpg" alt=""></li>
+                  <li class="show"><img width="480" height="405" src="images/fon-03.jpg" alt=""></li>
+                  <li class="show"><img width="480" height="405" src="images/fon-04.jpg" alt=""></li>
+                  <li class="show"><img width="480" height="405" src="images/fon-05.jpg" alt=""></li>
+                  <li class="show"><img width="480" height="405" src="images/fon-06.jpg" alt=""></li>
+                </ul>
+              </div>
+            </div>      
+         
+            <div class="space new">
+              <div class="board">
+                <h2>Registered Member</h2>      
+                <p>If you have an account with us, please sign in your account.</p><br/>
+                      
+                <div class="email">
+                  <strong>Email Address: </strong><sup class="asterism">*</sup><br/>
+                  <input type="email" id="email" />
+                </div>
+                      
+                <div class="password">
+                  <strong>Password: </strong><sup class="asterism">*</sup><br/>
+                  <input type="password" id="password" />
+
+                  <a class="forgot" href="forgot.html">Forgot Your Password?</a>
+                </div>
+                
+                <div class="submit">            
+                  <button onclick="login()">Sign In</button>
+                  <div class="required">
+                    <sup class="sup">* </sup><span>Required Field</span>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>    
+
+         <div class="wrap">
+          <div class="left-box">
+              <h2><img width="50" height="50" src="images/bg-sun.jpg" alt=""> Upcoming Event</h2>
+          <div class="upcoming">    
+            <ul>
+             <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="3" direction="up">
+              <li><h2><a href="single-event.html" target="_blank">04/15/2019 Music</a></h2></li>
+              <li><h2><a href="single-event2.html" target="_blank">04/25/2019 Band</a></h2></li>
+              <li><h2><a href="single-event3.html" target="_blank">05/15/2019 Music</a></h2></li>
+              <li><h2><a href="single-event4.html" target="_blank">05/25/2019 Band</a></h2></li>
+              <li><h2><a href="single-event5.html" target="_blank">06/15/2019 Music</a></h2></li>      
+              </marquee>
+            </ul>
+          </div>       
+          </div>
+          
+           <div class="middle-box">
+                 <h2><img width="50" height="50" src="images/bg-eye.jpg" alt=""> Get Involved</h2>              
+                 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+           </div>
+              
+           <div class="right-box">
+                 <h2><img width="50" height="50" src="images/getinvolved-bg-img3.png" alt=""> Shop Our Store</h2>
+                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <a href="retail.html"> Shop Now</a></p>
+           </div>
+         </div> 
+
+         <div id="logged"></div>
+            <ul class="pic">
+              <div id="left-box">
+              <li class="slide">
+              <img src="images/fon-01.jpg" alt="detail" class="slide">
+              <div class="title">
+                <h2>Like</h2>
+                <h3>Dreams</h3>
+              </div>
+              </li>
+            </div>
+            <div id="mid-box">
+              <li class="slide">
+               <img src="images/fon-02.jpg" alt="details" class="slide">
+              <div class="title">
+                <h2>Give</h2>
+                <h3>Wings</h3>
+              </div>
+              </li>
+            </div>
+            <div id="right-box">
+              <li class="slide">
+               <img src="images/fon-03.jpg" alt="details" class="slide">
+              <div class="title">
+                <h2>Universe</h2>
+                <h3>Mind</h3>
+              </div>
+            
+              </li>
+            </div>
+              <div id="left-box">
+              <li class="slide">
+              <img src="images/fon-04.jpg" alt="detail" class="slide">
+              <div class="title">
+                <h2>Truth</h2>
+                <h3>Emotion</h3>
+              </div>
+              </li>
+            </div>
+            <div id="mid-box">
+              <li class="slide">
+               <img src="images/fon-05.jpg" alt="details" class="slide">
+              <div class="title">
+                <h2>Express</h2>
+                <h3>Soul</h3>
+              </div>
+              </li>
+            </div>
+            <div id="right-box">
+              <li class="slide">
+               <img src="images/fon-06.jpg" alt="details" class="slide">
+              <div class="title">
+                <h2>Share</h2>
+                <h3>Feeling</h3>
+              </div>
+              </li>
+            </div>
+              <div id="left-box">
+              <li class="slide">
+              <img src="images/fon-07.jpg" alt="detail" class="slide">
+              <div class="title">
+                <h2>Incredible</h2>
+                <h3>Innovation </h3>
+              </div>
+              </li>
+            </div>
+            <div id="mid-box">
+              <li class="slide">
+               <img src="images/fon-08.jpg" alt="details" class="slide">
+              <div class="title">
+                <h2>Magic</h2>
+                <h3>Love</h3>
+              </div>
+              </li>
+            </div>
+            <div id="right-box">
+              <li class="slide">
+               <img src="images/fon-09.jpg" alt="details" class="slide">
+              <div class="title">
+                <h2>Beautifully</h2>
+                <h3>Listen</h3>
+              </div>
+              </li>
+            </div>
+              <div id="left-box">
+              <li class="slide">
+              <img src="images/fon-10.jpg" alt="detail" class="slide">
+              <div class="title">
+                <h2>Life</h2>
+                <h3>Live</h3>
+              </div>
+              </li>
+            </div>
+            <div id="mid-box">
+              <li class="slide">
+               <img src="images/fon-11.jpg" alt="details" class="slide">
+              <div class="title">
+                <h2>High</h2>
+                <h3>Powerful</h3>
+              </div>
+              </li>
+            </div>
+            <div id="right-box">
+              <li class="slide">
+               <img src="images/fon-12.jpg" alt="details" class="slide">
+              <div class="title">
+                <h2>Across</h2>
+                <h3>Distances</h3>
+              </div>
+              </li>
+            </div>
+            </ul>
+        </div>  
+      </section>
 </body>
 </html>

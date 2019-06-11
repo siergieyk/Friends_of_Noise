@@ -5,17 +5,17 @@
   <title>Checkout as guest</title>
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="css/checkout.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="images/fon-yellow.jpg" /> 
 </head>
 
-<body>
+<body>     
       <div class="top">
-          <h4 id="text"></h4>
-        </div>
-        <div class="logo">
-          <img src="images/FoNlogo.png">
-        </div>
-      </div>
-
+        <h4>Already a Member? <a href="login.html">User Visitor</a></h4>
+          <div class="logo"> 
+            <img src="images/FoNlogo.png"> 
+          </div>
+      </div> 
+      
       <nav class="main">
         <ul>
           <li><a href="http://www.friendsofnoise.org/" target="_blank">Home</a></li>
@@ -26,10 +26,10 @@
         <li class="separator">|</li>
           <li><a href="login.html">Sign In</a></li>
         </ul>
-      </nav>
-
+      </nav>                
+  
   <section id="account" class="width">
-    <div class="container">
+    <div class="container">      
         <div class="content">
           <h1>Guest Checkout</h1><br />
           <hr>
@@ -96,14 +96,14 @@
                 <option value="WV">West Virginia</option>
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
-              </select>
+              </select> 
               <input type="text" name="zip" pattern="[0-9]{5}" class="" value="" placeholder="ZIP code" required="required" />
               <input type="email" name="email" class="" value="" placeholder="Email" required="required" />
               <input type="submit" value="Done" /><br />
             </div>
           </form>
 
-           <div class="right box">
+           <div class="right box">     
             <div class="choose">
               <strong>Pay with: </strong><sup class="asterism">*</sup><br/>
               <ul class="pay">
@@ -111,7 +111,7 @@
                   <label for="card">Credit or debit card</label></li>
                 <li><input type="radio" id="card" name="type" value="paypal" onclick="window.open('https://www.paypal.com/us/home');">
                   <label for="paypal">PayPal</label></li>
-                <br />
+                <br />                
                </ul>
             </div>
 
@@ -149,3 +149,12 @@
                 <option value="2028">2028</option>
                 <option value="2029">2029</option>
                 <option value="2030">2030</option>
+             </select>              
+              <input type="text" name="cvs" class="" value="" placeholder="CVS number" required="required">
+              <button class="submit">Checkout</button><br /> 
+            </div>            
+        </form>
+    </div>
+  </section>
+</body>
+</html>
