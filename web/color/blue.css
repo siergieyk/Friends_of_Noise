@@ -1,0 +1,73 @@
+a, nav a{
+	color: #C1403D;
+	text-decoration: none;
+}
+hr{
+	background: #e0e0e0;
+	height: 1px;
+}
+h1, h2, h3, h4{
+	font-family: Times New Roman, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #C1403D;
+	padding-bottom: 23px;
+}
+body{
+	min-width: 980px;
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url("../images/get-involved.png");
+}
+/* header - logo and navigation */
+nav.main ul li a{
+	color: #03353E;
+	padding: 0 10px;
+	float: left;
+}
+nav.main ul li a:hover{
+	color: #fefefe;
+	background: #0294A5;
+	text-decoration: none;
+	border-radius: 3px;
+	position: relative;
+}
+span{
+	font-weight: 600;
+	color: #03353E;
+}
+.details p{
+	color: #1D65A6;
+}
+ul#filters li a.selected{
+	background: #C1403D;
+}
+ul#home-filters li a.selected, ul#home-filters li a:hover{
+	background: #C1403D;
+}
+ul#filters li a:hover{
+	color:#fff;
+	background: #C1403D;
+}
+ul#filters li.selected a{
+	color:#fff;
+	background: #C1403D;
+}
+button, input[type="submit"]{
+	margin: 0px 0 0 10px;
+	height: 40px;
+	display: block;
+	background: #C1403D;
+	color: #fefefe;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	border-radius: 4px;
+	width: 140px;
+	display: inline-block;
+}
+button:hover, input[type="submit"]:hover{
+	box-shadow: 0px 0px 2px #C1403D;
+	background: #fff;
+    border: 1px solid #C1403D;
+    cursor: pointer;
+}

@@ -3,12 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <title>Our Store</title>
+  <!-- main style --> 
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="css/event.css" rel="stylesheet" type="text/css">
+  <link href="images/fon-yellow.jpg" rel="shortcut icon" /> 
+  <!-- google firebase auth -->
   <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
   <script type="text/javascript" src="js/auth.js"></script>
   <script type="text/javascript" src="js/login.js"></script>
-  <link rel="shortcut icon" href="images/fon-yellow.jpg" />
+
+  <!-- Background colors -->
+  <link href="colorbox.css" rel="stylesheet" type="text/css" media="screen" />   
+  <link href="color/black.css" rel="stylesheet" type="text/css"  media="screen" title="black" />
+  <link href="color/blue.css" rel="stylesheet" type="text/css" media="screen" title="blue" />
+  <link href="color/darkblue.css" rel="stylesheet" type="text/css"  media="screen" title="darkblue" />
+  <link href="color/green.css" rel="stylesheet" type="text/css" media="screen" title="green" />
+  <link href="color/lightblue.css" rel="stylesheet" type="text/css"  media="screen" title="lightblue" />
+  <link href="color/orange.css" rel="stylesheet" type="text/css" media="screen" title="orange" />
+  <link href="color/purple.css" rel="stylesheet" type="text/css"  media="screen" title="purple" />
+  <link href="color/red.css" rel="stylesheet" type="text/css"  media="screen" title="red" />
+  <link href="color/yellow.css" rel="stylesheet" type="text/css"  media="screen" title="yellow" />
+
+  <!-- jQuery slider -->
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="js/styleswitch.js"></script>    
+ 
+  <script type="text/javascript">
+      $(function(){
+
+          $.stylesheetInit();
+          
+          $('.styleswitch').bind('click', function(e){
+              $.stylesheetSwitch(this.getAttribute('rel'));
+              return false;
+            }
+          );
+        }
+      );
+  </script>    
 </head>
 
 <body>     
@@ -176,6 +208,25 @@
          </div>
        </div>
 </section>
+          <div class="wrapper">
+              <div class="font">
+                <div class="inner">       
+                  <span>Background Color</span>
+                    <ul id="colors">
+                      <li><a href="#" rel="black" class="styleswitch color-black">black</a></li>       
+                      <li><a href="#" rel="blue" class="styleswitch color-blue">blue</a></li>
+                      <li><a href="#" rel="green" class="styleswitch color-green">green</a></li>
+                      <li><a href="#" rel="lightblue" class="styleswitch color-lightblue">lightblue</a></li>
+                      <li><a href="#" rel="orange" class="styleswitch color-orange">orange</a></li>
+                      <li><a href="#" rel="purple" class="styleswitch color-purple">purple</a></li>
+                      <li><a href="#" rel="red" class="styleswitch color-red">red</a></li>                        
+                      <li><a href="#" rel="yellow" class="styleswitch color-yellow">yellow</a></li>
+                      <li><a href="#" rel="darkblue" class="styleswitch color-darkblue">darkblue</a></li> 
+                    </ul>
+                </div>
+              </div>
+              <div class="open-close"></div>
+            </div>   
   
 </body>
 </html>

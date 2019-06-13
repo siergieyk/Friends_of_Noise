@@ -1,0 +1,73 @@
+/* color box on left*/
+.wrapper{
+	position: fixed;
+	z-index: 4000;
+	top: 150px;
+	left: -135px;
+}
+.font{
+	float: left;
+	background-color: #24150E;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: center;
+	font-family: Helvetica, Arial;
+	padding: 10px 10px;
+	border-bottom-right-radius: 3px;	
+}
+.inner{
+	overflow: hidden;
+	width: 114px;	
+}
+.wrapper a{
+	float: left;
+	display: inline-block;		
+}
+ul#colors li a{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	text-indent: 200px;
+}
+ul#colors li{
+	float: left;
+	padding: 3px;
+	padding-left:3px;
+	padding-bottom:5px;	
+}
+a.color-black{
+	background: #07000E;
+}
+a.color-blue{
+	background: #0584F2;
+}
+a.color-green{
+	background: #107050;
+}
+a.color-lightblue{
+	background: #328DAA;
+}
+a.color-orange{
+	background: #F08B33;
+}
+a.color-purple{
+	background: #5C4A72;
+}
+a.color-red{
+	background: #D72F01;
+}
+a.color-yellow{
+	background: #F4ED71;
+}
+a.color-darkblue{
+	background: #2B193E;
+}
+div.open-close{
+	position: relative;
+	left: -1px;
+	display: block;
+	width: 28px;
+	height: 30px;
+	float: left;
+	background: url(images/button.png);
+}

@@ -27,16 +27,27 @@ button:hover, input[type="submit"]:hover{
 	color: black;
 	box-shadow: 0px 0px 2px #87CEFA;
 }
-/* event and retail page - 3 columns*/
 .wrap{
 	position: relative; 
 	width: 980px; 
 	margin: 0 auto; 
 	padding: 0;
 }
+.left{
+	clear: both;
+	float: left;
+	width: 450px;
+	height: 200px;
+}
+.right{
+	float: right;
+	width: 450px;
+	height: 200px;
+}
 .wrap h2{
 	color: black;
 	font-size: 26px;
+	color: #F1F3F2;
 	font-weight: 600;
 	font-family: "Times New Roman", Times, serif;
 	margin-top: 10px;
@@ -48,6 +59,7 @@ button:hover, input[type="submit"]:hover{
 	margin: 0 auto;
 	padding: 0 10px 5px 10px;
 }
+/* event and retail page - 3 columns*/
 #left-box{
 	float: left;
 	width: 32%;
@@ -65,7 +77,7 @@ button:hover, input[type="submit"]:hover{
 }
 /*  event page - calendar */
 .date{
-	margin: 20px 0px 10px 0px;
+	margin: 0 auto;
  	padding: 10px;
  	width: 200px;
  	background:url(../images/cal-icon.png) no-repeat 100% 50% #FFF;
@@ -110,6 +122,7 @@ button:hover, input[type="submit"]:hover{
 .event a{
     font-weight: bold;
     color: red;
+
 }
 /* single event page */
 .center{
@@ -134,7 +147,7 @@ button:hover, input[type="submit"]:hover{
 	margin: 20px 0px 10px 0px;
  	padding: 10px;
  	height: 175px;
- 	width: 300px;
+ 	width: 315px;
  	float: left;	
  	border: 7px dotted #FFD700;
  	background-image: url("../images/bg-blue.jpg");
@@ -152,3 +165,48 @@ button:hover, input[type="submit"]:hover{
 button.buy{
 	width: 180px;
 }
+/* category bar */
+ul#filters{
+	float: left;
+	margin-top: 6px;
+}
+ul#filters li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+ul#filters li a{
+	color: #686868;
+	background: #f7f7f7;
+	padding: 8px 15px 9px 15px;
+	margin-left: 1px;
+	font-weight: 600;
+	display: block;
+}
+ul#filters li a.selected{
+	color: #fff;
+}
+ul#home-filters{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+ul#home-filters li a{
+	color: #686868;
+	background: #f7f7f7;
+	padding: 3px 15px;
+	margin-left: 1px;
+	font-weight: 600;
+	display: block;
+}
+ul#home-filters li a.selected, ul#home-filters li a:hover{
+	color: #fff;
+}
+#home-filters li{
+	display: inline;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+

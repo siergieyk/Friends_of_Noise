@@ -1,0 +1,73 @@
+a, nav a{
+	color: #F4F3F4;
+	text-decoration: none;
+}
+hr{
+	background: #e0e0e0;
+	height: 1px;
+}
+h1, h2, h3, h4{
+	font-family: Times New Roman, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #F4F3F4;
+	padding-bottom: 23px;
+}
+body{
+	min-width: 980px;
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #5C4A72;
+}
+/* header - logo and navigation */
+nav.main ul li a{
+	color: #B9C406;
+	padding: 0 10px;
+	float: left;
+}
+nav.main ul li a:hover{
+	color: #fefefe;
+	background: #D50B53;
+	text-decoration: none;
+	border-radius: 3px;
+	position: relative;
+}
+span{
+	font-weight: 600;	
+	color: #B9C406;
+}
+.details p{
+	color: #A882C1;
+}
+ul#filters li a.selected{
+	background: #D50B53;
+}
+ul#home-filters li a.selected, ul#home-filters li a:hover{
+	background: #D50B53;
+}
+ul#filters li a:hover{
+	color:#fff;
+	background: #D50B53;
+}
+ul#filters li.selected a{
+	color:#fff;
+	background: #D50B53;
+}
+button, input[type="submit"]{
+	margin: 0px 0 0 10px;
+	height: 40px;
+	display: block;
+	background: #D50B53;
+	color: #fefefe;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	border-radius: 4px;
+	width: 140px;
+	display: inline-block;
+}
+button:hover, input[type="submit"]:hover{
+	box-shadow: 0px 0px 2px #D50B53;
+	background: #fff;
+    border: 1px solid #D50B53;
+    cursor: pointer;
+}
