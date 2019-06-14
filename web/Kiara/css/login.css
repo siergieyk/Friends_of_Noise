@@ -1,0 +1,283 @@
+*{
+	padding: 0;
+	margin: 0;
+    border: 0;
+}
+html, body, div, h1, h2, h3, h4, a, strong, ul, li{
+	margin: 0;
+	padding: 0;
+	border: 0;
+    font-size: 100%;
+}
+ul{
+	list-style: none;
+}
+a, nav a{
+	color: #FFD700;
+	text-decoration: none;
+}
+li, p, strong{
+	font-size: 15px;
+	line-height: 22px;
+}
+hr{
+	background: #e0e0e0;
+	height: 1px;
+}
+h1, h2, h3, h4{
+	font-family: Times New Roman, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #444444;
+	padding-bottom: 23px;
+}
+h1{font-size: 32px;}
+h2{font-size: 27px}
+h3{font-size: 22px;}
+h4{font-size: 17px;}
+
+body{
+	min-width: 960px;
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+	background: radial-gradient(circle, #0584F2, #DAA2DA);
+}
+/* login page - top */
+.top{
+  	margin: 14px 0 0 14px;
+}
+.logo{
+	position: absolute;
+	text-align: center;
+}
+.logo img{
+	width: 17%;
+    margin: 0 auto; 
+}
+nav.main{
+	position: relative;
+	float: right;
+	margin: 30px 0 0 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+nav.main ul{
+	list-style: none;
+}
+nav.main ul li{
+	height: 30px;
+	font-size: 14px;
+	line-height: 30px;
+	margin: 0 2px;
+	float: left;
+}
+nav.main ul li a{
+	color: #777;
+	padding: 0 10px;
+	float: left;
+}
+nav.main ul li a:hover{
+	color: #fefefe;
+	background: #FFD700;
+	text-decoration: none;
+	border-radius: 3px;
+	position: relative;
+}
+/* Container */
+.container
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1020px;
+}
+/* login page - login and new */
+.content, .login{
+	display: inline;
+	margin-left: 18px;
+	margin-right: 12px;
+	float: left;
+}
+.container .login{
+	width: 480px;
+	height: 400px;
+}
+.container .content{
+	width: 980px;
+	position: relative;
+}
+/* login page */
+form.registed{
+	margin: 40px 0 0 0;
+	padding: 22px;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+}
+form.registed strong{
+	color: #707070;
+	font: bold Arial, Helvetica, sans-serif;
+}
+form.registed input[type="text"],
+form.registed input[type="email"],
+form.registed input[type="password"], select{
+	width: 255px;
+	margin: 5px 0 14px 0;
+}
+form.registed a.forgot{
+	font-size: 12px;
+	color: #707070;
+	margin-left: 12px;
+}
+form.registed .submit{
+	font-size: 15px;
+	color: red;
+	margin: 20px 0 20px 0;
+}
+form.registed .submit input[type="submit"]{
+	float: left;
+	margin: 0 180px 0 0;
+	width: 110px;
+	font: bold Arial, Helvetica, sans-serif;
+}
+input[type="text"], input[type="email"], input[type="password"]{
+	height: 35px;
+	padding: 0 10px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus{
+	outline:none;
+	border: 1px solid red;
+	box-shadow: 0px 0px 4px red;
+}
+button, input[type="submit"]{
+	height: 40px;
+	display: block;
+	background: #FFD700;
+	color: #fefefe;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	border-radius: 4px;
+	width: 120px;
+}
+button:hover, input[type="submit"]:hover{
+	background: #87CEFA;
+	color: black;
+	box-shadow: 0px 0px 2px #87CEFA;
+}
+.new{
+	margin-top: 65px;
+}
+.new p{
+	margin-bottom: 35px;
+}
+.new button.signup{
+	width: 120px;
+}
+/* register page  */
+form.info, select{
+	margin: 45px 0 0 0;
+	padding: 22px;
+}
+form.info input[type="text"],
+form.info input[type="email"],
+form.info input[type="password"], select{
+	width: 400px;
+	margin: 5px 0 14px 0;
+}
+form.info button{
+	width: 200px;
+}
+select{
+    height: 35px;
+    width: 420px;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;	
+}
+.center{
+    width: 185px;
+    margin: 2px auto;
+}
+/* sell page */
+.checkout{
+	margin: 0 auto;
+	padding: 5px;
+	width: 1080px;
+	display: inline-block;	
+}
+.music{ 
+	margin: 20px 0 0 0;
+ 	padding: 5px;
+ 	height: 300px;
+ 	width: 290px;
+ 	float: left;
+}
+.leftcolumn{	
+ 	margin: 40px 0 0 0;
+	padding: 10px;
+	height: 300px;
+	width: 290px;
+ 	display: inline;
+ 	float: left;	
+}
+.rightcolumn{ 
+ 	height: 300px;
+ 	width: 470px;
+ 	float: left;
+	position: relative;
+}
+.image img{
+	width: 100%;
+	margin: 0 auto;
+	border: 8px solid #fff;
+}
+.image img:hover {	
+	width: 115%;
+	height: 115%;
+	border: 8px solid #9ACD32;	
+}
+.table{
+	width: 105%;
+}
+.radio{
+	margin-left: 65px;
+}
+/* event page */
+.event{
+	margin: 0 auto;
+	width: 950px;
+}
+.event .leftcolumn{
+	margin: 20px 0px 10px 0px;
+ 	padding: 10px;
+ 	height: 175px;
+ 	width: 300px;
+ 	float: left;	
+ 	border: 7px dotted #FFD700;
+}
+.event .rightcolumn { 
+	float: right;
+ 	color: #333;
+ 	margin: 10px 0px 10px 0px;
+ 	padding: 5px;
+ 	height: 500px;
+ 	width: 580px;
+ 	display: inline;
+ 	position: relative;
+}
+button.buy{
+	width: 180px;
+}
+/* Admin Dashboard Boxes */
+.box {
+  width:450px;
+  height:300px;
+  margin:20px auto;
+  padding:10px;
+}
+.left {
+	clear:both;
+	float:left;
+}
+.right {
+	float:right;
+}

@@ -1,0 +1,112 @@
+body{
+	background-image: url(http://themcmorrislife.com/images/home-bg.png)
+}
+
+.row {
+  margin: 0 auto;
+	width: 50%;
+	padding: 15px;
+}
+
+
+.inside_con {
+	display: inline-block;
+}
+
+.outside_con{
+	display: block;
+}
+
+.inside_con,
+.outside_con {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #099556;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #000;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.middle{
+	margin: 30px 0 0  14px;
+}
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:15%;
+  height:auto;
+}
+
+nav.main{
+	text-align: center;
+	margin: 20px 0 0 0;
+	/*position: relative;
+	float: right;
+	margin: 30px 0 0 0;*/
+	font-family: Arial, Helvetica, sans-serif;
+}
+nav.main ul{
+	display: inline-block;
+	list-style: none;
+}
+nav.main ul li{
+	height: 30px;	
+	font-size: 14px;
+	line-height: 30px;
+	margin: 0 2px;
+	float: left;
+}
+nav.main ul li a{	
+	color: #777;
+	padding: 0 10px;		
+	float: left;
+}
+nav.main ul li a:hover{
+	color: #fefefe;
+	background: #87CEFA;
+	text-decoration: none;
+	border-radius: 3px;
+	position: relative;
+}
+
+.payment_lb{
+	text-align: center;
+}
