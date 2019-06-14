@@ -73,8 +73,9 @@ last_name VARCHAR(60) NOT NULL,
 email VARCHAR(45) NOT NULL,
 `password` VARCHAR(45) NOT NULL);
 
+
 CREATE TABLE guestcheckout(
-transactionID INT NOT NULL,
+transactionID INT UNIQUE AUTO_INCREMENT,
 #UID VARCHAR(100) PRIMARY KEY,
 First_Name VARCHAR(45) NOT NULL,
 Last_Name VARCHAR(45) NOT NULL,
@@ -83,10 +84,8 @@ Address VARCHAR(60) NOT NULL,
 AddressOptional VARCHAR(60) DEFAULT NULL,
 City VARCHAR(45) NOT NULL,
 State VARCHAR(45) NOT NULL,
-Zip VARCHAR(10) NOT NULL,
-itemID INT,
-CONSTRAINT guestcheckout_transactionID_K PRIMARY KEY(transactionID),
-CONSTRAINT merch_item_itemID_FK FOREIGN KEY(itemID) REFERENCES merchandise_tickets(itemID));
+Zip VARCHAR(10) NOT NULL);
+
 
 DROP VIEW IF EXISTS members_items;
 CREATE VIEW members_items
