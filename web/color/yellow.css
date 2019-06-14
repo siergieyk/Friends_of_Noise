@@ -38,17 +38,29 @@ span{
 .details p{
 	color: #192E5B;
 }
+ul#filters{
+	float: left;
+	margin-top: 6px;
+}
+ul#filters li{
+	display: inline;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+ul#filters li a{
+	color: #686868;
+	background: #f7f7f7;
+	padding: 8px 15px 9px 15px;
+	margin-left: 1px;
+	font-weight: 600;
+	display: block;
+}
 ul#filters li a.selected{
-	background: #00743F;
-}
-ul#home-filters li a.selected, ul#home-filters li a:hover{
-	background: #00743F;
-}
-ul#filters li a:hover{
 	color:#fff;
 	background: #00743F;
 }
-ul#filters li.selected a{
+ul#filters li a:hover{
 	color:#fff;
 	background: #00743F;
 }

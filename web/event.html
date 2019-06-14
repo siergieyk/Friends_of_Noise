@@ -48,14 +48,31 @@
           <h1>Events</h1><br />
           <hr>
 
-    <div class="wrap">        
-         <h2>Find Your Events: </h2>
-           <script src="js/date.js"></script>
-             <form class="event" action=" https://www.eventbrite.com/e/friends-of-noise-presents-spit-infinity-dmarx-jasonundefinded-guest-tickets-56867976649#" target="_blank">
-             <input class="date" id="datepicker" type="text" value="Select date">
-             <button class="search">Search</button>   
-             </form>
-           <br />
+     <div class="wrap">        
+          <div class="left box">
+            <h2>Find Your Events: </h2>
+                <script src="js/date.js"></script>
+                   <form class="event" action="https://www.eventbrite.com/e/friends-of-noise-presents-spit-infinity-dmarx-jasonundefinded-guest-tickets-56867976649#" target="_blank">
+                   <input class="date" id="datepicker" type="text" value="Select date">
+                   <button class="search">Search</button>   
+                   </form>
+           </div>
+
+           <div class="right box">       
+             <h2>All Ages Welcome!!</h2>
+              <h3>Shows all events by category.</h3>
+              <section id="options">
+                <ul id="filters" class="option" key="filter">
+                     <li><a href="#" class="active selected">All</a></li>
+                     <li><a href="#" value="rock" class="">Rock</a></li>
+                     <li><a href="#" value="hiphop" class="">Hip Hop</a></li>
+                     <li><a href="#" valuee="drum" class="">Drum</a></li>
+                     <li><a href="#" value="jazz" class="">Jazz</a></li>
+                </ul>     
+               </section>
+            </div> 
+      </div>             
+
      
          <div id="music" class="music">        
             <h2>Events:</h2>

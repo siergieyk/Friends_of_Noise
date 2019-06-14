@@ -13,9 +13,9 @@
   <script type="text/javascript" src="js/login.js"></script>
 
   <!-- Background colors -->
-  <link href="colorbox.css" rel="stylesheet" type="text/css" media="screen" />   
-  <link href="color/black.css" rel="stylesheet" type="text/css"  media="screen" title="black" />
+  <link href="colorbox.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="color/blue.css" rel="stylesheet" type="text/css" media="screen" title="blue" />
+  <link href="color/black.css" rel="stylesheet" type="text/css"  media="screen" title="black" />
   <link href="color/darkblue.css" rel="stylesheet" type="text/css"  media="screen" title="darkblue" />
   <link href="color/green.css" rel="stylesheet" type="text/css" media="screen" title="green" />
   <link href="color/lightblue.css" rel="stylesheet" type="text/css"  media="screen" title="lightblue" />
@@ -76,8 +76,25 @@
           <hr>
 
     <div class="wrap">        
-         <h2>Find Your Items: </h2>
+          <div class="left box">
+            <h2>Welcome!!</h2>
+              <h3>Shows all items by category.</h3>
 
+              <section id="options">
+                <ul id="filters" class="option" key="filter">
+                     <li><a href="#" class="active selected">All</a></li>
+                     <li><a href="#" value="rock" class="">Hats</a></li>
+                     <li><a href="#" value="hiphop" class="">T-shirts</a></li>
+                     <li><a href="#" valuee="drum" class="">Cups</a></li>
+                     <li><a href="#" value="jazz" class="">Gifts</a></li>
+                </ul>     
+              </section>
+           </div>
+
+           <div class="right box">       
+              <h2></h2>
+
+            </div>           
      
          <div id="music" class="music">        
             <h2>Items:</h2>
@@ -212,9 +229,9 @@
               <div class="font">
                 <div class="inner">       
                   <span>Background Color</span>
-                    <ul id="colors">
-                      <li><a href="#" rel="black" class="styleswitch color-black">black</a></li>       
+                    <ul id="colors">      
                       <li><a href="#" rel="blue" class="styleswitch color-blue">blue</a></li>
+                      <li><a href="#" rel="black" class="styleswitch color-black">black</a></li>                       
                       <li><a href="#" rel="green" class="styleswitch color-green">green</a></li>
                       <li><a href="#" rel="lightblue" class="styleswitch color-lightblue">lightblue</a></li>
                       <li><a href="#" rel="orange" class="styleswitch color-orange">orange</a></li>
