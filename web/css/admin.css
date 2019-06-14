@@ -83,7 +83,13 @@ nav.main ul li a:hover{
 	border-radius: 3px;
 	position: relative;
 }
-
+.logout{
+	height: 30px;
+	font-size: 14px;
+	line-height: 30px;
+	margin: 0 2px;
+	float: left;
+}
 /* #################Container################### */
 
 .container{

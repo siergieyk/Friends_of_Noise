@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Payment</title>
-  <link href="css/payment.css" rel="stylesheet" type="text/css">
+  <!-- main style --> 
+  <link href="css/member.css" rel="stylesheet" type="text/css">
+  <link href="images/bg-line.jpg" rel="shortcut icon" />
+  <!-- google firebase auth -->
   <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
   <script type="text/javascript" src="js/auth.js"></script>
   <script type="text/javascript" src="js/login.js"></script>
@@ -11,9 +14,9 @@
 
 <body>
 
-	<div class="middle">
-		<img class="logo" src="images/FoNlogo.png">
-	</div>
+  <div class="middle">
+    <img class="logo" src="images/FoNlogo.png">
+  </div>
 
       <nav class="main">
         <ul>
@@ -31,35 +34,39 @@
         </ul>
       </nav>
 
-	<div class="payment_lb">
+    <div class="container">    
+      <hr>
+    </div>  
 
-	<h2>Payment Page</h2>
-	</div>
+  <div class="payment_lb">
+  <br>  
+  <h2>Payment Page</h2>
+  </div>
 
  <div class="row">
   <div class="outside_con">
     <div class="container_pay">
-      <form name="form" action="/action_page.php" onsubmit="return validateForm()" method="post">
+      <form name="form" action="../app/member.php" onsubmit="return validateForm()" method="post">
 <p id="demo"></p>
         <div class="row">
           <div class="inside_con">
 
-			  <h3>Options</h3>
-			  <label><input type="checkbox" name="gift">Gift membership</label><label for="recipient"> Name of Recipient</label>
+        <h3>Options</h3>
+        <label><input type="checkbox" name="gift">Gift membership</label><label for="recipient"> Name of Recipient</label>
             <input type="text" id="name_rec" name="name_rec" placeholder="Jane Doe">
 
-			  <br><label><input type="checkbox" name="donation" >Make a donation</label>
-			 <label for="donation"> Donation Amount</label> <input type="text" id="do_am" name="do_am" placeholder="$0.00">
-			  <label for="mem_q"> Membership Quantity</label> <input type="text" id="mem_q" name="mem_q" placeholder="0">
+        <br><label><input type="checkbox" name="donation" >Make a donation</label>
+       <label for="donation"> Donation Amount</label> <input type="text" id="do_am" name="do_am" placeholder="$0.00">
+        <label for="mem_q"> Membership Quantity</label> <input type="text" id="mem_q" name="mem_q" placeholder="0">
 
-			  <h3>Information</h3>
-			  <label for="fname"><i class="fa fa-user"></i> First Name</label>
+        <h3>Information</h3>
+        <label for="fname"><i class="fa fa-user"></i> First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="John">
-			  <label for="lname"><i class="fa fa-user"></i> Last Name</label>
+        <label for="lname"><i class="fa fa-user"></i> Last Name</label>
             <input type="text" id="lname" name="lastname" placeholder="Doe">
             <label for="email"><i class="fa fa-envelope"></i> Email</label>
             <input type="text" id="email" name="email" placeholder="john@example.com">
-			  <label for="id"><i class="fa fa-id"></i> Member ID</label>
+        <label for="id"><i class="fa fa-id"></i> Member ID</label>
             <input type="text" id="id" name="id" placeholder="ND1564">
 
             <h3>Billing Address</h3>
@@ -70,11 +77,11 @@
             <input type="text" id="city" name="city" placeholder="New York">
                 <label for="state">State</label>
                 <input type="text" id="state" name="state" placeholder="NY">
-			  <label for="zip">Zip</label>
+        <label for="zip">Zip</label>
                 <input type="text" id="zip" name="zip" placeholder="10258">
 
 
-			<h3>Payment</h3>
+      <h3>Payment</h3>
             <label for="cname">Name on Card</label>
             <input type="text" id="cname" name="cardname" placeholder="John More Doe">
             <label for="ccnum">Credit card number</label>
@@ -102,5 +109,5 @@
 
 
 </div>
-	</body>
+  </body>
 </html>

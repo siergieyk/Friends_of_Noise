@@ -2,83 +2,85 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Friends Of Noise - Member Page</title>
+  <title>Member</title>
+  <!-- main style --> 
   <link href="css/member.css" rel="stylesheet" type="text/css">
+  <link href="images/bg-line.jpg" rel="shortcut icon" />
+  <!-- google firebase auth -->
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+  <script type="text/javascript" src="js/auth.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
 </head>
 
-<body>
+<body>     
       <div class="top">
 		  <h4>John Smith</br>
 		  ID: 5854AIF</h4>
       </div>
-
+      
 	<div class="middle">
 		<img class="logo" src="images/FoNlogo.png">
 	</div>
 
       <nav class="main">
         <ul>
-          <li><a href="#">Home</a></li>
-		    <li class="separator">|</li>
-          <li><a href="#">Events</a></li>
-	     	<li class="separator">|</li>
-	      <li><a href="#">Merchandise</a></li>
-	     	<li class="separator">|</li>
-          <li><a href="login.html">Buy/Renew Membership</a></li>
-	     	<li class="separator">|</li>
-          <li><a href="login.html">Friends Of Noise</a></li>
+          <li><a href="http://www.friendsofnoise.org/" target="_blank">Home</a></li>
+        <li class="separator">|</li>
+          <li><a href="event.html">Events</a></li>
+        <li class="separator">|</li>
+          <li><a href="register.html">Sign Up</a></li>
+        <li class="separator">|</li>
+          <li><a href="login.html">Sign In</a></li>
+        <div id="users" class="logout">
+        <li class="separator">|</li>
+          <li><a href="logout.html" onclick="logout()">Logout</a></li>
+        </div>
         </ul>
-      </nav>
-
+      </nav>   
+  
+    <div class="container">    
  <section id="account" class="width">
-    <div class="container">
+    <div class="container">      
        	<div class="content">
 			<h1></h1>
 			<hr>
-		</div>
-
-
+		</div>	
+		
+		
 		<div class="status">
-
-				<h2>Member Status</h2>
+			
+				<h2>Member Status</h2>			
 				<p>ACTIVE</p><br/>
-
+			           
        </div>
 
        	<div class="">
 			<h2>Your Membership</h2>
-			<p><img class="flyer" src="images/flyer.png"><a href="">DJ Myrie, Romero, Mahogany Menefee, Sensation Collective, JasonUndefined, Dmarx, Spit Infinity</a><br>
+			<p><img class="flyer" src="images/fon-01.jpg"><a href="single-event.html">DJ Myrie, Romero, Mahogany Menefee, Sensation Collective, JasonUndefined, Dmarx, Spit Infinity</a><br>
 				Disjecta<br>
-				Friday, March 8, 2019<br>
-				6:30PM - 10:30PM PST<br>
-
+				Monday, April 15, 2019<br>
+				6:00PM - 10:30PM PST<br>
+				
 			</p>
-
-
+			
+		
         </div>
 			<div class="upcoming">
 			<h2>Your Upcoming Events</h2>
-			<p><img class="flyer" src="images/flyer.png"><a href="">DJ Myrie, Romero, Mahogany Menefee, Sensation Collective, JasonUndefined, Dmarx, Spit Infinity</a><br>
+			<p><img class="flyer" src="images/fon-02.jpg"><a href="single-event2.html">DJ Myrie, Romero, Mahogany Menefee, Sensation Collective, JasonUndefined, Dmarx, Spit Infinity</a><br>
 				Disjecta<br>
-				Friday, March 8, 2019<br>
-				6:30PM - 10:30PM PST<br>
-
+				Thursday, April 25, 2019<br>
+				6:00PM - 10:30PM PST<br>
+				
 			</p>
-
+	
         </div>
-
+		
 		</div>
 			<div class="renew">
-				<h2><a href="">Renew Membership!</a></h2>
-			<p>
-
-			</p>
-
+				<h2><a href="membership.html">Renew Membership!</a></h2>
+	
         </div>
-
-      </div>
-    </div>
-  </section>
-
+    </section>  
 </body>
 </html>
