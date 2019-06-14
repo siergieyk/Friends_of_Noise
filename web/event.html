@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Events</title>
+  <!-- main style --> 
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/event.css" rel="stylesheet" type="text/css">
+  <link href="images/fon-yellow.jpg" rel="shortcut icon" /> 
+  <!-- google firebase auth -->
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+  <script type="text/javascript" src="js/auth.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+  <!-- Calendar -->
+  <script src='http://fullcalendar.io/js/fullcalendar-2.1.1/lib/jquery.min.js'></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script> 
+</head>
+
+<body>     
+      <div class="top">
+        <div id="div"></div>
+          <h4 id="text"></h4>  
+        </div>
+        <div class="logo"> 
+          <img src="images/FoNlogo.png"> 
+        </div>
+      </div> 
+      
+      <nav class="main">
+        <ul>
+          <li><a href="http://www.friendsofnoise.org/" target="_blank">Home</a></li>
+        <li class="separator">|</li>
+          <li><a href="event.html">Events</a></li>
+        <li class="separator">|</li>
+          <li><a href="register.html">Sign Up</a></li>
+        <li class="separator">|</li>
+          <li><a href="login.html">Sign In</a></li>
+        <div id="users" class="logout"> 
+        <li class="separator">|</li>
+          <li><a href="logout.html" onclick="logout()">Logout</a></li>
+        </div>
+        </ul>
+      </nav>         
+  
+  <section id="account" class="width">
+    <div class="container">      
+        <div class="content">
+          <h1>Events</h1><br />
+          <hr>
+
+     <div class="wrap">        
+          <div class="left box">
+            <h2>Find Your Events: </h2>
+                <script src="js/date.js"></script>
+                   <form class="event" action="https://www.eventbrite.com/e/friends-of-noise-presents-spit-infinity-dmarx-jasonundefinded-guest-tickets-56867976649#" target="_blank">
+                   <input class="date" id="datepicker" type="text" value="Select date">
+                   <button class="search">Search</button>   
+                   </form>
+           </div>
+
+           <div class="right box">       
+             <h2>All Ages Welcome!!</h2>
+              <h3>Shows all events by category.</h3>
+              <section id="options">
+                <ul id="filters" class="option" key="filter">
+                     <li><a href="#" class="active selected">All</a></li>
+                     <li><a href="#" value="rock" class="">Rock</a></li>
+                     <li><a href="#" value="hiphop" class="">Hip Hop</a></li>
+                     <li><a href="#" valuee="drum" class="">Drum</a></li>
+                     <li><a href="#" value="jazz" class="">Jazz</a></li>
+                </ul>     
+               </section>
+            </div> 
+      </div>             
+
+     
+         <div id="music" class="music">        
+            <h2>Events:</h2>
+              <div div="pic" class="pic">
+               <ul class="list">
+                <div id="left-box">                
+                <li onclick="location.href='single-event.html';">
+                  <img height="250" src="images/fon-01.jpg">            
+                  <div class="details">                   
+                        <h4><a href="#">04/15/2019 Friends of Noise &amp; Music</a></h4>
+                        <span>BAND! BAND! BAND!</span>
+                        <p>Baseball ipsum dolor sit amet blue knuckleball out streak. Baseball rope forkball gapper glove helmet robbed starting pitcher.</p>
+                  </div>                                    
+                </li>
+                </div>
+                <div id="mid-box"> 
+                <li onclick="location.href='single-event2.html';">
+                  <img height="250" src="images/fon-02.jpg">
+                  <div class="details">                   
+                        <h4><a href="#">4/25/2019 Friends of Noise &amp; Music</a></h4>
+                        <span>BAND! BAND! BAND!</span>
+                        <p>Baseball ipsum dolor sit amet blue knuckleball out streak. Baseball rope forkball gapper glove helmet robbed starting pitcher.</p>
+                  </div>                                    
+                </li>
+                </div>
+                <div id="right-box"> 
+                <li onclick="location.href='single-event3.html';">
+                  <img height="250" src="images/fon-03.jpg">
+                  <div class="details">                   
+                        <h4><a href="#">5/15/2019 Friends of Noise &amp; Music</a></h4>
+                        <span>BAND! BAND! BAND!</span>
+                        <p>Baseball ipsum dolor sit amet blue knuckleball out streak. Baseball rope forkball gapper glove helmet robbed starting pitcher.</p>
+                  </div>                                    
+                </li>
+                </div>
+                <div id="left-box">                
+                <li onclick="location.href='single-event4.html';">
+                  <img height="250" src="images/fon-04.jpg">
+                  <div class="details">                   
+                        <h4><a href="#">5/25/2019 Friends of Noise &amp; Music</a></h4>
+                        <span>BAND! BAND! BAND!</span>
+                        <p>Baseball ipsum dolor sit amet blue knuckleball out streak. Baseball rope forkball gapper glove helmet robbed starting pitcher.</p>
+                  </div>                                    
+                </li>
+                </div>
+                <div id="mid-box">                
+                <li onclick="location.href='single-event5.html';">
+                  <img height="250" src="images/fon-05.jpg">
+                  <div class="details">                   
+                        <h4><a href="#">6/15/2019 Friends of Noise &amp; Music</a></h4>
+                        <span>BAND! BAND! BAND!</span>
+                        <p>Baseball ipsum dolor sit amet blue knuckleball out streak. Baseball rope forkball gapper glove helmet robbed starting pitcher.</p>
+                  </div>                                    
+                </li>
+                </div>
+                <div id="right-box">                
+                 <li onclick="location.href='single-event6.html';">
+                  <img height="250" src="images/fon-06.jpg">
+                  <div class="details">                   
+                        <h4><a href="#">6/25/2019 Friends of Noise &amp; Music</a></h4>
+                        <span>BAND! BAND! BAND!</span>
+                        <p>Baseball ipsum dolor sit amet blue knuckleball out streak. Baseball rope forkball gapper glove helmet robbed starting pitcher.</p>
+                  </div>                                    
+                </li>
+                </div>
+                <div id="left-box">                
+                 <li onclick="location.href='single-event7.html';">
+                  <img height="250" src="images/fon-07.jpg">
+                  <div class="details">                   
+                        <h4><a href="#">7/15/2019 Friends of Noise &amp; Music</a></h4>
+                        <span>BAND! BAND! BAND!</span>
+                        <p>Baseball ipsum dolor sit amet blue knuckleball out streak. Baseball rope forkball gapper glove helmet robbed starting pitcher.</p>
+                  </div>                                    
+                </li>
+                </div>
+                <div id="mid-box">
+                 <li onclick="location.href='single-event8.html';">
+                  <img height="250" src="images/fon-08.jpg">
+                  <div class="details">                   
+                        <h4><a href="#">7/25/2019 Friends of Noise &amp; Music</a></h4>
+                        <span>BAND! BAND! BAND!</span>
+                        <p>Baseball ipsum dolor sit amet blue knuckleball out streak. Baseball rope forkball gapper glove helmet robbed starting pitcher.</p>
+                  </div>                                    
+                </li>
+                </div>
+                <div id="right-box">
+                 <li onclick="location.href='single-event9.html';">
+                  <img height="250" src="images/fon-09.jpg">
+                  <div class="details">                   
+                        <h4><a href="#">8/15/2019 Friends of Noise &amp; Music</a></h4>
+                        <span>BAND! BAND! BAND!</span>
+                        <p>Baseball ipsum dolor sit amet blue knuckleball out streak. Baseball rope forkball gapper glove helmet robbed starting pitcher.</p>
+                  </div>                                    
+                </li>
+                </div>
+              <div id="left-box">
+               <li onclick="location.href='single-event10.html';">
+                  <img height="250" src="images/fon-10.jpg">
+                  <div class="details">                   
+                        <h4><a href="#">8/25/2019 Friends of Noise &amp; Music</a></h4>
+                        <span>BAND! BAND! BAND!</span>
+                        <p>Baseball ipsum dolor sit amet blue knuckleball out streak. Baseball rope forkball gapper glove helmet robbed starting pitcher.</p>
+                  </div>                                    
+                </li>
+                </div>
+                <div id="mid-box">
+                 <li onclick="location.href='single-event11.html';">
+                  <img height="250" src="images/fon-11.jpg">
+                  <div class="details">                   
+                        <h4><a href="#">9/15/2019 Friends of Noise &amp; Music</a></h4>
+                        <span>BAND! BAND! BAND!</span>
+                        <p>Baseball ipsum dolor sit amet blue knuckleball out streak. Baseball rope forkball gapper glove helmet robbed starting pitcher.</p>
+                  </div>                                    
+                </li>
+                </div>
+                <div id="right-box">
+                 <li onclick="location.href='single-event12.html';">
+                  <img height="250" src="images/fon-12.jpg">
+                  <div class="details">                   
+                        <h4><a href="#">10/15/2019 Friends of Noise &amp; Music</a></h4>
+                        <span>BAND! BAND! BAND!</span>
+                        <p>Baseball ipsum dolor sit amet blue knuckleball out streak. Baseball rope forkball gapper glove helmet robbed starting pitcher.</p>
+                  </div>                                    
+                </li>
+                </div>
+              </ul>
+            </div>        
+         </div>
+       </div>
+</section>
+  
+</body>
+</html>

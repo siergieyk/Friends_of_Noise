@@ -1,0 +1,194 @@
+input[type="text"]{
+	height: 35px;
+	padding: 0 10px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+input[type="text"]:focus{
+	outline:none;
+	border: 1px solid red;
+	box-shadow: 0px 0px 4px red;
+}
+button, input[type="submit"]{
+	margin: 0px 0 0 10px;
+	height: 40px;
+	display: block;
+	background: #FFD700;
+	color: #fefefe;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	border-radius: 4px;
+	width: 140px;
+	display: inline-block;
+}
+button:hover, input[type="submit"]:hover{
+	background: #87CEFA;
+	color: black;
+	box-shadow: 0px 0px 2px #87CEFA;
+}
+.wrap{
+	position: relative; 
+	width: 980px; 
+	margin: 0 auto; 
+	padding: 0;
+}
+.left{
+	clear: both;
+	float: left;
+	width: 450px;
+	height: 200px;
+}
+.right{
+	float: right;
+	width: 450px;
+	height: 200px;
+}
+.wrap h2{
+	color: black;
+	font-size: 26px;
+	color: #F1F3F2;
+	font-weight: 600;
+	font-family: "Times New Roman", Times, serif;
+	margin-top: 10px;
+}
+.wrap p{
+	color: black;
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0 auto;
+	padding: 0 10px 5px 10px;
+}
+/* event and retail page - 3 columns*/
+#left-box{
+	float: left;
+	width: 32%;
+	margin: 5px;
+}
+#mid-box{
+	float: left;
+	width: 32%;
+	margin: 5px;
+}
+#right-box{
+	float: left;
+	width: 32%;
+	margin: 5px;
+}
+/*  event page - calendar */
+.date{
+	margin: 0 auto;
+ 	padding: 10px;
+ 	width: 200px;
+ 	background:url(../images/cal-icon.png) no-repeat 100% 50% #FFF;
+}
+.ui-datepicker{
+	background-color: black;
+	color: #DC143C;
+	width: 150px;
+	height: 170px;
+	display: none;
+	margin: 2px;
+	padding: 2px;
+}
+.ui-corner-all{
+	font-size: 15px;
+	margin: 0 15px 0  15px;
+	text-align: center;
+}
+.ui-datepicker-calendar{
+	font-size: 14px;	
+}
+.ui-datepicker-header{
+	text-align: center;
+}
+.data-event{
+	color: red;
+}
+.details {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.pic img{
+	width: 100%;	
+}
+.ui-datepicker-current-day .ui-state-active{
+	background: #008000;
+	border-radius: 5px;
+	padding: 2px;
+	margin: 2px;
+}
+.event a{
+    font-weight: bold;
+    color: red;
+
+}
+/* single event page */
+.center{
+    width: 185px;
+    margin: 2px auto;
+}
+.image img{
+	width: 100%;
+	margin: 0 auto;
+	border: 8px solid #fff;
+}
+.image img:hover {	
+	width: 115%;
+	height: 115%;
+	border: 8px solid #9ACD32;	
+}
+.event{
+	margin: 0 auto;
+	width: 950px;
+}
+.event .leftcolumn{
+	margin: 20px 0px 10px 0px;
+ 	padding: 10px;
+ 	height: 175px;
+ 	width: 315px;
+ 	float: left;	
+ 	border: 7px dotted #FFD700;
+ 	background-image: url("../images/bg-blue.jpg");
+}
+.event .rightcolumn { 
+	float: right;
+ 	color: #333;
+ 	margin: 10px 0px 10px 0px;
+ 	padding: 5px;
+ 	height: 500px;
+ 	width: 580px;
+ 	display: inline;
+ 	position: relative;
+}
+button.buy{
+	width: 180px;
+}
+/* category bar */
+ul#filters{
+	float: left;
+	margin-top: 6px;
+}
+ul#filters li{
+	display: inline;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+ul#filters li a{
+	color: #686868;
+	background: #f7f7f7;
+	padding: 8px 15px 9px 15px;
+	margin-left: 1px;
+	font-weight: 600;
+	display: block;
+}
+ul#filters li a.selected{
+	color:#fff;
+	background: #C1403D;
+}
+ul#filters li a:hover{
+	color:#fff;
+	background: #C1403D;
+}
