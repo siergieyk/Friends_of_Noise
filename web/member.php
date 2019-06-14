@@ -1,8 +1,9 @@
+<!-- add database credentials below -->
 <?php
-$servername = "mysql.themcmorrislife.com";
-$username = "eatlunchnow";
-$password = "746vG3a2Fs94";
-$dbname = "database_stuff";
+$servername = ""; 
+$username = "";
+$password = "";
+$dbname = "";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
