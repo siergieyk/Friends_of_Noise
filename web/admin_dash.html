@@ -4,31 +4,22 @@
   <meta charset="UTF-8">
   <title>Admin Dashboard</title>
   <link href="css/admin.css" rel="stylesheet" type="text/css">
+  <link href="images/red-doodle.jpg" rel="shortcut icon" /> 
   <!-- Below is the initialization snippet for Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyC0N7dTxzX551I3SeSMcxkx1PJbaAHzVR0",
-      authDomain: "fonproject-faf34.firebaseapp.com",
-      databaseURL: "https://fonproject-faf34.firebaseio.com",
-      projectId: "fonproject-faf34",
-      storageBucket: "fonproject-faf34.appspot.com",
-      messagingSenderId: "572276368012"
-    };
-    firebase.initializeApp(config);
-  </script>
-
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+  <script type="text/javascript" src="js/auth.js"></script>
   <script src="../app/adminOnClicks.js"></script>
 </head>
 
-<body>
-  <div class="top">
-    <h4>Already a Member? <a href="login.html">User Visitor</a></h4>
-      <div class="logo">
-        <img src="images/FoNlogo.png">
+<body>     
+      <div class="top">
+        <div id="div"></div>
+          <h4 id="text"></h4>  
+        </div>
+        <div class="logo"> 
+          <img src="images/FoNlogo.png"> 
+        </div>
       </div>
-  </div>
 
   <nav class="main">
     <ul>

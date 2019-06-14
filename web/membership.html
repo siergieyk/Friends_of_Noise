@@ -3,23 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>Membership</title>
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link href="css/membership.css" rel="stylesheet" type="text/css">
+  <!-- main style --> 
+  <link href="css/member.css" rel="stylesheet" type="text/css">
+  <link href="images/bg-line.jpg" rel="shortcut icon" />
+  <!-- google firebase auth -->
   <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
   <script type="text/javascript" src="js/auth.js"></script>
   <script type="text/javascript" src="js/login.js"></script>
 </head>
 
-<body>     
-      <div class="top">
-        <div id="div"></div>
-          <h4 id="text"></h4>  
-        </div>
-        <div class="logo"> 
-          <img src="images/FoNlogo.png"> 
-        </div>
-      </div> 
-      
+<body>
+
+	<div class="middle">
+		<img class="logo" src="images/FoNlogo.png">
+	</div>
+
       <nav class="main">
         <ul>
           <li><a href="http://www.friendsofnoise.org/" target="_blank">Home</a></li>
@@ -29,26 +27,26 @@
           <li><a href="register.html">Sign Up</a></li>
         <li class="separator">|</li>
           <li><a href="login.html">Sign In</a></li>
-        <div id="users" class="logout"> 
+        <div id="users" class="logout">
         <li class="separator">|</li>
           <li><a href="logout.html" onclick="logout()">Logout</a></li>
         </div>
         </ul>
-      </nav>         
+      </nav>        
   
-  <section id="account" class="width">
+ <section id="account" class="width">
     <div class="container">      
-        <div class="content">
-          <h1>Membership</h1><br />
-          <hr>
+       	<div class="content">
+		<hr>
+		</div>	
 
     <div class="wrap">
-    	<h3>Join FON</h3>
+    	<h1>Join FON</h1>
 		<h4>Description: Join our membership. Join our Membership. Join our Membership.</h4>        
         
         <div class="left-box">
 			<h3><a href="#">New Member</a></h3>
-			<h4>In Savings</h4>
+			<h4>A Perfect Choice</h4>
      			<div class="value">
 	    			<a href="#">$50/year</a>
 				</div>
@@ -56,11 +54,10 @@
 			    <ul>
 					<li><a href="event.html">Discount join events</a></li>
 					<li><a href="retail.html">Discount for our items</a></li>
+					<li><a href="#">Gift Discount</a></li>
 					<li><a href="#">Discount</a></li>
-					<li><a href="#">Discount</a></li>
-					<br>
-					<hr>
 				</ul>
+				<hr>
 				
 				<div class="cart">
 					<a href="payment.html">Buy Now</a>
@@ -77,12 +74,11 @@
 			    <ul>
 					<li><a href="event.html">Discount join events</a></li>
 					<li><a href="retail.html">Discount for our items</a></li>
-					<li><a href="#">Discount</a></li>
-					<li><a href="#">Discount</a></li>
-					<br>
-					<hr>
+					<li><a href="#">Gift Discount</a></li>
+					<li><a href="#">Discount</a></li>	
 				</ul>
-				
+				<hr>
+
 				<div class="cart">
 					<a href="payment.html">Buy Now</a>
 				</div>
@@ -90,7 +86,7 @@
 
 		<div class="right-box">
 			<h3><a href="#">Event Member</a></h3>
-			<h4>A perfct choice</h4>
+			<h4>In Savings</h4>
      			<div class="value">
 	    			<a href="#">$20/event</a>
 				</div>
@@ -98,11 +94,10 @@
 			    <ul>
 					<li><a href="event.html">Discount join events</a></li>
 					<li><a href="retail.html">Discount for our items</a></li>
+					<li><a href="#">Gift Discount</a></li>
 					<li><a href="#">Discount</a></li>
-					<li><a href="#">Discount</a></li>
-					<br>
-					<hr>
 				</ul>
+				<hr>
 				
 				<div class="cart">
 					<a href="payment.html">Buy Now</a>

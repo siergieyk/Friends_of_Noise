@@ -13,6 +13,7 @@ elseif ($page_name=='admin_dash.html') {
 }
 elseif ($page_name=='member.html') {
 	include $browser_t.'/member.html';
+	include "app/member.php";
 }
 elseif ($page_name=='single-event.html') {
 	include $browser_t.'/single-event.html';
@@ -26,6 +27,7 @@ elseif ($page_name=='register.html') {
 }
 elseif ($page_name=='checkout.html') {
 	include $browser_t.'/checkout.html';
+	include "app/checkout.php";
 }
 elseif ($page_name=='sell.html') {
 	include $browser_t.'/sell.html';
